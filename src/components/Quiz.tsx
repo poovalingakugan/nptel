@@ -3,7 +3,7 @@ import { allQuestions } from "@/data/questions";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { ChevronLeft, ChevronRight, RotateCcw, CheckCircle2, XCircle, Eye, EyeOff, Shuffle } from "lucide-react";
+import { ChevronLeft, ChevronRight, RotateCcw, CheckCircle2, XCircle, Eye, EyeOff } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface UserAnswers {
@@ -62,12 +62,6 @@ const Quiz = () => {
       }
     });
     return correct;
-  };
-
-  const handleShuffle = () => {
-    setQuestions(shuffleArray(allQuestions));
-    setShowAllQuestions(false);
-    setCurrentQuestion(0);
   };
 
   const handleSubmit = () => {
@@ -254,26 +248,15 @@ const Quiz = () => {
                 <span className="text-xs text-muted-foreground">
                   Question {currentQuestion + 1} of {totalQuestions}
                 </span>
-                <div className="flex gap-2">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    onClick={handleShuffle}
-                    className="text-xs"
-                  >
-                    <Shuffle className="w-4 h-4 mr-1" />
-                    Shuffle
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    onClick={() => setShowAllQuestions(!showAllQuestions)}
-                    className="text-xs"
-                  >
-                    {showAllQuestions ? <EyeOff className="w-4 h-4 mr-1" /> : <Eye className="w-4 h-4 mr-1" />}
-                    {showAllQuestions ? "Hide All" : "Show All"}
-                  </Button>
-                </div>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowAllQuestions(!showAllQuestions)}
+                  className="text-xs"
+                >
+                  {showAllQuestions ? <EyeOff className="w-4 h-4 mr-1" /> : <Eye className="w-4 h-4 mr-1" />}
+                  {showAllQuestions ? "Hide All" : "Show All"}
+                </Button>
               </div>
             </div>
           </CardContent>
@@ -406,7 +389,7 @@ const Quiz = () => {
             Previous
           </Button>
 
-          {answeredCount === totalQuestions ? (
+          {answeredCount >= 1 ? (
             <Button
               onClick={handleSubmit}
               size="lg"
@@ -417,10 +400,7 @@ const Quiz = () => {
           ) : (
             <div className="text-center">
               <p className="text-sm text-muted-foreground">
-                Answer all questions to submit
-              </p>
-              <p className="text-xs text-muted-foreground">
-                ({totalQuestions - answeredCount} remaining)
+                Answer at least 1 question to submit
               </p>
             </div>
           )}
