@@ -1,22 +1,37 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { allQuestions } from "@/data/questions";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { ChevronLeft, ChevronRight, RotateCcw, CheckCircle2, XCircle, Eye, EyeOff } from "lucide-react";
+import { ChevronLeft, ChevronRight, RotateCcw, CheckCircle2, XCircle, Eye, EyeOff, Shuffle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface UserAnswers {
   [key: number]: number;
 }
 
+const shuffleArray = <T,>(array: T[]): T[] => {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
 const Quiz = () => {
+  const [questions, setQuestions] = useState(allQuestions);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [userAnswers, setUserAnswers] = useState<UserAnswers>({});
   const [showResults, setShowResults] = useState(false);
   const [showAllQuestions, setShowAllQuestions] = useState(false);
 
-  const totalQuestions = allQuestions.length;
+  // Shuffle questions on initial load
+  useEffect(() => {
+    setQuestions(shuffleArray(allQuestions));
+  }, []);
+
+  const totalQuestions = questions.length;
   const answeredCount = Object.keys(userAnswers).length;
   const progressPercentage = (answeredCount / totalQuestions) * 100;
 
@@ -41,12 +56,18 @@ const Quiz = () => {
 
   const calculateResults = () => {
     let correct = 0;
-    allQuestions.forEach(question => {
+    questions.forEach(question => {
       if (userAnswers[question.id] === question.answer) {
         correct++;
       }
     });
     return correct;
+  };
+
+  const handleShuffle = () => {
+    setQuestions(shuffleArray(allQuestions));
+    setShowAllQuestions(false);
+    setCurrentQuestion(0);
   };
 
   const handleSubmit = () => {
@@ -55,6 +76,7 @@ const Quiz = () => {
   };
 
   const handleRestart = () => {
+    setQuestions(shuffleArray(allQuestions));
     setCurrentQuestion(0);
     setUserAnswers({});
     setShowResults(false);
@@ -69,7 +91,7 @@ const Quiz = () => {
     return { text: "Needs Improvement", emoji: "💪", color: "text-muted-foreground" };
   };
 
-  const currentQuestionData = allQuestions[currentQuestion];
+  const currentQuestionData = questions[currentQuestion];
   const correctAnswers = calculateResults();
   const percentage = ((correctAnswers / totalQuestions) * 100).toFixed(1);
   const feedback = getFeedbackMessage(correctAnswers);
@@ -139,7 +161,7 @@ const Quiz = () => {
                   Review Your Answers
                 </h3>
                 <div className="space-y-4 max-h-96 overflow-y-auto pr-2">
-                  {allQuestions.map((question, index) => {
+                  {questions.map((question, index) => {
                     const userAnswer = userAnswers[question.id];
                     const isCorrect = userAnswer === question.answer;
                     const wasAnswered = userAnswer !== undefined;
@@ -232,15 +254,26 @@ const Quiz = () => {
                 <span className="text-xs text-muted-foreground">
                   Question {currentQuestion + 1} of {totalQuestions}
                 </span>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => setShowAllQuestions(!showAllQuestions)}
-                  className="text-xs"
-                >
-                  {showAllQuestions ? <EyeOff className="w-4 h-4 mr-1" /> : <Eye className="w-4 h-4 mr-1" />}
-                  {showAllQuestions ? "Hide All" : "Show All"}
-                </Button>
+                <div className="flex gap-2">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={handleShuffle}
+                    className="text-xs"
+                  >
+                    <Shuffle className="w-4 h-4 mr-1" />
+                    Shuffle
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => setShowAllQuestions(!showAllQuestions)}
+                    className="text-xs"
+                  >
+                    {showAllQuestions ? <EyeOff className="w-4 h-4 mr-1" /> : <Eye className="w-4 h-4 mr-1" />}
+                    {showAllQuestions ? "Hide All" : "Show All"}
+                  </Button>
+                </div>
               </div>
             </div>
           </CardContent>
@@ -249,7 +282,7 @@ const Quiz = () => {
         {showAllQuestions ? (
           /* All Questions View */
           <div className="space-y-4 mb-6">
-            {allQuestions.map((question, index) => {
+            {questions.map((question, index) => {
               const isAnswered = userAnswers[question.id] !== undefined;
               return (
                 <Card 
