@@ -62,10 +62,10 @@ const Quiz = () => {
   };
 
   const getFeedbackMessage = (score: number) => {
-    if (score === 180) return { text: "Excellent", emoji: "🌟", color: "text-success" };
-    if (score >= 160) return { text: "Very Good", emoji: "👍", color: "text-accent" };
-    if (score >= 120) return { text: "Good", emoji: "🙂", color: "text-primary" };
-    if (score >= 80) return { text: "Average", emoji: "😐", color: "text-warning" };
+    if (score === 190) return { text: "Excellent", emoji: "🌟", color: "text-success" };
+    if (score >= 170) return { text: "Very Good", emoji: "👍", color: "text-accent" };
+    if (score >= 130) return { text: "Good", emoji: "🙂", color: "text-primary" };
+    if (score >= 85) return { text: "Average", emoji: "😐", color: "text-warning" };
     return { text: "Needs Improvement", emoji: "💪", color: "text-muted-foreground" };
   };
 

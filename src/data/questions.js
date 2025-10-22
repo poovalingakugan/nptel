@@ -62,10 +62,10 @@ export const questions = [
   }
 ];
 
-// Helper to generate placeholder questions to reach 180 total
+// Helper to generate placeholder questions to reach 190 total
 const generatePlaceholderQuestions = () => {
   const placeholders = [];
-  for (let i = 11; i <= 180; i++) {
+  for (let i = 11; i <= 190; i++) {
     placeholders.push({
       id: i,
       question: `Sample Question ${i}: This is a placeholder question. Replace with actual NPTEL question.`,
@@ -81,5 +81,5 @@ const generatePlaceholderQuestions = () => {
   return placeholders;
 };
 
-// Combine sample questions with placeholders to make 180 total
+// Combine sample questions with placeholders to make 190 total
 export const allQuestions = [...questions, ...generatePlaceholderQuestions()];
