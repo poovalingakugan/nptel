@@ -1,7 +1,9 @@
 import Quiz from "@/components/Quiz";
+import { useParams } from "react-router-dom";
 
 const Index = () => {
-  return <Quiz />;
+  const { weekId } = useParams();
+  return <Quiz weekId={weekId} />;
 };
 
 export default Index;

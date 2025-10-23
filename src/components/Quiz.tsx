@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import { allQuestions } from "@/data/questions";
+import { allQuestions, questionsByWeek } from "@/data/questions";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { ChevronLeft, ChevronRight, RotateCcw, CheckCircle2, XCircle, Eye, EyeOff } from "lucide-react";
+import { ChevronLeft, ChevronRight, RotateCcw, CheckCircle2, XCircle, Eye, EyeOff, Home } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useNavigate } from "react-router-dom";
 
 interface UserAnswers {
   [key: number]: number;
@@ -19,8 +20,22 @@ const shuffleArray = <T,>(array: T[]): T[] => {
   return shuffled;
 };
 
-const Quiz = () => {
-  const [questions, setQuestions] = useState(allQuestions);
+interface QuizProps {
+  weekId?: string;
+}
+
+const Quiz = ({ weekId }: QuizProps) => {
+  const navigate = useNavigate();
+  const getInitialQuestions = () => {
+    if (weekId === "final") return allQuestions;
+    if (weekId !== undefined) {
+      const week = parseInt(weekId);
+      return questionsByWeek[week] || allQuestions;
+    }
+    return allQuestions;
+  };
+
+  const [questions, setQuestions] = useState(getInitialQuestions());
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [userAnswers, setUserAnswers] = useState<UserAnswers>({});
   const [showResults, setShowResults] = useState(false);
@@ -28,8 +43,9 @@ const Quiz = () => {
 
   // Shuffle questions on initial load
   useEffect(() => {
-    setQuestions(shuffleArray(allQuestions));
-  }, []);
+    const initialQuestions = getInitialQuestions();
+    setQuestions(shuffleArray(initialQuestions));
+  }, [weekId]);
 
   const totalQuestions = questions.length;
   const answeredCount = Object.keys(userAnswers).length;
@@ -70,7 +86,8 @@ const Quiz = () => {
   };
 
   const handleRestart = () => {
-    setQuestions(shuffleArray(allQuestions));
+    const initialQuestions = getInitialQuestions();
+    setQuestions(shuffleArray(initialQuestions));
     setCurrentQuestion(0);
     setUserAnswers({});
     setShowResults(false);
@@ -139,6 +156,14 @@ const Quiz = () => {
               </div>
 
               <div className="flex gap-4 justify-center mb-8">
+                <Button 
+                  onClick={() => navigate("/")}
+                  size="lg"
+                  variant="outline"
+                >
+                  <Home className="w-5 h-5 mr-2" />
+                  Back to Home
+                </Button>
                 <Button 
                   onClick={handleRestart}
                   size="lg"
@@ -377,28 +402,40 @@ const Quiz = () => {
         )}
 
         {/* Navigation */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-between items-center">
-          <Button
-            onClick={handlePrevious}
-            disabled={currentQuestion === 0}
-            variant="outline"
-            size="lg"
-            className="w-full sm:w-auto"
-          >
-            <ChevronLeft className="w-5 h-5 mr-2" />
-            Previous
-          </Button>
+        <div className="flex flex-col gap-4">
+          <div className="flex justify-between items-center gap-4">
+            <Button
+              onClick={handlePrevious}
+              disabled={currentQuestion === 0}
+              variant="outline"
+              size="lg"
+              className="flex-1"
+            >
+              <ChevronLeft className="w-5 h-5 mr-2" />
+              Previous
+            </Button>
+
+            <Button
+              onClick={handleNext}
+              disabled={currentQuestion === totalQuestions - 1}
+              size="lg"
+              className="flex-1"
+            >
+              Next
+              <ChevronRight className="w-5 h-5 ml-2" />
+            </Button>
+          </div>
 
           {answeredCount >= 1 ? (
             <Button
               onClick={handleSubmit}
               size="lg"
-              className="w-full sm:w-auto bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-lg px-8"
+              className="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-lg"
             >
               Submit Quiz
             </Button>
           ) : (
-            <div className="text-center">
+            <div className="text-center py-2">
               <p className="text-sm text-muted-foreground">
                 Answer at least 1 question to submit
               </p>
@@ -406,13 +443,13 @@ const Quiz = () => {
           )}
 
           <Button
-            onClick={handleNext}
-            disabled={currentQuestion === totalQuestions - 1}
-            size="lg"
-            className="w-full sm:w-auto"
+            onClick={() => navigate("/")}
+            variant="ghost"
+            size="sm"
+            className="w-full"
           >
-            Next
-            <ChevronRight className="w-5 h-5 ml-2" />
+            <Home className="w-4 h-4 mr-2" />
+            Back to Home
           </Button>
         </div>
       </div>
