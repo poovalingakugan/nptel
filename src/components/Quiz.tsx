@@ -94,18 +94,19 @@ const Quiz = ({ weekId }: QuizProps) => {
     setShowAllQuestions(false);
   };
 
-  const getFeedbackMessage = (score: number) => {
-    if (score === 190) return { text: "Excellent", emoji: "🌟", color: "text-success" };
-    if (score >= 170) return { text: "Very Good", emoji: "👍", color: "text-accent" };
-    if (score >= 130) return { text: "Good", emoji: "🙂", color: "text-primary" };
-    if (score >= 85) return { text: "Average", emoji: "😐", color: "text-warning" };
+  const getFeedbackMessage = (score: number, total: number) => {
+    const percentage = (score / total) * 100;
+    if (percentage === 100) return { text: "Excellent", emoji: "🌟", color: "text-success" };
+    if (percentage >= 90) return { text: "Very Good", emoji: "👍", color: "text-accent" };
+    if (percentage >= 70) return { text: "Good", emoji: "🙂", color: "text-primary" };
+    if (percentage >= 45) return { text: "Average", emoji: "😐", color: "text-warning" };
     return { text: "Needs Improvement", emoji: "💪", color: "text-muted-foreground" };
   };
 
   const currentQuestionData = questions[currentQuestion];
   const correctAnswers = calculateResults();
   const percentage = ((correctAnswers / totalQuestions) * 100).toFixed(1);
-  const feedback = getFeedbackMessage(correctAnswers);
+  const feedback = getFeedbackMessage(correctAnswers, totalQuestions);
 
   if (showResults) {
     return (
