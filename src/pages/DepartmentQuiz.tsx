@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { useNavigate, useParams } from "react-router-dom";
 import { BookOpen, Trophy, ArrowLeft } from "lucide-react";
 import { departmentConfig } from "@/data/departments";
+import { getQuestionsByDepartmentWeek } from "@/data/questions";
 
 const DepartmentQuiz = () => {
   const navigate = useNavigate();
@@ -17,10 +18,11 @@ const DepartmentQuiz = () => {
 
   const weeks = [];
   for (let i = config.startWeek; i <= config.endWeek; i++) {
+    const actualQuestions = getQuestionsByDepartmentWeek(department!, i);
     weeks.push({
       id: i,
       label: `Week ${i}`,
-      questions: config.questionsPerWeek,
+      questions: actualQuestions.length,
     });
   }
 

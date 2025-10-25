@@ -473,15 +473,26 @@ const Quiz = ({ weekId, department = 'ece' }: QuizProps) => {
             </div>
           )}
 
-          <Button
-            onClick={() => navigate("/")}
-            variant="ghost"
-            size="sm"
-            className="w-full"
-          >
-            <Home className="w-4 h-4 mr-2" />
-            Back to Home
-          </Button>
+          <div className="flex gap-2">
+            <Button
+              onClick={() => navigate(department ? `/department/${department}` : "/")}
+              variant="ghost"
+              size="sm"
+              className="flex-1"
+            >
+              <ChevronLeft className="w-4 h-4 mr-2" />
+              Back to Weeks
+            </Button>
+            <Button
+              onClick={() => navigate("/")}
+              variant="ghost"
+              size="sm"
+              className="flex-1"
+            >
+              <Home className="w-4 h-4 mr-2" />
+              Back to Home
+            </Button>
+          </div>
         </div>
       </div>
     </div>
