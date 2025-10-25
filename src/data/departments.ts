@@ -18,11 +18,11 @@ export const departmentConfig: Record<string, DepartmentConfig> = {
   },
   it: {
     topic: "Sample Topic for IT (Replace Later)",
-    startWeek: 0,
+    startWeek: 1,
     endWeek: 12,
-    questionsPerWeek: 15,
-    finalTestLabel: "Week 0-12",
-    totalQuestions: 190,
+    questionsPerWeek: 30, // Week 1-8: 30, Week 9-12: 20 (handled in questions.js)
+    finalTestLabel: "Week 1-12",
+    totalQuestions: 320, // (8 weeks * 30) + (4 weeks * 20)
   },
   ece: {
     topic: "Introduction to Industry 4.0 and Industrial Internet of Things",
@@ -32,16 +32,8 @@ export const departmentConfig: Record<string, DepartmentConfig> = {
     finalTestLabel: "Week 0-12",
     totalQuestions: 190,
   },
-  eee: {
-    topic: "Sample Topic for EEE (Replace Later)",
-    startWeek: 0,
-    endWeek: 12,
-    questionsPerWeek: 15,
-    finalTestLabel: "Week 0-12",
-    totalQuestions: 190,
-  },
-  csbs: {
-    topic: "Sample Topic for CSBS (Replace Later)",
+  "eee-csbs": {
+    topic: "Sample Topic for EEE & CSBS (Replace Later)",
     startWeek: 1,
     endWeek: 12,
     questionsPerWeek: 15,

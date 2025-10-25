@@ -3,8 +3,7 @@ export const questionsByDepartment = {
   cse: {},
   it: {},
   ece: {},
-  eee: {},
-  csbs: {},
+  "eee-csbs": {},
 };
 
 // ECE Department - Week 0 questions
@@ -13,7 +12,8 @@ questionsByDepartment.ece[0] = [
     id: 1,
     question: "What is the time complexity of binary search algorithm?",
     options: ["O(n)", "O(log n)", "O(n²)", "O(1)"],
-    answer: 1
+    answer: 1,
+    image: null // Optional image URL
   },
   {
     id: 2,
@@ -72,18 +72,24 @@ questionsByDepartment.ece[0] = [
 ];
 
 // Generate placeholder questions for all departments
-const departments = ['cse', 'it', 'ece', 'eee', 'csbs'];
+const departments = ['cse', 'ece', 'eee-csbs', 'it'];
 
 departments.forEach(dept => {
-  const startWeek = dept === 'csbs' ? 1 : 0;
+  const startWeek = (dept === 'eee-csbs' || dept === 'it') ? 1 : 0;
   const endWeek = 12;
   
   for (let week = startWeek; week <= endWeek; week++) {
-    // Skip Week 0 for ECE as we have actual questions, skip for CSBS as it doesn't have Week 0
-    if ((dept === 'ece' && week === 0) || (dept === 'csbs' && week === 0)) continue;
+    // Skip Week 0 for ECE as we have actual questions
+    if (dept === 'ece' && week === 0) continue;
+    
+    // IT department has different question counts
+    let questionsPerWeek = 15;
+    if (dept === 'it') {
+      questionsPerWeek = (week >= 1 && week <= 8) ? 30 : 20;
+    }
     
     questionsByDepartment[dept][week] = [];
-    for (let q = 1; q <= 15; q++) {
+    for (let q = 1; q <= questionsPerWeek; q++) {
       const id = parseInt(`${dept.charCodeAt(0)}${week}${q.toString().padStart(2, '0')}`);
       questionsByDepartment[dept][week].push({
         id,
@@ -94,7 +100,8 @@ departments.forEach(dept => {
           "Option C - Replace with actual option",
           "Option D - Replace with actual option"
         ],
-        answer: 0
+        answer: 0,
+        image: dept === 'it' ? "PLACE_IMAGE_URL_HERE" : null // IT questions support images
       });
     }
   }

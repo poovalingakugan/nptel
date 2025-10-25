@@ -208,6 +208,15 @@ const Quiz = ({ weekId, department = 'ece' }: QuizProps) => {
                           </div>
                           <div className="flex-1">
                             <p className="font-medium text-foreground mb-2">{question.question}</p>
+                            {question.image && question.image !== "PLACE_IMAGE_URL_HERE" && (
+                              <div className="mb-2">
+                                <img 
+                                  src={question.image} 
+                                  alt="Question illustration" 
+                                  className="max-w-sm h-auto rounded-lg border-2 border-border"
+                                />
+                              </div>
+                            )}
                             <div className="text-sm space-y-1">
                               {wasAnswered && (
                                 <>
@@ -305,14 +314,25 @@ const Quiz = ({ weekId, department = 'ece' }: QuizProps) => {
                   onClick={() => setCurrentQuestion(index)}
                 >
                   <CardHeader className="pb-3">
-                    <CardTitle className="text-lg flex items-center gap-3">
+                    <CardTitle className="text-lg flex items-start gap-3">
                       <span className={cn(
                         "flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold",
                         isAnswered ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
                       )}>
                         {index + 1}
                       </span>
-                      <span className="flex-1">{question.question}</span>
+                      <div className="flex-1">
+                        <div>{question.question}</div>
+                        {question.image && question.image !== "PLACE_IMAGE_URL_HERE" && (
+                          <div className="mt-2">
+                            <img 
+                              src={question.image} 
+                              alt="Question illustration" 
+                              className="max-w-full h-auto rounded-lg border-2 border-border"
+                            />
+                          </div>
+                        )}
+                      </div>
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -364,6 +384,15 @@ const Quiz = ({ weekId, department = 'ece' }: QuizProps) => {
                   <CardTitle className="text-2xl mb-2">
                     {currentQuestionData.question}
                   </CardTitle>
+                  {currentQuestionData.image && currentQuestionData.image !== "PLACE_IMAGE_URL_HERE" && (
+                    <div className="mt-4 mb-2">
+                      <img 
+                        src={currentQuestionData.image} 
+                        alt="Question illustration" 
+                        className="max-w-full h-auto rounded-lg border-2 border-border"
+                      />
+                    </div>
+                  )}
                   <CardDescription>
                     Select the correct answer from the options below
                   </CardDescription>
