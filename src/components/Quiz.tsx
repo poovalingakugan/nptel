@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { allQuestions, questionsByWeek } from "@/data/questions";
+import { getQuestionsByDepartmentWeek, getAllQuestionsByDepartment } from "@/data/questions";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
@@ -22,17 +22,18 @@ const shuffleArray = <T,>(array: T[]): T[] => {
 
 interface QuizProps {
   weekId?: string;
+  department?: string;
 }
 
-const Quiz = ({ weekId }: QuizProps) => {
+const Quiz = ({ weekId, department = 'ece' }: QuizProps) => {
   const navigate = useNavigate();
   const getInitialQuestions = () => {
-    if (weekId === "final") return allQuestions;
+    if (weekId === "final") return getAllQuestionsByDepartment(department);
     if (weekId !== undefined) {
       const week = parseInt(weekId);
-      return questionsByWeek[week] || allQuestions;
+      return getQuestionsByDepartmentWeek(department, week);
     }
-    return allQuestions;
+    return getAllQuestionsByDepartment(department);
   };
 
   const [questions, setQuestions] = useState(getInitialQuestions());
@@ -45,7 +46,7 @@ const Quiz = ({ weekId }: QuizProps) => {
   useEffect(() => {
     const initialQuestions = getInitialQuestions();
     setQuestions(shuffleArray(initialQuestions));
-  }, [weekId]);
+  }, [weekId, department]);
 
   const totalQuestions = questions.length;
   const answeredCount = Object.keys(userAnswers).length;
@@ -158,12 +159,12 @@ const Quiz = ({ weekId }: QuizProps) => {
 
               <div className="flex gap-4 justify-center mb-8">
                 <Button 
-                  onClick={() => navigate("/")}
+                  onClick={() => navigate(department ? `/department/${department}` : "/")}
                   size="lg"
                   variant="outline"
                 >
                   <Home className="w-5 h-5 mr-2" />
-                  Back to Home
+                  Back to {department ? 'Weeks' : 'Home'}
                 </Button>
                 <Button 
                   onClick={handleRestart}
