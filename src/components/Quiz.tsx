@@ -3,7 +3,7 @@ import { getQuestionsByDepartmentWeek, getAllQuestionsByDepartment } from "@/dat
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { ChevronLeft, ChevronRight, RotateCcw, CheckCircle2, XCircle, Eye, EyeOff, Home } from "lucide-react";
+import { ChevronLeft, ChevronRight, RotateCcw, CheckCircle2, XCircle, Eye, EyeOff } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useNavigate } from "react-router-dom";
 
@@ -174,8 +174,8 @@ const Quiz = ({ weekId, department = 'ece', topicId }: QuizProps) => {
                   size="lg"
                   variant="outline"
                 >
-                  <Home className="w-5 h-5 mr-2" />
-                  Back to {department ? 'Weeks' : 'Home'}
+                  <ChevronLeft className="w-5 h-5 mr-2" />
+                  Back to Weeks
                 </Button>
                 <Button 
                   onClick={handleRestart}
@@ -268,6 +268,16 @@ const Quiz = ({ weekId, department = 'ece', topicId }: QuizProps) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted py-8 px-4">
       <div className="max-w-4xl mx-auto">
+        {/* Back Button */}
+        <Button
+          onClick={() => navigate(topicId ? `/department/cse/topic/${topicId}` : department ? `/department/${department}` : "/")}
+          variant="ghost"
+          className="mb-4"
+        >
+          <ChevronLeft className="w-4 h-4 mr-2" />
+          Back to Weeks
+        </Button>
+        
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2">
@@ -483,27 +493,6 @@ const Quiz = ({ weekId, department = 'ece', topicId }: QuizProps) => {
               </p>
             </div>
           )}
-
-          <div className="flex gap-2">
-            <Button
-              onClick={() => navigate(topicId ? `/department/cse/topic/${topicId}` : department ? `/department/${department}` : "/")}
-              variant="ghost"
-              size="sm"
-              className="flex-1"
-            >
-              <ChevronLeft className="w-4 h-4 mr-2" />
-              Back to Weeks
-            </Button>
-            <Button
-              onClick={() => navigate("/")}
-              variant="ghost"
-              size="sm"
-              className="flex-1"
-            >
-              <Home className="w-4 h-4 mr-2" />
-              Back to Home
-            </Button>
-          </div>
         </div>
       </div>
     </div>

@@ -3,7 +3,9 @@ import { useParams } from "react-router-dom";
 
 const Index = () => {
   const { weekId, department, topicId } = useParams();
-  return <Quiz weekId={weekId} department={department} topicId={topicId} />;
+  // If topicId is present, it's CSE department
+  const actualDepartment = topicId ? 'cse' : department;
+  return <Quiz weekId={weekId} department={actualDepartment} topicId={topicId} />;
 };
 
 export default Index;

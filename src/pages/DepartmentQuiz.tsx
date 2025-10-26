@@ -10,7 +10,9 @@ const DepartmentQuiz = () => {
   const navigate = useNavigate();
   const { department, topicId } = useParams();
   
-  const config = department ? departmentConfig[department] : null;
+  // If topicId is present, we know it's CSE department
+  const actualDepartment = topicId ? 'cse' : department;
+  const config = actualDepartment ? departmentConfig[actualDepartment] : null;
 
   useEffect(() => {
     if (!config) {
@@ -24,7 +26,7 @@ const DepartmentQuiz = () => {
 
   const weeks = [];
   for (let i = config.startWeek; i <= config.endWeek; i++) {
-    const actualQuestions = getQuestionsByDepartmentWeek(department!, i);
+    const actualQuestions = getQuestionsByDepartmentWeek(actualDepartment!, i);
     weeks.push({
       id: i,
       label: `Week ${i}`,
@@ -59,7 +61,7 @@ const DepartmentQuiz = () => {
               {weeks.map((week) => (
                 <Button
                   key={week.id}
-                  onClick={() => navigate(topicId ? `/department/cse/topic/${topicId}/quiz/${week.id}` : `/department/${department}/quiz/${week.id}`)}
+                  onClick={() => navigate(topicId ? `/department/cse/topic/${topicId}/quiz/${week.id}` : `/department/${actualDepartment}/quiz/${week.id}`)}
                   variant="outline"
                   className="h-auto py-4 flex flex-col items-center gap-2 hover:bg-primary hover:text-primary-foreground transition-all"
                 >
@@ -71,7 +73,7 @@ const DepartmentQuiz = () => {
 
             <div className="pt-4">
               <Button
-                onClick={() => navigate(topicId ? `/department/cse/topic/${topicId}/quiz/final` : `/department/${department}/quiz/final`)}
+                onClick={() => navigate(topicId ? `/department/cse/topic/${topicId}/quiz/final` : `/department/${actualDepartment}/quiz/final`)}
                 className="w-full h-auto py-6 text-lg font-semibold"
                 size="lg"
               >
