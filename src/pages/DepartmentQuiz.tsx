@@ -4,6 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { BookOpen, Trophy, ArrowLeft } from "lucide-react";
 import { departmentConfig } from "@/data/departments";
 import { getQuestionsByDepartmentWeek } from "@/data/questions";
+import { useEffect } from "react";
 
 const DepartmentQuiz = () => {
   const navigate = useNavigate();
@@ -11,8 +12,13 @@ const DepartmentQuiz = () => {
   
   const config = department ? departmentConfig[department] : null;
 
+  useEffect(() => {
+    if (!config) {
+      navigate("/");
+    }
+  }, [config, navigate]);
+
   if (!config) {
-    navigate("/");
     return null;
   }
 
