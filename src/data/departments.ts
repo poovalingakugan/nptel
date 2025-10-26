@@ -9,12 +9,12 @@ export interface DepartmentConfig {
 
 export const departmentConfig: Record<string, DepartmentConfig> = {
   cse: {
-    topic: "Sample Topic for CSE (Replace Later)",
-    startWeek: 0,
+    topic: "Multiple Topics Available",
+    startWeek: 1,
     endWeek: 12,
     questionsPerWeek: 15,
-    finalTestLabel: "Week 0-12",
-    totalQuestions: 190,
+    finalTestLabel: "Week 1-12",
+    totalQuestions: 180,
   },
   it: {
     topic: "Sample Topic for IT (Replace Later)",

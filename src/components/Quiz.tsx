@@ -23,9 +23,10 @@ const shuffleArray = <T,>(array: T[]): T[] => {
 interface QuizProps {
   weekId?: string;
   department?: string;
+  topicId?: string;
 }
 
-const Quiz = ({ weekId, department = 'ece' }: QuizProps) => {
+const Quiz = ({ weekId, department = 'ece', topicId }: QuizProps) => {
   const navigate = useNavigate();
   const getInitialQuestions = () => {
     if (weekId === "final") return getAllQuestionsByDepartment(department);
@@ -109,6 +110,16 @@ const Quiz = ({ weekId, department = 'ece' }: QuizProps) => {
   const percentage = ((correctAnswers / totalQuestions) * 100).toFixed(1);
   const feedback = getFeedbackMessage(correctAnswers, totalQuestions);
 
+  const departmentNames: Record<string, string> = {
+    cse: "CSE",
+    it: "IT", 
+    ece: "ECE",
+    "eee-csbs": "EEE & CSBS"
+  };
+
+  const displayDepartment = department ? departmentNames[department] || department.toUpperCase() : "";
+  const displayWeek = weekId === "final" ? "Final Test" : `Week ${weekId}`;
+
   if (showResults) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted py-8 px-4">
@@ -159,7 +170,7 @@ const Quiz = ({ weekId, department = 'ece' }: QuizProps) => {
 
               <div className="flex gap-4 justify-center mb-8">
                 <Button 
-                  onClick={() => navigate(department ? `/department/${department}` : "/")}
+                  onClick={() => navigate(topicId ? `/department/cse/topic/${topicId}` : department ? `/department/${department}` : "/")}
                   size="lg"
                   variant="outline"
                 >
@@ -259,8 +270,8 @@ const Quiz = ({ weekId, department = 'ece' }: QuizProps) => {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-3">
-            NPTEL MCQ Practice Test
+          <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2">
+            {displayDepartment} - {displayWeek}
           </h1>
           <p className="text-lg text-muted-foreground">
             Test your knowledge with {totalQuestions} questions
@@ -475,7 +486,7 @@ const Quiz = ({ weekId, department = 'ece' }: QuizProps) => {
 
           <div className="flex gap-2">
             <Button
-              onClick={() => navigate(department ? `/department/${department}` : "/")}
+              onClick={() => navigate(topicId ? `/department/cse/topic/${topicId}` : department ? `/department/${department}` : "/")}
               variant="ghost"
               size="sm"
               className="flex-1"

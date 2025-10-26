@@ -31,7 +31,7 @@ const Home = () => {
                 <div
                   key={dept.id}
                   className="border-2 rounded-lg p-6 hover:bg-accent/50 hover:border-primary transition-all cursor-pointer"
-                  onClick={() => navigate(`/department/${dept.id}`)}
+                  onClick={() => navigate(dept.id === "cse" ? "/cse/topics" : `/department/${dept.id}`)}
                 >
                   <div className="font-bold text-2xl mb-2">{dept.label}</div>
                   <div className="text-sm text-muted-foreground">{dept.name}</div>

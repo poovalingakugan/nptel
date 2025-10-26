@@ -7,7 +7,7 @@ import { getQuestionsByDepartmentWeek } from "@/data/questions";
 
 const DepartmentQuiz = () => {
   const navigate = useNavigate();
-  const { department } = useParams();
+  const { department, topicId } = useParams();
   
   const config = department ? departmentConfig[department] : null;
 
@@ -30,12 +30,12 @@ const DepartmentQuiz = () => {
     <div className="min-h-screen bg-gradient-to-br from-background to-secondary/20 p-4 md:p-8">
       <div className="max-w-4xl mx-auto">
         <Button
-          onClick={() => navigate("/")}
+          onClick={() => navigate(topicId ? "/cse/topics" : "/")}
           variant="ghost"
           className="mb-4"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
-          Back to Departments
+          {topicId ? "Back to Topics" : "Back to Departments"}
         </Button>
         
         <Card className="shadow-xl">
@@ -53,7 +53,7 @@ const DepartmentQuiz = () => {
               {weeks.map((week) => (
                 <Button
                   key={week.id}
-                  onClick={() => navigate(`/department/${department}/quiz/${week.id}`)}
+                  onClick={() => navigate(topicId ? `/department/cse/topic/${topicId}/quiz/${week.id}` : `/department/${department}/quiz/${week.id}`)}
                   variant="outline"
                   className="h-auto py-4 flex flex-col items-center gap-2 hover:bg-primary hover:text-primary-foreground transition-all"
                 >
@@ -65,7 +65,7 @@ const DepartmentQuiz = () => {
 
             <div className="pt-4">
               <Button
-                onClick={() => navigate(`/department/${department}/quiz/final`)}
+                onClick={() => navigate(topicId ? `/department/cse/topic/${topicId}/quiz/final` : `/department/${department}/quiz/final`)}
                 className="w-full h-auto py-6 text-lg font-semibold"
                 size="lg"
               >
