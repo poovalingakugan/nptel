@@ -43,7 +43,7 @@ const DepartmentQuiz = () => {
           className="mb-4"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
-          {topicId ? "Back to Topics" : "Back to Departments"}
+          {topicId ? "Back to Topics" : "Back to Courses"}
         </Button>
         
         <Card className="shadow-xl">

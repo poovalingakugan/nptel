@@ -8,36 +8,12 @@ export interface DepartmentConfig {
 }
 
 export const departmentConfig: Record<string, DepartmentConfig> = {
-  cse: {
-    topic: "Multiple Topics Available",
+  "sensors-and-actuators": {
+    topic: "Sensors and Actuators",
     startWeek: 1,
     endWeek: 12,
-    questionsPerWeek: 15,
+    questionsPerWeek: 10,
     finalTestLabel: "Week 1-12",
-    totalQuestions: 180,
-  },
-  it: {
-    topic: "Sample Topic for IT (Replace Later)",
-    startWeek: 1,
-    endWeek: 12,
-    questionsPerWeek: 30, // Week 1-8: 30, Week 9-12: 20 (handled in questions.js)
-    finalTestLabel: "Week 1-12",
-    totalQuestions: 320, // (8 weeks * 30) + (4 weeks * 20)
-  },
-  ece: {
-    topic: "Introduction to Industry 4.0 and Industrial Internet of Things",
-    startWeek: 0,
-    endWeek: 12,
-    questionsPerWeek: 15,
-    finalTestLabel: "Week 0-12",
-    totalQuestions: 190,
-  },
-  "eee-csbs": {
-    topic: "Sample Topic for EEE & CSBS (Replace Later)",
-    startWeek: 1,
-    endWeek: 12,
-    questionsPerWeek: 15,
-    finalTestLabel: "Week 1-12",
-    totalQuestions: 180, // No Week 0
+    totalQuestions: 120,
   },
 };

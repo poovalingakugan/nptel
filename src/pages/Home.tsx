@@ -6,10 +6,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const departments = [
-    { id: "cse", label: "CSE", name: "Computer Science Engineering" },
-    { id: "it", label: "IT", name: "Information Technology" },
-    { id: "ece", label: "ECE", name: "Electronics and Communication Engineering" },
-    { id: "eee-csbs", label: "EEE & CSBS", name: "Electrical and Electronics Engineering & Computer Science and Business Systems" },
+    { id: "sensors-and-actuators", label: "Sensors and Actuators" },
   ];
 
   return (
@@ -22,24 +19,28 @@ const Home = () => {
             </div>
             <CardTitle className="text-4xl font-bold">NPTEL MCQ Practice</CardTitle>
             <CardDescription className="text-lg">
-              Select your department to begin
+              Select your Course to begin
             </CardDescription>
           </CardHeader>
+
           <CardContent className="space-y-6">
             <div className="space-y-3">
               {departments.map((dept) => (
                 <div
                   key={dept.id}
                   className="border-2 rounded-lg p-6 hover:bg-accent/50 hover:border-primary transition-all cursor-pointer"
-                  onClick={() => navigate(dept.id === "cse" ? "/cse/topics" : `/department/${dept.id}`)}
+                  onClick={() =>
+                    navigate(dept.id === "cse" ? "/cse/topics" : `/department/${dept.id}`)
+                  }
                 >
                   <div className="font-bold text-2xl mb-2">{dept.label}</div>
-                  <div className="text-sm text-muted-foreground">{dept.name}</div>
                 </div>
               ))}
             </div>
           </CardContent>
         </Card>
+
+
       </div>
     </div>
   );

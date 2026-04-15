@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import DepartmentQuiz from "./pages/DepartmentQuiz";
-import CSETopics from "./pages/CSETopics";
+
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
@@ -19,7 +19,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/cse/topics" element={<CSETopics />} />
+          
           <Route path="/department/cse/topic/:topicId" element={<DepartmentQuiz />} />
           <Route path="/department/:department" element={<DepartmentQuiz />} />
           <Route path="/department/:department/quiz/:weekId" element={<Index />} />
