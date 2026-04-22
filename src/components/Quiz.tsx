@@ -85,6 +85,7 @@ const Quiz = ({ weekId, department = 'ece', topicId }: QuizProps) => {
   const handleSubmit = () => {
     setShowResults(true);
     setShowAllQuestions(true);
+    window.scrollTo(0, 0);
   };
 
   const handleRestart = () => {
@@ -94,6 +95,7 @@ const Quiz = ({ weekId, department = 'ece', topicId }: QuizProps) => {
     setUserAnswers({});
     setShowResults(false);
     setShowAllQuestions(false);
+    window.scrollTo(0, 0);
   };
 
   const getFeedbackMessage = (score: number, total: number) => {
