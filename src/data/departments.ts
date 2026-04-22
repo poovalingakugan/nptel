@@ -24,4 +24,12 @@ export const departmentConfig: Record<string, DepartmentConfig> = {
     finalTestLabel: "Week 1-12",
     totalQuestions: 180,
   },
+  "blockchain-and-its-applications": {
+    topic: "Blockchain and its Applications",
+    startWeek: 1,
+    endWeek: 12,
+    questionsPerWeek: 10,
+    finalTestLabel: "Week 1-12",
+    totalQuestions: 120,
+  },
 };

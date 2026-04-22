@@ -1,7 +1,7 @@
-// Questions organized by department and weeks
 export const questionsByDepartment = {
   "sensors-and-actuators": {},
-  "industry-4-0-and-industrial-iot": {}
+  "industry-4-0-and-industrial-iot": {},
+  "blockchain-and-its-applications": {}
 };
 
 // Sensors and Actuators - Week 1 questions
@@ -1897,6 +1897,775 @@ questionsByDepartment["industry-4-0-and-industrial-iot"][12] = [
     question: "What do case studies explore and investigate through detailed analysis?",
     options: ["Real-life phenomenon", "Purely fictional events", "Ancient historical myths", "Unknown future predictions"],
     answer: 0
+  }
+];
+
+// Blockchain and its Applications - Week 1 questions
+questionsByDepartment["blockchain-and-its-applications"][1] = [
+  {
+    id: 1,
+    question: "Which of the following statements is true regarding the foundational concepts of blockchain and cryptography?",
+    options: ["Decentralization in blockchain ensures that a single authority controls the network for higher efficiency.", "SHA-256 is a cryptographic hash function widely used in blockchain due to its fixed output size and collision resistance.", "A hash chain is a sequence of cryptographic keys used to decode blockchain data.", "Cryptographic hash ensures that the blockchain data cannot be read by anyone outside the network."],
+    answer: 1
+  },
+  {
+    id: 2,
+    question: "Consider the following input string: \"Hello World\". You apply SHA-256 to this string. Then, you change the input to \"Hello World!\" (added an exclamation mark) and apply SHA-256 again. Which statement describes the relationship between the two output hashes?",
+    options: ["The two hashes will be identical.", "The second hash will be the same as the first, plus a few extra bits at the end.", "The two hashes will be completely different and uncorrelated.", "The second hash will be exactly 8 bits longer than the first."],
+    answer: 2
+  },
+  {
+    id: 3,
+    question: "A blockchain network uses SHA-256 for its hashing process. If it takes 10^-8 seconds to compute a single SHA-256 hash, how long would it take (approximately) to compute 2^128 hashes for a collision attack?",
+    options: ["10^10 years", "10^15 years", "10^20 years", "10^25 years"],
+    answer: 3
+  },
+  {
+    id: 4,
+    question: "In a decentralized distributed system with 100 participants, which of the following statements is true regarding trust and communication?",
+    options: ["At least 50 participants must trust each other for the system to function.", "A central body governing communication among all 100 participants is mandatory.", "Participants may or may not trust each other, as the system ensures integrity using cryptographic protocols and agreement through consensus protocols.", "All the 100 participants must trust each other."],
+    answer: 2
+  },
+  {
+    id: 5,
+    question: "A blockchain network achieves an average block generation time of 5 minutes under normal conditions. However, due to scheduled maintenance, the network's hash rate is reduced by 50% for 4 hours daily. If the network operates for 12 hours in total (including the maintenance period), how many blocks will be added to the blockchain?",
+    options: ["120", "200", "216", "240"],
+    answer: 0
+  },
+  {
+    id: 6,
+    question: "Where are the transaction logs stored in a blockchain network?",
+    options: ["In a centralized SQL database.", "On an immutable ledger controlled by a central authority.", "In metadata tables on each peer.", "In the distributed ledger of each peer across the network."],
+    answer: 3
+  },
+  {
+    id: 7,
+    question: "An attacker wants to find a collision in a cryptographic hash function with a 128-bit output. What is the approximate number of hash operations required to succeed?",
+    options: ["2^64", "2^256", "2^128", "0.5 x 2^128"],
+    answer: 0
+  },
+  {
+    id: 8,
+    question: "Which of the following statements accurately describes a blockchain?",
+    options: ["A centralized database where data is stored on a single server.", "A distributed ledger where data is stored across multiple nodes and is immutable.", "A system that only stores cryptocurrency transaction data on a single node.", "A network that uses a single user to control access and updates to the data."],
+    answer: 1
+  },
+  {
+    id: 9,
+    question: "A centralized database processes transactions at 10,000 TPS (Transactions Per Second). You decide to move this system to a decentralized blockchain to increase trust. Which of the following is the most likely outcome regarding performance and control?",
+    options: ["Throughput increases, and a single authority retains control.", "Throughput decreases, and control is distributed among peers.", "Throughput remains the same, but data becomes mutable.", "Throughput increases, and data becomes encrypted."],
+    answer: 1
+  },
+  {
+    id: 10,
+    question: "Which of the following describes the avalanche effect in a cryptographic hash function?",
+    options: ["Given the same input, the hash function returns a different hash 99.99% of the time.", "It takes 10^5 attempts to reverse-engineer the original message from the hash.", "A small change in the input causes a drastic change in the hash, flipping nearly all the bits.", "The hash function always returns the same hash for the same input."],
+    answer: 2
+  }
+];
+
+// Blockchain and its Applications - Week 2 questions
+questionsByDepartment["blockchain-and-its-applications"][2] = [
+  {
+    id: 11,
+    question: "Alice employs the RSA cryptosystem with the prime numbers p=11 and q=17 to derive her public and private keys. Given that her public key is e=13, what is her corresponding private key d?",
+    options: ["71", "155", "37", "129"],
+    answer: 2
+  },
+  {
+    id: 12,
+    question: "Bob receives a secure package from Alice, which was encrypted for confidentiality and digitally signed for integrity. To read the message and verify its origin, which keys must Bob use, and in what capacity?",
+    options: ["Bob uses Alice's Public Key to decrypt the message and Bob's Private Key to verify the signature.", "Bob uses Bob's Private Key to decrypt the message and Alice's Public Key to verify the signature.", "Bob uses Bob's Public Key to decrypt the message and Alice's Private Key to verify the signature.", "Bob uses Alice's Private Key to decrypt the message and Bob's Public Key to verify the signature."],
+    answer: 1
+  },
+  {
+    id: 13,
+    question: "Which statement best captures non-repudiation in blockchain transactions enabled by digital signatures?",
+    options: ["Anyone can change a signed transaction without detection.", "The sender can later deny authoring the transaction even if it's signed.", "The sender cannot plausibly deny authoring the transaction, and others can verify the origin.", "Digital signatures hide the transaction contents from all nodes."],
+    answer: 2
+  },
+  {
+    id: 14,
+    question: "In a typical blockchain transaction flow, what does verifying Alice's signature using Alice's public key ensure?",
+    options: ["The message is encrypted for Alice only", "The message definitely remained confidential on the network", "The transaction was authorized by Alice and was not altered after signing", "The miners will include the transaction in the next block for sure"],
+    answer: 2
+  },
+  {
+    id: 15,
+    question: "Consider 8 data points labeled 1 to 8. The post-order traversal of the Merkle Tree is provided as follows (where 1 represents the hash of data point 1, 56 denotes the combined hash of 5 and 6, and so on):",
+    options: ["{12345678, 1234, 12, 1, 2, 34, 3, 4, 5678, 56, 5, 6, 78, 7, 8}", "{1, 2, 12, 3, 4, 34, 1234, 5, 6, 56, 7, 8, 78, 5678, 12345678}", "{1, 12, 2, 3, 34, 4, 1234, 5, 56, 6, 7, 78, 8, 5678, 12345678}", "{12, 1, 2, 34, 3, 4, 1234, 56, 5, 6, 78, 7, 8, 5678, 12345678}"],
+    answer: 1
+  },
+  {
+    id: 16,
+    question: "In the Bitcoin Proof of Work (PoW) system, which field in the block header do miners constantly modify to find a hash that meets the difficulty target?",
+    options: ["Previous Block Hash", "Merkle Root", "Nonce", "Timestamp"],
+    answer: 2
+  },
+  {
+    id: 17,
+    question: "Which option most clearly conflicts with the typical design goals of public cryptocurrencies?",
+    options: ["Open participation with peer-to-peer propagation", "Tamper-evident append-only ledger", "Central authority that can unilaterally reverse valid transactions", "Distributed validation through consensus"],
+    answer: 2
+  },
+  {
+    id: 18,
+    question: "Which of the following accurately describes the role of Miners in the Bitcoin network?",
+    options: ["They are central authorities appointed by the Bitcoin Foundation to issue currency.", "They use Proof of Stake (PoS) to vote on valid transactions based on their coin wealth.", "They solve computational puzzles (Proof of Work) to validate transactions and secure the network in exchange for rewards.", "They primarily focus on encrypting user passwords to prevent hacking."],
+    answer: 2
+  },
+  {
+    id: 19,
+    question: "In the context of the Bitcoin network, how do nodes resolve a temporary 'fork' (where two different valid blocks are found at roughly the same time)?",
+    options: ["They choose the block that contains the most transactions.", "They follow the \"Longest Chain\" rule (the chain with the most cumulative work).", "A central server decides which block is valid.", "Both blocks are discarded, and miners restart."],
+    answer: 1
+  },
+  {
+    id: 20,
+    question: "In the context of blockchain distributed systems, what specific problem does the consensus algorithm (like Proof of Work) attempt to solve?",
+    options: ["The Data Storage Problem: Ensuring all nodes have infinite storage capacity.", "The Byzantine Generals Problem: Reaching agreement even when some participants may act maliciously or send conflicting information.", "The Latency Problem: Ensuring data travels at the speed of light between nodes.", "The Encryption Problem: Making sure no one can read the transaction details."],
+    answer: 1
+  }
+];
+
+// Blockchain and its Applications - Week 3 questions
+questionsByDepartment["blockchain-and-its-applications"][3] = [
+  {
+    id: 21,
+    question: "If the current block reward for Bitcoin is 3.125 BTC, and the network remains calibrated so that a new block is found every 10 minutes on average, how much Bitcoin will be mined in a total 24-hour period?",
+    options: ["312.5 BTC", "450 BTC", "252 BTC", "900 BTC"],
+    answer: 1
+  },
+  {
+    id: 22,
+    question: "What is a fundamental difference between a permissionless (public) blockchain and a permissioned blockchain?",
+    options: ["Permissioned blockchains do not use a distributed ledger.", "Permissionless blockchains require participants to prove their identity to a central authority before they can join the network.", "Permissioned blockchains utilize a gatekeeping mechanism that restricts the ability to validate transactions and update the ledger to a set of authorized nodes.", "Permissioned blockchains allow any user to participate in the consensus process without prior authorization."],
+    answer: 2
+  },
+  {
+    id: 23,
+    question: "Which of the following combinations is correctly used to compute Bitcoin's current block hash?",
+    options: ["Previous block's hash, Merkle root, block reward, nonce, timestamp, and block size", "Previous block's hash, timestamp, nonce, Merkle root, difficulty bits, and block version", "Block creator's public key, Merkle root, timestamp, block reward, nonce, and difficulty level", "Previous block's hash, nonce, Merkle root, height, timestamp, and difficulty bits"],
+    answer: 1
+  },
+  {
+    id: 24,
+    question: "Which of the following difficulty targets would make it most difficult for miners to find a valid block?",
+    options: ["0000000000000000000000000000000000000000000000000000000056789abcdef12", "00000000000000000000000000000000000000000000000000002dfe34a1b2c3d55", "0000000000000000000000000000000000000000000000000000000afc123987ab", "00000000000000000000000000000000000000000000000000000000000af467"],
+    answer: 3
+  },
+  {
+    id: 25,
+    question: "In the Bitcoin, block identifier refers to",
+    options: ["SHA1 (128 bits) of the future block header", "Double SHA256 of the current block header", "Double SHA256 of the difficulty bits only", "Triple SHA256 of the future block header"],
+    answer: 1
+  },
+  {
+    id: 26,
+    question: "If a Bitcoin block contains 64 transactions, how many hashing steps (Merkle path length) are required to verify the inclusion of a specific transaction without downloading the entire block?",
+    options: ["64", "32", "6", "12"],
+    answer: 2
+  },
+  {
+    id: 27,
+    question: "In Bitcoin Script, the stack is shown from bottom to top, left to right.\nThe current stack is: Bottom - [ x1, x2, x3 ] - Top\nWhich opcode will transform the stack into: Bottom - [ x1, x3 ] - Top",
+    options: ["OP_DROP", "OP_NIP", "OP_2DROP", "OP_DEPTH"],
+    answer: 1
+  },
+  {
+    id: 28,
+    question: "If a Merkle tree is constructed from 16 transactions, what is the total number of hashes (nodes) in the entire tree, including the transaction hashes (leaves) and the Merkle root?",
+    options: ["32", "16", "31", "15"],
+    answer: 2
+  },
+  {
+    id: 29,
+    question: "The \"Nonce\" field in the Bitcoin block header is 32 bits long. What is the maximum value a miner can test in the nonce field before needing to change other header fields (like the timestamp or extra nonce)?",
+    options: ["2^64 (approx 1.84 x 10^19)", "2^32 (approx 4 billion)", "2^256 (approx 1.15 x 10^77)", "1,000,000"],
+    answer: 1
+  },
+  {
+    id: 30,
+    question: "What happens if the number of transactions in a Merkle tree is odd?",
+    options: ["The tree cannot be built", "Dummy (duplicate) hashes are added to adjust", "Transactions are left out of the block", "The Merkle root is ignored"],
+    answer: 1
+  }
+];
+
+// Blockchain and its Applications - Week 4 questions
+questionsByDepartment["blockchain-and-its-applications"][4] = [
+  {
+    id: 31,
+    question: "Which of the following scenarios describes a \"Soft Fork\" in the Bitcoin network?",
+    options: ["A protocol change where the new rules are stricter, making old blocks valid but new blocks potentially invalid to non-upgraded nodes.", "A divergence where the blockchain splits permanently into two incompatible chains (e.g., Bitcoin and Bitcoin Cash).", "A backward-compatible upgrade where non-upgraded nodes can still validate new blocks.", "A temporary split caused by two miners finding a block simultaneously."],
+    answer: 2
+  },
+  {
+    id: 32,
+    question: "Suppose a miner initially receives 100 bitcoins as a reward for successfully mining a block at time Jan, 2009. The reward for mining a block is halved approximately every four years (or after every 210,000 blocks). Based on this halving process, which of the following statements are correct? \nI. In Jan 2013, the miner will receive 50 bitcoins for adding a new block. \nII. In Jan 2018, the miner will receive 25 bitcoins for adding a new block. \nIII. In Jan 2021, the miner will receive 12.5 bitcoins for adding a new block. \nIV. In Jan 2024, the miner will receive 6.25 bitcoins for adding a new block.",
+    options: ["I and II", "I, II, and III", "II, III, and IV", "All of the above"],
+    answer: 1
+  },
+  {
+    id: 33,
+    question: "In the absence of a central authority, why is the \"Longest Chain Rule\" crucial for preventing double-spending?",
+    options: ["It ensures that the chain with the most cumulative computational work is accepted as the single source of truth.", "It allows users to spend the same UTXO multiple times if the chain is long enough.", "It encrypts the transaction data so it cannot be copied.", "It ensures that the timestamp of every block is exactly 10 minutes apart. A centralized authority will be used to verify each transaction before it is added to the blockchain."],
+    answer: 0
+  },
+  {
+    id: 34,
+    question: "In a permissionless blockchain like Bitcoin, which specific attack vector is mitigated by requiring a costly resource (like computing power in PoW) to participate in consensus?",
+    options: ["SQL Injection", "Sybil Attack", "Man-in-the-Middle Attack", "Phishing Ensuring that all participants trust a central authority"],
+    answer: 1
+  },
+  {
+    id: 35,
+    question: "Which component in the block header serves as a \"fingerprint\" for all transactions included in that specific block?",
+    options: ["The Nonce", "The Previous Block Hash", "The Merkle Root", "The Miner's Public Key"],
+    answer: 2
+  },
+  {
+    id: 36,
+    question: "Traditional distributed databases handle \"Crash Faults\" effectively. What specific, more complex class of faults is the Bitcoin blockchain designed to tolerate?",
+    options: ["Hardware Failures", "Network Latency", "Byzantine Faults", "Power Outages"],
+    answer: 2
+  },
+  {
+    id: 37,
+    question: "Which of the following best describes Safety and Liveness in Bitcoin?",
+    options: ["Safety ensures transactions are irreversible, while Liveness ensures transactions are eventually added.", "Safety guarantees quick transaction confirmation, while Liveness prevents forks.", "Safety prevents double-spending, while Liveness speeds up block creation.", "Safety ensures blocks are always valid, while Liveness ensures no transaction delays."],
+    answer: 0
+  },
+  {
+    id: 38,
+    question: "Mathematically, what is a miner attempting to do during Proof of Work (PoW)?",
+    options: ["Decrypt the previous block's signature.", "Find a nonce such that Hash(Block Header) < Target", "Sort all transactions in the mempool alphabetically.", "Calculate the private key of the Satoshi Nakamoto wallet."],
+    answer: 1
+  },
+  {
+    id: 39,
+    question: "Before a miner begins the heavy computational work (hashing) to mine a new block, what must they typically do first?",
+    options: ["Broadcast their solution to the network.", "Construct a candidate block by selecting valid transactions from their memory pool.", "Wait for the next difficulty adjustment period.", "Shut down their node to save power."],
+    answer: 1
+  },
+  {
+    id: 40,
+    question: "What is the theoretical consequence if a single mining pool obtains >50% of the network's hashrate (The 51% Attack)?",
+    options: ["They can steal funds from any user's wallet (e.g., transfer your BTC to them).", "They can change the maximum supply of Bitcoin to 42 million.", "They can reverse their own recent transactions (double spending) and block other transactions from confirming.", "They can shut down the internet connection of other miners."],
+    answer: 2
+  }
+];
+
+// Blockchain and its Applications - Week 5 questions
+questionsByDepartment["blockchain-and-its-applications"][5] = [
+  {
+    id: 41,
+    question: "Which of the following factors generally limit the scalability of permissionless blockchain consensus mechanisms? \nI. Requirement for a global agreement among nodes \nII. Centralized validator selection \nIII. High communication and computation overhead \nIV. Absence of cryptographic security",
+    options: ["I and II", "I and III", "II and IV", "III and IV"],
+    answer: 1
+  },
+  {
+    id: 42,
+    question: "Which consensus mechanism relies on trusted hardware environments to ensure fairness in block proposer selection?",
+    options: ["Proof of Stake", "Proof of Burn", "Proof of Elapsed Time", "Practical Byzantine Fault Tolerance"],
+    answer: 2
+  },
+  {
+    id: 43,
+    question: "Which of the following properties is a key advantage of stake-based (PoS) consensus mechanisms compared to computation-based (PoW) mechanisms?",
+    options: ["Complete elimination of forks", "Reduced energy consumption", "Guaranteed transaction finality", "Removal of the need for digital signatures"],
+    answer: 1
+  },
+  {
+    id: 44,
+    question: "In a PoW-based blockchain system like Bitcoin, when two valid blocks are mined at the same time, which rule does the network primarily use to resolve the fork and identify the authoritative chain?",
+    options: ["Number of transactions in each block", "Total accumulated computational work (heaviest chain)", "Size of the blockchain ledger", "Time since genesis block creation"],
+    answer: 1
+  },
+  {
+    id: 45,
+    question: "Which component of the Ethereum architecture ensures deterministic execution of smart contracts across all nodes?",
+    options: ["Ethereum Client", "Ethereum Virtual Machine", "Ethereum Wallet", "Ethereum Miner"],
+    answer: 1
+  },
+  {
+    id: 46,
+    question: "Which of the following operations on Ethereum requires gas payment and inclusion in a block?",
+    options: ["Querying an account balance", "Reading a public contract variable", "Executing a state-modifying function", "Simulating contract execution locally"],
+    answer: 2
+  },
+  {
+    id: 47,
+    question: "Which Ethereum transaction parameter ensures transaction ordering and prevents replay attacks for a given account?",
+    options: ["Gas", "Value", "Nonce", "Data"],
+    answer: 2
+  },
+  {
+    id: 48,
+    question: "Which JSON-RPC method is used to retrieve the Ether balance of an Ethereum account?",
+    options: ["eth_call", "eth_getBalance", "eth_getTransactionByHash", "eth_sendTransaction"],
+    answer: 1
+  },
+  {
+    id: 49,
+    question: "Which consensus mechanism requires participants to irreversibly destroy cryptocurrency to demonstrate long-term commitment to the network?",
+    options: ["Proof of Work (PoW)", "Proof of Burn (PoB)", "Proof of Stake (PoS)", "Proof of Elapsed Time (PoET)"],
+    answer: 1
+  },
+  {
+    id: 50,
+    question: "Which of the following Ethereum unit relationships is CORRECT?",
+    options: ["1 Ether = 10^9 Wei", "1 Gwei = 10^9 Wei", "1 Ether = 10^6 Gwei", "1 Wei = 10^9 Ether"],
+    answer: 1
+  }
+];
+
+// Blockchain and its Applications - Week 6 questions
+questionsByDepartment["blockchain-and-its-applications"][6] = [
+  {
+    id: 51,
+    question: "Which of the following statements correctly describe safety and liveness in consensus protocols? \nI. Safety ensures that conflicting decisions never occur \nII. Liveness ensures that the system eventually makes progress \nIII. Safety may be temporarily violated under network delays \nIV. Liveness guarantees agreement under all possible network conditions",
+    options: ["I and II", "II and III", "III and IV", "I and IV"],
+    answer: 0
+  },
+  {
+    id: 52,
+    question: "Which failure model is classical Paxos designed to tolerate?",
+    options: ["Byzantine faults", "Crash faults", "Arbitrary malicious behavior", "Network-level message tampering"],
+    answer: 1
+  },
+  {
+    id: 53,
+    question: "A distributed system consists of 7 nodes operating under a Byzantine Fault Tolerance (BFT) model. What is the maximum number of Byzantine faulty nodes that can be tolerated while still achieving consensus?",
+    options: ["1", "2", "3", "4"],
+    answer: 1
+  },
+  {
+    id: 54,
+    question: "Which of the following properties are typically associated with permissioned blockchain systems? \nI. Anonymous participation \nII. Identity management through a trusted authority \nIII. Restricted transaction visibility to authorized participants \nIV. No requirement for consensus",
+    options: ["I and II", "II and III", "III and IV", "I and IV"],
+    answer: 1
+  },
+  {
+    id: 55,
+    question: "Why must any two majorities (quorums) in Paxos intersect in at least one common node?",
+    options: ["To ensure faster communication between nodes", "To guarantee safety by preventing two different values from being chosen", "To reduce network latency", "To eliminate the need for a coordinator"],
+    answer: 1
+  },
+  {
+    id: 56,
+    question: "Which of the following characteristics distinguish Byzantine faults from crash faults? \nI. Byzantine faults may cause a node to send conflicting information to different nodes \nII. Crash faults allow a node to behave arbitrarily \nIII. Byzantine faults involve arbitrary or malicious behavior \nIV. Crash faults require digital signatures to detect",
+    options: ["I and II", "I and III", "II and IV", "III and IV"],
+    answer: 1
+  },
+  {
+    id: 57,
+    question: "If fewer than a majority of acceptors respond during a Paxos round, which property of the protocol is affected?",
+    options: ["Safety", "Liveness", "Agreement validity", "Deterministic execution"],
+    answer: 1
+  },
+  {
+    id: 58,
+    question: "In a Byzantine Fault Tolerant system, why is the requirement n >= 3f + 1 necessary to tolerate f Byzantine faults?",
+    options: ["To ensure faulty nodes can be isolated from the network", "To guarantee that the number of honest nodes exceeds faulty nodes by exactly one", "To ensure that any two decision quorums intersect in at least one honest node", "To eliminate the need for cryptographic authentication"],
+    answer: 2
+  },
+  {
+    id: 59,
+    question: "What inefficiency in classic Paxos does Multi-Paxos primarily address?",
+    options: ["Inability to tolerate crash faults", "Repeated execution of the prepare phase for each proposed value", "Lack of quorum intersection", "Absence of agreement guarantees"],
+    answer: 1
+  },
+  {
+    id: 60,
+    question: "Which of the following statements about roles in Paxos are correct? \nI. A single physical node can simultaneously perform the roles of Proposer, Acceptor, and Learner. \nII. Roles are permanently fixed once assigned \nIII. Roles are dynamic and are not permanently tied to specific nodes. \nIV. Only one Acceptor is required to reach a consensus in a network of five nodes.",
+    options: ["I and II", "I and III", "II and IV", "III and IV"],
+    answer: 1
+  }
+];
+
+// Blockchain and its Applications - Week 7 questions
+questionsByDepartment["blockchain-and-its-applications"][7] = [
+  {
+    id: 61,
+    question: "Which of the following properties make PBFT suitable for enterprise blockchain environments? \nI. Deterministic transaction finality \nII. Anonymous validator participation \nIII. Tolerance to Byzantine faults \nIV. Dependence on computational mining",
+    options: ["I and II", "I and III", "II and IV", "III and IV"],
+    answer: 1
+  },
+  {
+    id: 62,
+    question: "In Hyperledger Fabric, what is the primary role of the Membership Service Provider (MSP)?",
+    options: ["Mining new blocks", "Defining the rules for identity validation and managing the roles of participants.", "Executing smart contracts", "Ordering transactions"],
+    answer: 1
+  },
+  {
+    id: 63,
+    question: "Which of the following conditions must hold in a Byzantine quorum system to ensure safety?",
+    options: ["Any two quorums must intersect in at least one correct (honest) replica", "Quorums may be completely disjoint to increase throughput", "Quorum size must equal exactly half of the network", "Faulty replicas must be able to form a standalone quorum."],
+    answer: 0
+  },
+  {
+    id: 64,
+    question: "Which of the following are advantages of blockchain in supply-chain systems? \nI. Tamper-evident audit trail \nII. Automatic deletion of transaction history \nIII. Improved transparency among participants \nIV. Removal of all governance requirements",
+    options: ["I and II", "I and III", "II and IV", "III and IV"],
+    answer: 1
+  },
+  {
+    id: 65,
+    question: "What mechanism ensures progress in PBFT when the primary replica becomes faulty?",
+    options: ["Increasing block size", "Timeout-based view change protocol", "Switching to PoW", "Re-broadcasting old transactions"],
+    answer: 1
+  },
+  {
+    id: 66,
+    question: "Which of the following statements correctly describe permissioned blockchain systems? \nI. Participants are authenticated before joining \nII. All nodes remain anonymous \nIII. Access to transaction data may be restricted \nIV. Consensus mechanisms are unnecessary",
+    options: ["I and II", "I and III", "II and IV", "III and IV"],
+    answer: 1
+  },
+  {
+    id: 67,
+    question: "In Hyperledger Fabric, what is the purpose of channels?",
+    options: ["To increase mining difficulty", "To create logically separate ledgers among subsets of participants", "To replace consensus mechanisms", "To store private cryptographic keys"],
+    answer: 1
+  },
+  {
+    id: 68,
+    question: "In a Byzantine Fault Tolerant (BFT) system with f malicious nodes, why is the total number of replicas n >= 3f + 1 required?",
+    options: ["To ensure that any two quorums of size 2f + 1 share at least one honest replica.", "To eliminate digital signatures and hashing.", "To ensure the system can function with 2f + 1 faulty nodes.", "To minimize the number of communication rounds to O(1)."],
+    answer: 0
+  },
+  {
+    id: 69,
+    question: "Which of the following properties characterize committee-based consensus protocols such as Algorand? \nI. Committee membership is rotated and unique for every round \nII. Selection is based on cryptographic randomness (VRF) \nIII. Membership is publicly predictable long in advance \nIV. The entire network validates every block to ensure maximum security.",
+    options: ["I and II", "I and III", "II and IV", "III and IV"],
+    answer: 0
+  },
+  {
+    id: 70,
+    question: "Which of the following are key architectural features of Hyperledger Fabric? \nI. Modular design with pluggable components \nII. Mandatory native cryptocurrency \nIII. Separation of transaction endorsement and ordering \nIV. Public anonymous participation",
+    options: ["I and II", "I and III", "II and IV", "III and IV"],
+    answer: 1
+  }
+];
+
+// Blockchain and its Applications - Week 8 questions
+questionsByDepartment["blockchain-and-its-applications"][8] = [
+  {
+    id: 71,
+    question: "Which of the following statements is/are FALSE regarding the PBFT and PoW consensus mechanisms?",
+    options: ["PBFT is generally used in permissioned blockchain environments with known validators.", "PoW is suited for open public networks where participants may be anonymous.", "PBFT is effective for large, highly decentralized public networks with thousands of nodes.", "PoW requires significant computational effort to validate new blocks"],
+    answer: 2
+  },
+  {
+    id: 72,
+    question: "Which mechanism ensures deterministic finality in PBFT-based systems?",
+    options: ["Longest-chain selection", "Computational difficulty", "Quorum-based agreement with overlapping honest replicas", "Randomized leader selection"],
+    answer: 2
+  },
+  {
+    id: 73,
+    question: "In Bitcoin-NG, what is the primary effect of separating leader election from transaction serialization?",
+    options: ["Eliminates Proof-of-Work", "Allows higher transaction throughput", "Makes block intervals deterministic", "Removes fork possibility"],
+    answer: 1
+  },
+  {
+    id: 74,
+    question: "Which of the following statements is TRUE regarding block propagation in Bitcoin-NG?",
+    options: ["Micro-blocks are used to carry transactions and are produced frequently between key-blocks.", "Key-blocks are produced frequently, while micro-blocks are infrequent.", "Both key-blocks and micro-blocks are produced at the same rate.", "Micro-blocks determine the leader, while key-blocks only store transactions."],
+    answer: 0
+  },
+  {
+    id: 75,
+    question: "What scalability limitation of classical PBFT does CoSi attempt to improve?",
+    options: ["Energy consumption", "Quadratic communication overhead", "Block size restrictions", "Lack of cryptographic signatures"],
+    answer: 1
+  },
+  {
+    id: 76,
+    question: "Which of the following statements is TRUE regarding block (or commitment) propagation in Byzcoin?",
+    options: ["Byzcoin uses collective signing (CoSi) to allow blocks to be committed quickly once validators reach agreement.", "Byzcoin relies on a single leader to sign each block, similar to classical PoW mining.", "In Byzcoin, blocks are only propagated after several minutes to reduce network traffic.", "Byzcoin avoids using keyblocks entirely and relies only on microblocks for consensus."],
+    answer: 0
+  },
+  {
+    id: 77,
+    question: "In Byzcoin, what is the main benefit of using collective signing for block commitment?",
+    options: ["Eliminates the need for leader election", "Reduces signature verification overhead", "Guarantees probabilistic finality", "Removes quorum requirements"],
+    answer: 1
+  },
+  {
+    id: 78,
+    question: "Which trade-off best characterizes BFT-based consensus compared to Proof-of-Work?",
+    options: ["Higher node scalability but lower throughput", "No need for identity management", "Lower communication cost but higher energy consumption", "Deterministic finality but limited scalability to very large networks"],
+    answer: 3
+  },
+  {
+    id: 79,
+    question: "In Hyperledger Fabric, why is transaction endorsement performed before ordering?",
+    options: ["To determine mining difficulty", "To execute business logic and verify endorsement policy compliance", "To reduce block interval", "To eliminate validation"],
+    answer: 1
+  },
+  {
+    id: 80,
+    question: "What happens during the validation phase of a Fabric transaction?",
+    options: ["Mining competition selects the block", "The world state is updated without verification", "Endorsement policies and read-write set consistency are verified before updating world state", "Proof-of-Work puzzles are solved"],
+    answer: 2
+  }
+];
+
+
+// Blockchain and its Applications - Week 9 questions
+questionsByDepartment["blockchain-and-its-applications"][9] = [
+  {
+    id: 81,
+    question: "What specific limitation of Bitcoin-NG does ByzCoin attempt to solve?",
+    options: ["The requirement for all miners to share their private keys with the entire network", "The introduction of faulty or malicious microblocks that are only discovered at the end of a round", "The inability to elect a leader using proof of work", "The lack of support for any form of cryptographic signatures on transactions"],
+    answer: 1
+  },
+  {
+    id: 82,
+    question: "The 'Blockchain Performance Triangle' illustrates the trade-offs between which three properties?",
+    options: ["Throughput, Latency, and Scalability", "Scalability, Security, and Decentralization", "Consistency, Availability, and Tolerance", "Proof of Work, PBFT, and Collective Signing."],
+    answer: 1
+  },
+  {
+    id: 83,
+    question: "ByzCoin improves upon traditional Practical Byzantine Fault Tolerance (PBFT) by integrating it with Proof of Work (PoW) and Collective Signing (CoSi). Which of the following statements correctly describe the technical improvements in ByzCoin for a network of n nodes? \nI. ByzCoin reduces communication complexity from O(n^2) to O(n) by using a tree-based multicast protocol. \nII. ByzCoin reduces consensus latency from O(n^2) to O(log n) by using a tree-based communication structure. \nIII. ByzCoin reduces verification complexity for third-party observers from O(n) to O(1) by using Schnorr multi-signatures. \nIV. ByzCoin eliminates the need for a leader node, reducing the communication complexity to O(1).",
+    options: ["I and II", "II and III", "III and IV", "I and IV"],
+    answer: 1
+  },
+  {
+    id: 84,
+    question: "To select a random committee without centralized coordination, Algorand uses Cryptographic Sortition via a Verifiable Random Function (VRF). When a user runs the VRF, it outputs a hash, a proof, and an integer j. If the algorithm returns j=0 for a user, what does this mathematically signify?",
+    options: ["The user is selected as the sole block proposer for the current round.", "The user is a part of the committee, but with a voting weight of 0.", "The user is not a part of the consensus committee for that round.", "The VRF failed, and the user must re-run the algorithm using the seed from round r - 1."],
+    answer: 2
+  },
+  {
+    id: 85,
+    question: "Under Algorand's synchrony assumptions, what characterizes weak synchrony?",
+    options: ["There is no communication between nodes", "Messages are guaranteed to be received within a known time bound by almost all honest users.", "The network can be controlled by an adversary for a bounded period of time.", "The protocol only works if the majority of the money is held by one central bank."],
+    answer: 2
+  },
+  {
+    id: 86,
+    question: "Which of the following is NOT true about Single Sign-on?",
+    options: ["A single user can access multiple services.", "A single identity provider typically maintains the identity of an individual", "During authentication, the identity is not exposed to all the services", "Identity holders use the Identity Provider to authenticate other identity holders"],
+    answer: 3
+  },
+  {
+    id: 87,
+    question: "Decentralized Identifiers (DIDs) are a W3C recommendation to implement self-sovereign identity. Which of the following accurately describes the technical components and structure of DIDs? \nI. A DID URI typically follows the syntax: did:<method-name>:<method-specific-identifier>. \nII. The DID document must contain only JSON-encoded data to ensure compatibility with all blockchain-verified registries. \nIII. The DID document includes cryptographic public keys and authentication methods so the verifier can verify that the subject controls the DID. \nIV. A DID document specifies a 'service endpoint,' which tells the verifier how to communicate with the DID subject for the next level of service.",
+    options: ["I, II, and III", "I, III, and IV", "II, III, and IV", "All of the above"],
+    answer: 1
+  },
+  {
+    id: 88,
+    question: "In the Verifiable Credentials (VC) data model, which entity is responsible for asserting claims about a subject and cryptographically signing them?",
+    options: ["The Holder", "The Verifier", "The Issuer", "The Blockchain miner."],
+    answer: 2
+  },
+  {
+    id: 89,
+    question: "If Algorand's BA* protocol fails to reach a final consensus in a single round, how does it resolve the situation mathematically and architecturally? \nI. It runs the BA* protocol repeatedly, then a timeout occurs, and the protocol moves to the next round with a newly selected random committee. \nII. Mathematically, exactly 10 executions of BA* are required to force a final consensus under weak synchrony. \nIII. Algorand mathematically demonstrates that running BA* 2 to 3 times is typically sufficient to reach final consensus, even if up to 49% of participants are malicious. \nIV. It permanently halts the blockchain to prevent a fork, requiring off-chain governance to reset the verifiable random functions.",
+    options: ["I and II", "I and III", "II and IV", "III and IV"],
+    answer: 1
+  },
+  {
+    id: 90,
+    question: "In the structure of a Decentralized Identifier (DID) URI such as 'did:example:123', what does 'example' represent?",
+    options: ["The DID method", "The DID subject identifier", "The DID document", "The DID scheme"],
+    answer: 0
+  }
+];
+
+// Blockchain and its Applications - Week 10 questions
+questionsByDepartment["blockchain-and-its-applications"][10] = [
+  {
+    id: 91,
+    question: "Which of the following denote properties of Hashed Timelock Contracts (HTLC)?",
+    options: ["If the secret is not revealed, the funds are permanently locked and cannot be recovered.", "If the secret is not revealed, all contracts using that secret are automatically executed.", "HTLCs restrict the spending of funds until a valid secret (preimage) is revealed or a predefined timeout occurs.", "If the secret is not revealed, the funds are automatically transferred to the recipient after the timeout."],
+    answer: 2
+  },
+  {
+    id: 92,
+    question: "If a participant in an atomic cross-chain swap halts during the \"triggering phase\" (after the hashlock secret has been revealed), what is the resulting state for a conforming counterparty?",
+    options: ["The counterparty is \"worse off\" because they have lost their asset.", "The protocol guarantees that the conforming party either receives their intended asset or retains their original asset.", "All assets on all involved blockchains are permanently frozen.", "The counterparty must wait for a consensus-level view change to reclaim their funds."],
+    answer: 1
+  },
+  {
+    id: 93,
+    question: "Which of the following are inherent risks or disadvantages associated with using a Centralized Trusted Third Party (TTP) for cross-chain asset transfers? \nI. Users must relinquish control of their funds to the third party. \nII. The third party represents a single point of failure. \nIII. Cross-chain transfers cannot be performed using a third party. \nIV. Users may lose funds if the third party is compromised or shuts down.",
+    options: ["I, II, and III", "I, II, and IV", "II, III, and IV", "All of the above"],
+    answer: 1
+  },
+  {
+    id: 94,
+    question: "Why is \"Consensus-driven\" data transfer emphasized for permissioned blockchains?",
+    options: ["To ensure that only the administrator of the network can authorize a transfer.", "To guarantee that the data being moved is not a temporary or unconfirmed state of the source ledger.", "Because permissioned blockchains do not support hashlocks.", "To allow the destination network to participate in the mining process of the source network."],
+    answer: 1
+  },
+  {
+    id: 95,
+    question: "In the three-party atomic swap scenario (Alice, Bob, Carol) involving an alt-coin, Bitcoin, and a car title, why is the sequence of timelocks (6Δ, 5Δ, 4Δ) critical?",
+    options: ["To ensure the car title is transferred before Alice spends her alt-coins.", "To prevent the Bitcoin network from crashing due to high transaction volume.", "To allow Carol to claim her Bitcoin and Bob to claim his alt-coins before their respective contracts expire, even if the secret s is revealed late in the chain.", "To ensure that Alice, as the generator of the secret, has the least amount of time to act."],
+    answer: 2
+  },
+  {
+    id: 96,
+    question: "According to the permissioned blockchain interoperability (e.g., between TradeLens and We.Trade), what must be included with the data moving from the source network to the destination? \nI. A set of endorsements or signatures representing the consensus view of the source network. \nII. A proof that the data has been encrypted using the destination network's private key. \nIII. Verification that the data sharing complies with the source network's 'Exposure Control' policy. \nIV. A physical bill of lading scanned into a PDF format.",
+    options: ["I and II", "I and III", "II and IV", "III and IV"],
+    answer: 1
+  },
+  {
+    id: 97,
+    question: "During the Hyperledger Indy identity configuration, which statements correctly describe the roles of Stewards and Trust Anchors? \nI. Stewards have the permission to register new DIDs (verinyms) on the ledger. \nII. Trust Anchors are responsible for maintaining the RBFT consensus nodes. \nIII. Trust Anchors, such as a University, have the authority to issue verifiable credentials to users. \nIV. Stewards are pre-approved participants who can approve the transition of a user to a Trust Anchor role.",
+    options: ["I, II, and III", "I, III, and IV", "II, III, and IV", "All of the above"],
+    answer: 1
+  },
+  {
+    id: 98,
+    question: "In the permissioned interoperability relay architecture, what does the \"Data Acceptance Policy\" in the destination network (Network A) evaluate?",
+    options: ["The current exchange rate of the assets being transferred.", "Whether the received data has a sufficient number of valid attestations/signatures from the source network.", "The identity of the individual programmer who wrote the source chaincode.", "If the source network (Network B) has a higher market cap than Network A."],
+    answer: 1
+  },
+  {
+    id: 99,
+    question: "Why does Hyperledger Indy use a \"Genesis Transaction\" file (pool_transactions_genesis) during the application setup?",
+    options: ["It contains the history of every identity ever created since the start of the web.", "It is a legal document that Alice must sign before using the system.", "It reboots the nodes every time a new transaction is made.", "It provides the initial IP addresses, ports, and keys of the nodes in the Indy pool so the SDK can connect to the network."],
+    answer: 3
+  },
+  {
+    id: 100,
+    question: "In the Indy tutorial, the University sets `support_revocation: False` when creating a Credential Definition. What is the implication of this setting?",
+    options: ["The University can never issue more than one credential.", "Once issued, the University cannot use an Indy Revocation List to invalidate that specific transcript in the future.", "Alice is forbidden from showing her transcript to any company.", "The credential will automatically delete itself from Alice's wallet after 24 hours."],
+    answer: 1
+  }
+];
+
+// Blockchain and its Applications - Week 11 questions
+questionsByDepartment["blockchain-and-its-applications"][11] = [
+  {
+    id: 101,
+    question: "What specific gap does Hyperledger Aries fill when used alongside Hyperledger Indy?",
+    options: ["It provides the consensus algorithm necessary for Indy to mine blocks.", "It introduces a new native cryptocurrency to incentivize Indy node operators.", "It gives the infrastructure for blockchain-routed peer-to-peer interactions and the secure transport of digital credentials between participants.", "It replaces Indy's distributed ledger entirely by acting as a faster, centralized database."],
+    answer: 2
+  },
+  {
+    id: 102,
+    question: "According to the architecture of the Aries Cloud Agent Python (ACA-Py) discussed in the lecture, which of the following are primary modules/components? \nI. Core Capabilities \nII. REST API Module \nIII. Proof of Work Consensus Engine \nIV. Aries Protocols (DIDcomm)",
+    options: ["I, II, and III", "I, II, and IV", "II, III, and IV", "All of the above"],
+    answer: 1
+  },
+  {
+    id: 103,
+    question: "In the context of selfish mining, suppose an attacker's mining pool privately mines two consecutive blocks while the honest network mines one competing block. The attacker then releases its private chain, and both attacker blocks are successfully accepted into the main chain (i.e., no fork race or block loss occurs). If the block reward is 6.25 bitcoins per block, how much total reward does the attacker's pool earn?",
+    options: ["6.25 bitcoins", "12.5 bitcoins", "18.75 bitcoins", "8.25 bitcoins"],
+    answer: 1
+  },
+  {
+    id: 104,
+    question: "In the context of transaction privacy leakage, what mechanism is mentioned in the lecture as a way to use decoys to obscure the trace of cryptocurrency transactions?",
+    options: ["Genesis Blocks", "Chaff coins (Mixins)", "51% Padding", "Webhooks"],
+    answer: 1
+  },
+  {
+    id: 105,
+    question: "In an eclipse attack scenario discussed in lecture 54, suppose an attacker controls 40% of the network's hashing power, while a victim node has 30% and the rest of the network holds the remaining 30%. If the attacker successfully isolates (eclipses) the victim from the rest of the network, which of the following statements correctly describe what happens? \nI. The attacker now effectively controls 70% of the hashing power on the main chain. \nII. The honest nodes (victim + rest of the network) can no longer combine their 60% hashing power. \nIII. The attacker directly competes with the victim with a 40% vs 30% advantage. \nIV. The attacker directly competes with the rest of the network with a 40% vs 30% advantage.",
+    options: ["I, II, and III", "I, III, and IV", "II, III, and IV", "All of the above"],
+    answer: 2
+  },
+  {
+    id: 106,
+    question: "In the Fomo3D smart contract game, every time someone buys a ticket, the countdown timer is extended by 30 seconds. Suppose an attacker buys a ticket when there are exactly 3 minutes left on the clock, and then launches a suppression attack by flooding the network with high gas-price transactions so that no one else's transactions get included in blocks. Assuming no honest transactions go through during this time, how many ticket purchases did the attacker effectively prevent?",
+    options: ["3 purchases", "6 purchases", "10 purchases", "30 purchases"],
+    answer: 1
+  },
+  {
+    id: 107,
+    question: "What is the primary objective of an \"Eclipse Attack\" on a blockchain network?",
+    options: ["To gain majority control (51%) of the network's hashing power by combining mining pools", "To isolate a target node from the rest of the network by filling its peer connections with attacker-controlled nodes", "To take advantage of smart contract bugs to steal funds", "To crack a user's private key using brute force"],
+    answer: 1
+  },
+  {
+    id: 108,
+    question: "In an eclipse attack, an attacker can overwhelm a node by filling its \"new\" and \"tried\" peer tables with malicious IP addresses, effectively isolating it from honest peers. Based on the lecture, which of the following is a practical way developers can reduce this risk?",
+    options: ["Force all nodes to rely on a centralized and trusted DNS server for peer discovery.", "Change how IP address buckets are managed so that malicious entries are gradually replaced by honest ones.", "Require nodes to pass a strict Proof of Stake check before joining the network.", "Encrypt the node's local database to hide the peer tables from attackers."],
+    answer: 1
+  },
+  {
+    id: 109,
+    question: "In a double-spending attack where the attacker is working together with a mining pool, how is the vendor actually cheated?",
+    options: ["The attacker sends a payment to the vendor and receives the service, but the colluding mining pool later confirms a conflicting transaction that sends the same coins back to the attacker.", "The attacker steals the vendor's digital signature and uses it to drain their wallet.", "The attacker creates a private chain of blocks that removes the vendor's node from the network.", "The attacker uses fake \"chaff coins\" to make the payment appear larger than it really is."],
+    answer: 0
+  },
+  {
+    id: 110,
+    question: "In an Eclipse Attack, how does the attacker actually isolate a victim node from the rest of the network?",
+    options: ["By interfering with the ISP's routing hardware", "By launching a DDoS attack on the victim's internet provider", "By hacking the victim's wallet so it ignores blocks", "By filling the victim's peer tables with attacker-controlled IPs"],
+    answer: 3
+  }
+];
+
+// Blockchain and its Applications - Week 12 questions
+questionsByDepartment["blockchain-and-its-applications"][12] = [
+  {
+    id: 111,
+    question: "Which of the following is a suitable use case for a blockchain-based solution in real-world systems?",
+    options: ["Storing high-frequency sensor data that requires rapid deletion and modification", "Creating a transparent and tamper-evident supply-chain tracking system for goods", "Running a machine learning model training directly on a public blockchain", "Hosting large video files for a global streaming platform"],
+    answer: 1
+  },
+  {
+    id: 112,
+    question: "In interbank settlements, what issue does Project Ubin Phase 2 try to solve using decentralized multilateral netting?",
+    options: ["Preventing double-spending of digital currencies.", "Verifying identities between banks", "Resolving gridlock situations where banks lack liquidity for individual payments but are overall solvent", "Stopping unauthorized access to central bank accounts"],
+    answer: 2
+  },
+  {
+    id: 113,
+    question: "The Stellar Consensus Protocol (SCP) uses federated voting. Which of the following are the key steps involved? \nI. Propose \nII. Vote \nIII. Accept \nIV. Prepare \nV. Confirm",
+    options: ["I, II, and III", "II, III, and V", "II, IV, and V", "III, IV, and V"],
+    answer: 1
+  },
+  {
+    id: 114,
+    question: "According to research by Amores-Sesar et al., what level of overlap in trusted nodes (UNL overlap) is now recommended for safety in the Ripple network?",
+    options: ["20%", "40%", "80%", "Over 90%"],
+    answer: 3
+  },
+  {
+    id: 115,
+    question: "In the CollabFed decentralized marketplace model, how is a request from a public blockchain verified and transferred to a private consortium ledger?",
+    options: ["Through a central broker API", "Using SPV (Simplified Payment Verification) plus approval from two-thirds of service providers", "By running Proof of Work on the private ledger", "By encrypting it with a shared private key"],
+    answer: 1
+  },
+  {
+    id: 116,
+    question: "Why is it better to use a blockchain-based access log for sensitive government data instead of duplicating the data itself?",
+    options: ["It speeds up access to large files", "It allows deletion of stored data", "It minimizes breach risks while keeping a transparent record of access", "It removes the need for centralized storage"],
+    answer: 2
+  },
+  {
+    id: 117,
+    question: "How does CollabFed combine multiple service provider signatures into a single response for users?",
+    options: ["Schnorr multi-signatures", "CoSi (Collective Signing) using BLS signatures", "Ring signatures", "HMAC"],
+    answer: 1
+  },
+  {
+    id: 118,
+    question: "What was the main goal of Project Ubin Phase 3 (Delivery versus Payment)?",
+    options: ["Automating GST collection", "Enabling atomic exchange of cash and securities across different systems", "Supporting cross-border payments", "Building a retail payment interface"],
+    answer: 1
+  },
+  {
+    id: 119,
+    question: "What performance characteristics were observed for the Stellar network? \nI. Transaction throughput of approximately 350 TPS. \nII. Transaction finality/latency of approximately 1 second. \nIII. Energy consumption comparable to Bitcoin mining. \nIV. Confirmation times ranging between 3 to 5 minutes.",
+    options: ["I and II", "I and III", "II and IV", "III and IV"],
+    answer: 0
+  },
+  {
+    id: 120,
+    question: "In decentralized marketplaces without platforms like Booking.com, what major challenge still remains?",
+    options: ["Difficulty ordering transactions", "Lack of quick authority for real-time dispute resolution", "Poor blockchain interoperability", "High smart contract costs"],
+    answer: 1
   }
 ];
 

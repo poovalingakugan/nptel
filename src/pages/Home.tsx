@@ -8,6 +8,7 @@ const Home = () => {
   const departments = [
     { id: "sensors-and-actuators", label: "Sensors and Actuators" },
     { id: "industry-4-0-and-industrial-iot", label: "Introduction to Industry 4.0 and Industrial IOT" },
+    { id: "blockchain-and-its-applications", label: "Blockchain and its Applications" },
   ];
 
   return (
