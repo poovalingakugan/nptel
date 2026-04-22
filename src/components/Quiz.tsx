@@ -126,7 +126,7 @@ const Quiz = ({ weekId, department = 'ece', topicId }: QuizProps) => {
 
   if (showResults) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted py-8 px-4">
+      <div className="w-full py-8 px-4 flex-1">
         <div className="max-w-4xl mx-auto">
           <Card className="shadow-2xl border-2">
             <CardHeader className="text-center bg-gradient-to-r from-primary to-secondary text-primary-foreground rounded-t-lg">
@@ -270,7 +270,7 @@ const Quiz = ({ weekId, department = 'ece', topicId }: QuizProps) => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted py-8 px-4">
+    <div className="w-full py-8 px-4 flex-1">
       <div className="max-w-4xl mx-auto">
         {/* Back Button */}
         <Button

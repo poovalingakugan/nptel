@@ -16,4 +16,12 @@ export const departmentConfig: Record<string, DepartmentConfig> = {
     finalTestLabel: "Week 1-12",
     totalQuestions: 120,
   },
+  "industry-4-0-and-industrial-iot": {
+    topic: "Introduction to Industry 4.0 and Industrial IOT",
+    startWeek: 1,
+    endWeek: 12,
+    questionsPerWeek: 15,
+    finalTestLabel: "Week 1-12",
+    totalQuestions: 180,
+  },
 };

@@ -7,10 +7,11 @@ const Home = () => {
 
   const departments = [
     { id: "sensors-and-actuators", label: "Sensors and Actuators" },
+    { id: "industry-4-0-and-industrial-iot", label: "Introduction to Industry 4.0 and Industrial IOT" },
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background to-secondary/20 p-4 md:p-8">
+    <div className="w-full p-4 md:p-8 flex-1">
       <div className="max-w-2xl mx-auto">
         <Card className="shadow-xl">
           <CardHeader className="text-center space-y-2 pb-8">

@@ -35,7 +35,7 @@ const DepartmentQuiz = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background to-secondary/20 p-4 md:p-8">
+    <div className="w-full p-4 md:p-8 flex-1">
       <div className="max-w-4xl mx-auto">
         <Button
           onClick={() => navigate(topicId ? "/cse/topics" : "/")}
