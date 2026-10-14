@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { getQuestionsByDepartmentWeek, getAllQuestionsByDepartment } from "@/data/questions";
+import { departmentConfig } from "@/data/departments";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
@@ -111,20 +112,39 @@ const Quiz = ({ weekId, department = 'ece', topicId }: QuizProps) => {
     return { text: "Needs Improvement", emoji: "😔", color: "text-muted-foreground" };
   };
 
+  const departmentConfigItem = department ? (departmentConfig as Record<string, any>)[department] : null;
+  const displayDepartment = departmentConfigItem?.topic || (department ? department.toUpperCase() : "");
+  const displayWeek = weekId === "final" ? "Final Mock Exam" : `Week ${weekId}`;
+
+  if (totalQuestions === 0) {
+    return (
+      <div className="w-full py-12 px-4 flex-1 flex items-center justify-center">
+        <div className="max-w-md w-full mx-auto text-center p-8 rounded-3xl bg-card border border-border/80 shadow-xl space-y-4">
+          <div className="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mx-auto">
+            <RotateCcw className="w-7 h-7" />
+          </div>
+          <h2 className="text-2xl font-bold font-heading text-foreground">
+            No Questions Found
+          </h2>
+          <p className="text-muted-foreground text-sm">
+            Questions for {displayDepartment ? `${displayDepartment} - ` : ""}{displayWeek} will be available once the questions list is added.
+          </p>
+          <Button
+            onClick={() => navigate(topicId ? `/department/cse/topic/${topicId}` : department ? `/department/${department}` : "/")}
+            className="rounded-xl mt-4"
+          >
+            <ChevronLeft className="w-4 h-4 mr-2" />
+            Back to Course
+          </Button>
+        </div>
+      </div>
+    );
+  }
+
   const currentQuestionData = questions[currentQuestion];
   const correctAnswers = calculateResults();
   const percentage = ((correctAnswers / totalQuestions) * 100).toFixed(1);
   const feedback = getFeedbackMessage(correctAnswers, totalQuestions);
-
-  const departmentNames: Record<string, string> = {
-    cse: "CSE",
-    it: "IT", 
-    ece: "ECE",
-    "eee-csbs": "EEE & CSBS"
-  };
-
-  const displayDepartment = department ? departmentNames[department] || department.toUpperCase() : "";
-  const displayWeek = weekId === "final" ? "Final Test" : `Week ${weekId}`;
 
   if (showResults) {
     return (
