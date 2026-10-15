@@ -4793,7 +4793,116 @@ export const questionsByDepartment = {
         answer: 3
       }
     ],
-    11: [],
+    11: [
+      {
+        id: 101,
+        question: "Which of the following is not true about personal data as per GDPR?",
+        options: [
+          "Personal data is any information that relates to an individual who can be directly or indirectly identified.",
+          "Names and email addresses are personal data.",
+          "Location information, ethnicity, gender, biometric data, religious beliefs, web cookies, and political opinions can also be personal data.",
+          "Pseudonymous data is not personal data, even if the individual can be easily re-identified from it."
+        ],
+        answer: 3
+      },
+      {
+        id: 102,
+        question: "An organization continues to retain personal data even though it is no longer required for the purpose for which it was collected. Which principle is most directly concerned with this situation?",
+        options: [
+          "Accuracy",
+          "Purpose Limitation",
+          "Storage Limitation",
+          "Accountability"
+        ],
+        answer: 2
+      },
+      {
+        id: 103,
+        question: "Which of the following statements best describes the applicability of the GDPR?",
+        options: [
+          "GDPR applies only when an organization is physically located in the European Union.",
+          "GDPR applies only to organizations that collect names and email addresses.",
+          "GDPR can apply to organizations that process personal data, regardless of their location, when the GDPR applies to their processing activities.",
+          "GDPR applies only to government organizations that process personal data."
+        ],
+        answer: 2
+      },
+      {
+        id: 104,
+        question: "A person is in a life-threatening situation, and processing their personal data is necessary to save their life. Which legal basis for processing is most appropriate under GDPR?",
+        options: [
+          "Consent",
+          "Public interest",
+          "Contract",
+          "Vital interests"
+        ],
+        answer: 3
+      },
+      {
+        id: 105,
+        question: "In the context of Aadhaar data, who is considered the Data Principal under the DPDP Act?",
+        options: [
+          "The Unique Identification Authority of India (UIDAI)",
+          "The individual to whom the Aadhaar number and related personal data belong",
+          "The service provider that uses Aadhaar authentication",
+          "The government agency responsible for processing the data"
+        ],
+        answer: 1
+      },
+      {
+        id: 106,
+        question: "What is the primary objective of the Digital Personal Data Protection (DPDP) Act, 2023?",
+        options: [
+          "To give organizations unrestricted authority to process personal data when a legitimate purpose exists.",
+          "To balance the right of individuals to protect their personal data with the need to process such data for lawful purposes.",
+          "To restrict the processing of digital personal data primarily to government-authorized purposes.",
+          "To prioritize the prevention of personal-data processing over its legitimate and lawful use."
+        ],
+        answer: 1
+      },
+      {
+        id: 107,
+        question: "According to the Digital Personal Data Protection Act, 2023 (DPDP Act), a person who alone or together with others determines the purposes and means of processing personal data is known as:",
+        options: [
+          "Data Protection Officer",
+          "Data Processor",
+          "Data Fiduciary",
+          "Consent Manager"
+        ],
+        answer: 2
+      },
+      {
+        id: 108,
+        question: "The Information Technology Act of India was enacted in which year?",
+        options: [
+          "2000",
+          "2020",
+          "2022",
+          "1998"
+        ],
+        answer: 0
+      },
+      {
+        id: 109,
+        question: "Which of the following correctly identifies the core principles of the Aadhaar technology system?",
+        options: [
+          "Openness, central storage, security, and data monetization",
+          "Data monetization, vendor-neutrality, security, and data analytics",
+          "Openness, data monetization, security, and data analytics",
+          "Openness, vendor neutrality, security, and data analytics"
+        ],
+        answer: 3
+      },
+      {
+        id: 110,
+        question: "The Indian Telegraph Act, 1885, empowered the government to intercept certain communications under specified circumstances.",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 0
+      }
+    ],
     12: []
   }
 };
