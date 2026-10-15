@@ -4903,7 +4903,116 @@ export const questionsByDepartment = {
         answer: 0
       }
     ],
-    12: []
+    12: [
+      {
+        id: 111,
+        question: "Under GDPR, which of the following are accurate requirements? (1) Transparency about the collection, use, and storage of personal data. (2) Consumer control over how their data is used.",
+        options: [
+          "Only (2) is true",
+          "Only (1) is true",
+          "(1) and (2) are true",
+          "(1) and (2) are false"
+        ],
+        answer: 2
+      },
+      {
+        id: 112,
+        question: "Individuals demand a much higher price to give up their data (WTA) than they are willing to pay to protect it (WTP), a gap attributed to loss aversion. Which concept pairing explains this?",
+        options: [
+          "Privacy calculus and rational disclosure",
+          "Prospect Theory explains why WTA valuations exceed WTP valuations",
+          "Differential privacy and plausible deniability",
+          "Privacy as a reductionist, derivative right"
+        ],
+        answer: 1
+      },
+      {
+        id: 113,
+        question: "Why does understanding users' valuation of personal data protection matter strategically for a business?",
+        options: [
+          "It helps develop privacy-enhancing initiatives that provide a competitive advantage.",
+          "It allows mandating strict data policies without regard to consumer preference.",
+          "It enables using personal data for maximum commercial gain.",
+          "It facilitates markets where individuals monetize their own data."
+        ],
+        answer: 0
+      },
+      {
+        id: 114,
+        question: "Before disclosing data, individuals weigh perceived risks against expected benefits. Which theory describes this process?",
+        options: [
+          "Individuals are motivated solely by potential benefits of disclosure.",
+          "Individuals make irrational disclosure decisions.",
+          "Privacy calculus: a cost-benefit analysis governs the decision to disclose.",
+          "Individuals have no control over disclosure."
+        ],
+        answer: 2
+      },
+      {
+        id: 115,
+        question: "Which architectural approach minimizes personal data shared with any central authority (e.g., in contact-tracing system design)?",
+        options: [
+          "Mandatory participation to maximize effectiveness",
+          "Prioritizing public health benefit over privacy protection",
+          "Centralized architecture storing all data with a single authority",
+          "Decentralized, privacy-preserving architecture minimizing data sharing"
+        ],
+        answer: 3
+      },
+      {
+        id: 116,
+        question: "People become more risk-averse facing a potential privacy loss than facing an equivalent potential gain. Prospect Theory predicts that:",
+        options: [
+          "Losses are felt more intensely than equivalent gains.",
+          "People only maximize financial gains.",
+          "Gains and losses are valued equally.",
+          "Individuals are more risk-seeking for potential gains."
+        ],
+        answer: 0
+      },
+      {
+        id: 117,
+        question: "The same type of personal data is assigned very different worth by different individuals in different contexts. What does this indicate about privacy valuation?",
+        options: [
+          "It is consistent across individuals and contexts.",
+          "It varies based on context and circumstance.",
+          "It is influenced by external factors but remains stable over time.",
+          "It is determined solely by economic/market factors."
+        ],
+        answer: 1
+      },
+      {
+        id: 118,
+        question: "Which of the following are valid components of responsible privacy protection in ML system design?",
+        options: [
+          "Safeguarding data privacy within the model itself, alongside responsible data collection and on-device processing where feasible.",
+          "Collecting maximum data upfront to improve model accuracy, then restricting access post-training.",
+          "Relying solely on legal disclaimers instead of technical safeguards.",
+          "Treating privacy as a one-time compliance checkbox at deployment."
+        ],
+        answer: 0
+      },
+      {
+        id: 119,
+        question: "WTA valuations tend to be substantially higher than WTP valuations for the same privacy good.",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 0
+      },
+      {
+        id: 120,
+        question: "Under the Digital Personal Data Protection Bill, 2022, the individual whose personal data is processed, and who holds the right to give or withdraw consent, is termed:",
+        options: [
+          "Data Protection Officer",
+          "Data Processor",
+          "Data Fiduciary",
+          "Data Principal"
+        ],
+        answer: 3
+      }
+    ]
   }
 };
 
