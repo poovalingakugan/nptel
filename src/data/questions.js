@@ -3911,13 +3911,778 @@ export const questionsByDepartment = {
         answer: 1
       }
     ],
-    3: [],
-    4: [],
-    5: [],
-    6: [],
-    7: [],
-    8: [],
-    9: [],
+    3: [
+      {
+        id: 21,
+        question: "Which of the following are the goals of information security governance?\n\ni. Strategic alignment of information security with business objectives to ensure organizational goals are effectively supported.\nii. Risk management through the implementation of suitable controls and measures to identify, manage, and mitigate risks to information assets.\niii. Resource management by optimizing the utilization of information security expertise, technologies, and infrastructure in an efficient and effective manner.\niv. Performance measurement by evaluating, monitoring, and reporting information security governance metrics to verify that organizational objectives are being achieved.",
+        options: [
+          "Only i and ii are correct",
+          "Only i, ii, and iv are correct",
+          "Only i, ii, and iii are correct",
+          "i, ii, iii, and iv are correct"
+        ],
+        answer: 3
+      },
+      {
+        id: 22,
+        question: "Which of the following statements is not correct?",
+        options: [
+          "COBIT is a framework to organize business processes.",
+          "COBIT defines the design factors the enterprise should consider when building a best-fit governance system.",
+          "COBIT is not a comprehensive description of an enterprise's IT environment.",
+          "COBIT defines the components to build and sustain a governance system: processes, organizational structures, policies and procedures, information flows, culture and behaviors, skills, and infrastructure."
+        ],
+        answer: 0
+      },
+      {
+        id: 23,
+        question: "Match the following.\n\ni. De facto standard\nii. De jure standard\niii. Guidelines\niv. Practices\n\na. A standard that has been formally evaluated, approved, and ratified by a formal standards organization.\nb. Examples of actions that illustrate compliance with policies.\nc. A standard that has been widely adopted or accepted by a public group rather than a formal standards organization.\nd. Nonmandatory recommendations the employee may use as a reference in complying with a policy.",
+        options: [
+          "i - a, ii - c, iii - b, iv - d",
+          "i - c, ii - a, iii - b, iv - d",
+          "i - c, ii - a, iii - d, iv - b",
+          "i - b, ii - c, iii - d, iv - a"
+        ],
+        answer: 2
+      },
+      {
+        id: 24,
+        question: "COSO's ERM framework emphasizes:",
+        options: [
+          "Operational efficiency",
+          "Risk identification and assessment",
+          "Regulatory compliance",
+          "Human resource management"
+        ],
+        answer: 1
+      },
+      {
+        id: 25,
+        question: "Which of the following is NOT a fundamental component of the NIST Cybersecurity Framework?",
+        options: [
+          "The Framework profile",
+          "The Framework tiers",
+          "The Framework core",
+          "The Framework control"
+        ],
+        answer: 3
+      },
+      {
+        id: 26,
+        question: "An organization adopts a Governance, Risk, and Compliance (GRC) framework. What benefits can it expect to achieve?",
+        options: [
+          "Improved accountability and responsible operations",
+          "Better decisions based on data and insights",
+          "Stronger cybersecurity management",
+          "All of the above"
+        ],
+        answer: 3
+      },
+      {
+        id: 27,
+        question: "Which of the following is not true?",
+        options: [
+          "ISO/IEC 27001 is suitable only for large organizations in the information technology sector and is not relevant to small or medium-sized businesses.",
+          "Conformity with ISO/IEC 27001 indicates that an organization has established a systematic approach to managing risks associated with the security of the information it owns or processes, and that this approach adheres to the best practices and principles specified in the International Standard.",
+          "ISO/IEC 27001 enables organizations to develop a risk-aware culture by proactively identifying, assessing, and addressing information security vulnerabilities and weaknesses.",
+          "ISO/IEC 27001 promotes a comprehensive approach to information security by addressing people, processes, policies, and technology to safeguard organizational information assets."
+        ],
+        answer: 0
+      },
+      {
+        id: 28,
+        question: "Which of the following is not a component of COSO?",
+        options: [
+          "Control Activities",
+          "Monitoring",
+          "Risk Response",
+          "Risk Assessment"
+        ],
+        answer: 2
+      },
+      {
+        id: 29,
+        question: "Information security governance is the application of the principles of corporate governance to the information security function.",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 0
+      },
+      {
+        id: 30,
+        question: "ISO standards, such as ______ for risk management or ______ for information security, provide global best practices for compliance and risk management.",
+        options: [
+          "ISO 31000, ISO 27001",
+          "ISO 27001, ISO 31000",
+          "ISO 27001, ISO 17799",
+          "ISO 17799, ISO 27001"
+        ],
+        answer: 0
+      }
+    ],
+    4: [
+      {
+        id: 31,
+        question: "A ______ is prepared by the organization to anticipate, react to, and recover from events that threaten the security of information and information assets in the organization.",
+        options: [
+          "Disaster Recovery Plan",
+          "Incident Response Plan",
+          "Contingency Plan",
+          "Business Continuity Plan"
+        ],
+        answer: 2
+      },
+      {
+        id: 32,
+        question: "Business Resumption Planning (BRP) consists of the actions taken by senior management to develop and implement a combined ______ and ______, and set of recovery teams.",
+        options: [
+          "Disaster Recovery Plan, Business Continuity Plan",
+          "Incident Response Plan, Business Continuity Plan",
+          "Contingency Plan, Disaster Recovery Plan",
+          "Disaster Recovery Plan, Incident Response Plan"
+        ],
+        answer: 0
+      },
+      {
+        id: 33,
+        question: "Which of the following statements is not true?",
+        options: [
+          "Tactical planning focuses on short-term undertakings that will be completed within one or two years.",
+          "An operational plan outlines the required tasks for all relevant departments, along with communication and reporting requirements.",
+          "Strategic planning sets the long-term direction to be taken by the organization and each of its component parts.",
+          "Operational plans are used to create tactical plans, which in turn are used to develop strategic plans."
+        ],
+        answer: 3
+      },
+      {
+        id: 34,
+        question: "Incident response planning comprises four phases: incident planning, incident detection, incident reaction, and incident recovery.",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 0
+      },
+      {
+        id: 35,
+        question: "Which of the following statements are true?\n\nI. Business Impact Analysis (BIA) investigates and assesses adverse events that can affect the organization as part of contingency planning.\nII. After the contingency planning policy is developed, the next step is conducting a business impact analysis.\nIII. Business Impact Analysis is a preparatory activity common to contingency planning and risk management.\nIV. The initial phase of BIA involves evaluating and prioritizing business processes according to their contribution to the organization's mission.",
+        options: [
+          "Only II and IV are true",
+          "Only I, II, and III are true",
+          "Only II, III, and IV are true",
+          "I, II, III, and IV are true"
+        ],
+        answer: 3
+      },
+      {
+        id: 36,
+        question: "The total amount of time the system owner or authorizing official is willing to accept for a business process outage or disruption, including all impact considerations, is known as:",
+        options: [
+          "Work Recovery Time",
+          "Maximum Tolerable Downtime",
+          "Maximum Recovery Time",
+          "Recovery Point Objective"
+        ],
+        answer: 1
+      },
+      {
+        id: 37,
+        question: "Which of the following statements is not true?",
+        options: [
+          "The incident response plan focuses on immediate response, but if an attack escalates or is disastrous, the process moves on to disaster recovery and the business continuity plan.",
+          "The disaster recovery plan typically focuses on restoring systems at the original site after disasters occur and is closely associated with the business continuity plan.",
+          "The business continuity plan occurs only when the disaster recovery plan fails and requires more than simple restoration of information and information resources.",
+          "The business continuity plan establishes critical business functions at an alternate site."
+        ],
+        answer: 2
+      },
+      {
+        id: 38,
+        question: "Which of the following events are definite indicators of incidents?",
+        options: [
+          "Use of dormant accounts, changes to logs, presence of hacker tools, notifications by partner or peer",
+          "Activities at unexpected times, notifications by partners or peers, unusual system crashes, presence or execution of unknown programs or processes",
+          "Notification from IDPS, presence of new accounts, unusual system crashes, use of dormant accounts",
+          "Unusual consumption of computing resources, changes to logs, unusual system crashes, presence of unfamiliar files"
+        ],
+        answer: 0
+      },
+      {
+        id: 39,
+        question: "Incident classification is the process of examining an incident candidate and determining whether it constitutes an actual incident.",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 0
+      },
+      {
+        id: 40,
+        question: "A fully configured computing facility that includes all services, communication links, and physical plant operations, used for business continuity operations, is known as:",
+        options: [
+          "Warm Site",
+          "Cold Site",
+          "Hot Site",
+          "Service Bureau"
+        ],
+        answer: 2
+      }
+    ],
+    5: [
+      {
+        id: 41,
+        question: "Identify the correct statement.",
+        options: [
+          "Guidelines are examples of actions that illustrate compliance with policies.",
+          "Procedures are non-mandatory recommendations that employees may use as a reference when complying with a policy.",
+          "Standards are step-by-step instructions that guide employees in following policies and guidelines.",
+          "Practices are examples of actions that illustrate compliance with policies."
+        ],
+        answer: 3
+      },
+      {
+        id: 42,
+        question: "Which of the following is NOT a component of Enterprise Information Security Policies (EISP)?",
+        options: [
+          "Statement of Purpose",
+          "Need for Information Security",
+          "Authorized access and usage of equipment",
+          "Information Security Responsibilities and Roles"
+        ],
+        answer: 2
+      },
+      {
+        id: 43,
+        question: "A policy to be effective and legally enforceable should meet which criteria?\n\nA. The organization must demonstrate that the policy is readily available for employee review.\nB. The organization must demonstrate that the document is disseminated in an intelligible form.\nC. The organization must demonstrate that the employee understands the requirements and content of the policy.\nD. The organization must demonstrate that the employee agrees to comply with the policy through an act or affirmation.",
+        options: [
+          "Only A and B",
+          "Only B, C, and D",
+          "Only A, C, and D",
+          "All A, B, C, and D"
+        ],
+        answer: 3
+      },
+      {
+        id: 44,
+        question: "Which approaches are used to create and manage Issue-Specific Security Policies (ISSPs) within an organization?\n\nA. Independent ISSP documents, each tailored to a specific issue.\nB. A single comprehensive ISSP document that covers all issues.\nC. A modular ISSP document that unifies policy creation and administration while maintaining each specific issue's requirements.\nD. A hierarchical ISSP structure in which all issue-specific requirements are incorporated directly into the Enterprise Information Security Policy (EISP).",
+        options: [
+          "Only A and B",
+          "Only A, B, and C",
+          "Only B, C, and D",
+          "All A, B, C, and D"
+        ],
+        answer: 1
+      },
+      {
+        id: 45,
+        question: "Which statement is NOT true?",
+        options: [
+          "System-Specific Security Policies (SysSPs) function as standards or procedures to be used when configuring or maintaining systems.",
+          "SysSPs can be separated into managerial guidance SysSPs and technical specifications SysSPs.",
+          "System-specific policies can be developed at the same time as ISSPs or prepared in advance of their related ISSPs.",
+          "Technical specifications SysSPs express management's intent for the acquisition, implementation, configuration, and management of a particular technology, written from a business perspective."
+        ],
+        answer: 3
+      },
+      {
+        id: 46,
+        question: "__________ consists of details about user access permissions and privileges for an organizational asset or resource, such as a file storage system, software component, or network communications device.",
+        options: [
+          "Access Control List",
+          "Capabilities Table",
+          "Configuration Rules",
+          "User Policies"
+        ],
+        answer: 0
+      },
+      {
+        id: 47,
+        question: "Capability Tables combine the information in Access Control Lists and Access Control Matrix.",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 1
+      },
+      {
+        id: 48,
+        question: "______ govern how a security system reacts to the data it receives.",
+        options: [
+          "User Policies",
+          "Configuration Rules",
+          "Access Control Lists",
+          "File Integrity Baselines"
+        ],
+        answer: 1
+      },
+      {
+        id: 49,
+        question: "Which of the following most accurately distinguishes cyber hygiene from cybersecurity?",
+        options: [
+          "Cyber hygiene is hardware-focused, while cybersecurity is software-focused.",
+          "Cyber hygiene is reactive in nature, while cybersecurity is always proactive.",
+          "Cyber hygiene involves routine practices for maintaining digital health, whereas cybersecurity encompasses broader strategies, technologies, and incident response.",
+          "Cyber hygiene focuses only on personal devices, while cybersecurity is limited to organizations."
+        ],
+        answer: 2
+      },
+      {
+        id: 50,
+        question: "______ is an organizational policy that offers detailed, targeted guidance to all members of the organization regarding the use of a resource, such as a process or technology.",
+        options: [
+          "Systems-Specific Security Policy",
+          "General or Security Program Policy",
+          "Enterprise Information Security Policy",
+          "Issue-Specific Security Policy"
+        ],
+        answer: 3
+      }
+    ],
+    6: [
+      {
+        id: 51,
+        question: "Match the following.\n\n1. Risk Assessment\n2. Risk Identification\n3. Risk Management\n4. Risk Control\n\na. The process of identifying risk, assessing its relative magnitude, and taking steps to reduce it to an acceptable level.\nb. The recognition, enumeration, and documentation of risks to an organization's information assets.\nc. The implementation of safeguards that reduce risks to an organization's information assets to an acceptable level.\nd. A determination of the extent to which an organization's information assets are exposed to risk.",
+        options: [
+          "1-d, 2-b, 3-a, 4-c",
+          "1-b, 2-d, 3-a, 4-c",
+          "1-d, 2-a, 3-b, 4-c",
+          "1-c, 2-b, 3-a, 4-d"
+        ],
+        answer: 0
+      },
+      {
+        id: 52,
+        question: "The risk that remains after the risk management process has concluded is a combined function of:",
+        options: [
+          "A threat less the effect of threat-reducing safeguards, a vulnerability less the effect of vulnerability-reducing safeguards, and an asset less the effect of asset value-reducing safeguards.",
+          "A threat less the effect of threat-reducing safeguards, a vulnerability plus the effect of vulnerability-reducing safeguards, and an asset plus the effect of asset value-reducing safeguards.",
+          "A threat plus the effect of threat-reducing safeguards.",
+          "A threat plus the effect of threat-reducing safeguards and vulnerabilities."
+        ],
+        answer: 0
+      },
+      {
+        id: 53,
+        question: "Which of the following is NOT a component of Risk Assessment?",
+        options: [
+          "Determine Loss Frequency",
+          "Specify Asset Vulnerabilities",
+          "Calculate Risk",
+          "Assess Risk Acceptability"
+        ],
+        answer: 1
+      },
+      {
+        id: 54,
+        question: "__________ is the quantity and nature of risk that organizations are willing to accept as they evaluate the trade-offs between perfect security and unlimited accessibility.",
+        options: [
+          "Residual Risk",
+          "Risk Appetite",
+          "Loss Magnitude",
+          "Loss Frequency"
+        ],
+        answer: 1
+      },
+      {
+        id: 55,
+        question: "Which of the following are components of risk identification?\n\nA. Identify, Inventory, and Categorize Assets\nB. Evaluate Loss Magnitude\nC. Classify, Value, and Prioritize Assets\nD. Specify Asset Vulnerabilities",
+        options: [
+          "Only A and C",
+          "Only A, C, and D",
+          "Only B, C, and D",
+          "All A, B, C, and D"
+        ],
+        answer: 1
+      },
+      {
+        id: 56,
+        question: "The classification scheme used by the U.S. Classified National Security Information (NSI) system for information whose unauthorized disclosure could reasonably be expected to cause serious damage to national security is:",
+        options: [
+          "Top Secret",
+          "Secret",
+          "Confidential",
+          "Internal"
+        ],
+        answer: 1
+      },
+      {
+        id: 57,
+        question: "Match the following threats with examples.\n\n1. Espionage or trespass\n2. Sabotage or vandalism\n3. Information extortion\n4. Theft\n\na. Damage to or destruction of systems or information.\nb. Unauthorized access and/or data collection.\nc. Illegal confiscation of equipment or information.\nd. Blackmail threat of information disclosure.",
+        options: [
+          "1-b, 2-a, 3-d, 4-c",
+          "1-a, 2-b, 3-d, 4-c",
+          "1-b, 2-d, 3-a, 4-c",
+          "1-c, 2-a, 3-d, 4-b"
+        ],
+        answer: 0
+      },
+      {
+        id: 58,
+        question: "An attacker bypasses or compromises a router, gains access to an organization's network, and encrypts critical data, demanding payment in exchange for the decryption key. This scenario is best classified as:",
+        options: [
+          "Information Extortion",
+          "Sabotage or Vandalism",
+          "Espionage or Trespass",
+          "Software Attacks"
+        ],
+        answer: 0
+      },
+      {
+        id: 59,
+        question: "An organization's Hospital Electronic Health Record (EHR) System (Asset A) has an asset value of 50 on a scale of 0–100. Industry reports indicate a 10% probability of a cyberattack in a given year. Based on current vulnerabilities and protection mechanisms, the attack has a 50% probability of success if attempted. A successful attack would result in a 100% loss or compromise of the EHR system's value. The assumptions and data are considered 90% accurate, and the resulting risk value should be adjusted by adding the 10% uncertainty. Using the formula:\n\nRisk = (Loss Frequency × Loss Magnitude) + Uncertainty Term\n\nWhat is the risk score for Asset A?",
+        options: [
+          "2.25",
+          "2.5",
+          "2.75",
+          "5"
+        ],
+        answer: 2
+      },
+      {
+        id: 60,
+        question: "The goal of risk assessment is to assign a risk rating or score that represents the relative risk for a specific vulnerability of an information asset.",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 0
+      }
+    ],
+    7: [
+      {
+        id: 61,
+        question: "Which of the following statements correctly describes the processor protection ring model?",
+        options: [
+          "User programs execute in Ring 0 because they require maximum privileges.",
+          "Ring 3 is the most privileged ring used by the operating system.",
+          "The kernel executes at the highest privilege level, and no software is more privileged than the kernel.",
+          "All four protection rings are equally privileged."
+        ],
+        answer: 2
+      },
+      {
+        id: 62,
+        question: "Which of the following is NOT true with respect to Public-Key Encryption?",
+        options: [
+          "One algorithm is used for encryption and decryption with a pair of keys, one for encryption and one for decryption.",
+          "The sender and receiver must each have one of the matched pair of keys.",
+          "One of the two keys must be kept secret.",
+          "The sender and receiver must share the algorithm and the key."
+        ],
+        answer: 3
+      },
+      {
+        id: 63,
+        question: "Which of the following statements are true?\n\nA. A hash function maps a variable-length message into a fixed-length hash value, or message digest.\nB. Hash functions can be used for intrusion detection and virus detection.\nC. The compression function used in secure hash algorithms falls into one of two categories: a function based on a public-key cryptographic algorithm or an algorithm based on a stream cipher.\nD. A cryptographic hash function can be used to construct a pseudorandom function (PRF) or a pseudorandom number generator (PRNG).",
+        options: [
+          "Only A and B",
+          "Only A, B, and D",
+          "Only B, C, and D",
+          "All A, B, C, and D"
+        ],
+        answer: 1
+      },
+      {
+        id: 64,
+        question: "HTTPS refers to the combination of ______ and ______ to implement secure communication between a web browser and a web server.",
+        options: [
+          "HTTP, SSL",
+          "HTTP, SSH",
+          "UDP, TCP",
+          "TCP, SSL"
+        ],
+        answer: 0
+      },
+      {
+        id: 65,
+        question: "__________ is the principle that an individual is entrusted to safeguard and control equipment, keying material, and information and is answerable to the proper authority for their loss or misuse, whereas __________ is the principle that ensures actions and events can be traced and reviewed through appropriate records and evidence.",
+        options: [
+          "Auditability, Accountability",
+          "Accountability, Auditability",
+          "Confidentiality, Auditability",
+          "Responsibility, Accountability"
+        ],
+        answer: 1
+      },
+      {
+        id: 66,
+        question: "Match the following.\n\n1. Stateful Inspection Firewall\n2. Packet Filters\n3. Proxy Firewalls\n4. Next Generation Firewalls\n\na. Examine individual data packets, making decisions to allow or block them based on predefined rules.\nb. Serves as the gateway from one network to another for a specific application.\nc. Allows or blocks traffic based on state, port, and protocol.\nd. Combines traditional stateful firewall functions with application awareness and control, integrated intrusion prevention, advanced threat detection, and user identity awareness.",
+        options: [
+          "1-c, 2-a, 3-b, 4-d",
+          "1-a, 2-c, 3-b, 4-d",
+          "1-c, 2-b, 3-a, 4-d",
+          "1-d, 2-a, 3-b, 4-c"
+        ],
+        answer: 0
+      },
+      {
+        id: 67,
+        question: "______ masks your Internet Protocol (IP) address, creating a private connection from a public Wi-Fi connection.",
+        options: [
+          "IPSEC",
+          "SSL",
+          "VPN",
+          "DNS"
+        ],
+        answer: 2
+      },
+      {
+        id: 68,
+        question: "Match the following.\n\n1. Reconnaissance\n2. Exploitation\n3. Weaponization\n4. Command and Control\n\na. Creating a malicious payload or malware tailored to the target.\nb. Establishing a remote communication channel to control the compromised system.\nc. Triggering the code to breach the system vulnerability.\nd. Gathering target data, scanning networks, and finding weak spots.",
+        options: [
+          "1-d, 2-c, 3-a, 4-b",
+          "1-c, 2-d, 3-a, 4-b",
+          "1-d, 2-a, 3-c, 4-b",
+          "1-a, 2-c, 3-d, 4-b"
+        ],
+        answer: 0
+      },
+      {
+        id: 69,
+        question: "The following figure depicts which attack?",
+        image: "/images/cyber-security-and-privacy/week7-q9.png",
+        options: [
+          "DDoS",
+          "Brute Force Attack",
+          "Session Hijacking",
+          "DNS Spoofing"
+        ],
+        answer: 0
+      },
+      {
+        id: 70,
+        question: "Which of the following is the primary function of a SIEM system?",
+        options: [
+          "Encrypting all network traffic",
+          "Collecting, correlating, and analyzing security logs and events",
+          "Blocking all unauthorized websites",
+          "Performing software vulnerability scanning"
+        ],
+        answer: 1
+      }
+    ],
+    8: [
+      {
+        id: 71,
+        question: "Which of the following statements is NOT true?",
+        options: [
+          "Risk management involves three major undertakings: risk identification, risk assessment, and risk control.",
+          "Risk assessment is the process of identifying risk, assessing its relative magnitude, and taking steps to reduce it to an acceptable level.",
+          "Risk identification is the recognition, enumeration, and documentation of risks to an organization's information assets.",
+          "Risk identification also involves classifying, valuing, and prioritizing assets."
+        ],
+        answer: 1
+      },
+      {
+        id: 72,
+        question: "______ is the quantity and nature of risk that an organization is willing to accept while balancing security requirements against business needs such as accessibility and usability.",
+        options: [
+          "Risk appetite",
+          "Risk exposure",
+          "Residual risk",
+          "Risk capacity"
+        ],
+        answer: 0
+      },
+      {
+        id: 73,
+        question: "Residual risk is a combined function of (1) a threat less the effect of threat-reducing safeguards, (2) a vulnerability less the effect of vulnerability-reducing safeguards, and (3) an asset less the effect of asset value-reducing safeguards.",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 0
+      },
+      {
+        id: 74,
+        question: "An organization estimates that a data breach would result in a Single Loss Expectancy (SLE) of ₹8,00,000. The Annualized Loss Expectancy (ALE) is estimated to be ₹12,00,000. What is the Annualized Rate of Occurrence (ARO)?",
+        options: [
+          "0.5",
+          "1.0",
+          "1.5",
+          "2.0"
+        ],
+        answer: 2
+      },
+      {
+        id: 75,
+        question: "An organization's critical server has an Asset Value (AV) of ₹15,00,000 and an Exposure Factor (EF) of 40%. The threat is expected to occur 2 times per year. What is the Annualized Loss Expectancy (ALE)?",
+        options: [
+          "₹6,00,000",
+          "₹12,00,000",
+          "₹20,00,000",
+          "₹30,00,000"
+        ],
+        answer: 1
+      },
+      {
+        id: 76,
+        question: "A company has an Annualized Loss Expectancy (ALE) of ₹20,00,000 before implementing a security safeguard. After implementing the safeguard, the ALE is ₹8,00,000. The Annual Cost of Safeguard (ACS) is ₹3,00,000. What is the Cost-Benefit Estimate (CBE)?",
+        options: [
+          "₹5,00,000",
+          "₹8,00,000",
+          "₹9,00,000",
+          "₹12,00,000"
+        ],
+        answer: 2
+      },
+      {
+        id: 77,
+        question: "Identify the biometric error measures represented by the numbered curves/point in the figure.",
+        image: "/images/cyber-security-and-privacy/week8-q7.png",
+        options: [
+          "1 – FAR, 2 – FRR, 3 – CER",
+          "1 – FRR, 2 – FAR, 3 – CER",
+          "1 – FAR, 2 – CER, 3 – FRR",
+          "1 – CER, 2 – FAR, 3 – FRR"
+        ],
+        answer: 0
+      },
+      {
+        id: 78,
+        question: "Which of the following correctly distinguishes between identification and authentication?",
+        options: [
+          "Identification verifies the user's identity using a password, while authentication is the process of claiming an identity using a username.",
+          "Identification is the process of claiming an identity, while authentication verifies that the claimed identity is genuine.",
+          "Identification determines what resources a user can access, while authentication records the user's activities.",
+          "Identification and authentication are two terms used for the same process of verifying a user's identity."
+        ],
+        answer: 1
+      },
+      {
+        id: 79,
+        question: "An organization wants to ensure that an employee cannot later deny having approved an electronic purchase order. Which mechanism would be most appropriate?",
+        options: [
+          "Encrypting the purchase order using the organization's public key",
+          "Generating a cryptographic hash of the purchase order",
+          "Applying a digital signature using the employee's private key",
+          "Storing the purchase order in an access-controlled database"
+        ],
+        answer: 2
+      },
+      {
+        id: 80,
+        question: "A user wants to verify that a website's public key actually belongs to the organization operating the website. Which entity is primarily responsible for providing this assurance?",
+        options: [
+          "Registration Authority (RA)",
+          "Certificate Repository",
+          "Identity Provider (IdP)",
+          "Certificate Authority (CA)"
+        ],
+        answer: 3
+      }
+    ],
+    9: [
+      {
+        id: 81,
+        question: "Who first introduced the Fair Information Practice Principles (FIPPs)?",
+        options: [
+          "The Federal Trade Commission (FTC)",
+          "A private industry consortium",
+          "The European Union",
+          "The US Secretary's Advisory Committee on Automated Personal Data Systems"
+        ],
+        answer: 3
+      },
+      {
+        id: 82,
+        question: "Who is credited with popularizing \"the right to be let alone\" in American privacy law, and in which year?",
+        options: [
+          "Alan Westin, 1967",
+          "Warren & Brandeis, 1890",
+          "Richard Posner, 1975",
+          "Aristotle, 4th century BCE"
+        ],
+        answer: 1
+      },
+      {
+        id: 83,
+        question: "Which school of thought holds that privacy has no independent existence and must always be derived from other rights like property or bodily security?",
+        options: [
+          "Coherentism",
+          "Reductionism",
+          "Feminist view",
+          "Economic view"
+        ],
+        answer: 1
+      },
+      {
+        id: 84,
+        question: "Which stakeholder in a data ecosystem \"determines the purposes and means of processing personal data,\" termed Data Fiduciary under India's PDP framework?",
+        options: [
+          "Data Subject",
+          "Controller",
+          "Processor",
+          "Regulator"
+        ],
+        answer: 1
+      },
+      {
+        id: 85,
+        question: "What is the equivalent term for \"Data Subject\" under India's Personal Data Protection framework?",
+        options: [
+          "Data Fiduciary",
+          "Data Processor",
+          "Data Principal",
+          "Data Controller"
+        ],
+        answer: 2
+      },
+      {
+        id: 86,
+        question: "Which of the following are among the four dimensions of concern for information privacy?\n\nA. Concern on Collection\nB. Concern on Unauthorized Access\nC. Concern on Encryption Strength\nD. Concern on Secondary Use",
+        options: [
+          "Only A and B",
+          "Only A, B, and D",
+          "Only B, C, and D",
+          "All A, B, C, and D"
+        ],
+        answer: 1
+      },
+      {
+        id: 87,
+        question: "According to Posner's (1975) economic view, when does privacy matter?",
+        options: [
+          "Always, regardless of cost",
+          "Only insofar as it has economic consequences",
+          "Never, it is purely a social construct",
+          "Only in employer-employee relationships"
+        ],
+        answer: 1
+      },
+      {
+        id: 88,
+        question: "Which era in Westin's (2003) evolution of information privacy is marked by the rise of the Internet, the emergence of Web 2.0, and a major geopolitical event that reshaped information-exchange norms?",
+        options: [
+          "Privacy Baseline (1945–1960)",
+          "1st Era of Privacy (1961–1979)",
+          "2nd Era of Privacy (1980–1989)",
+          "3rd Era of Privacy (1990–2002)"
+        ],
+        answer: 3
+      },
+      {
+        id: 89,
+        question: "Alan Westin's 1967 work Privacy and Freedom distinguished \"privacy\" from a related concept concerning personal data. Which pairing correctly reflects that distinction?",
+        options: [
+          "Privacy is control over exposure to others; informational self-determination is control over disclosure of personal data.",
+          "Privacy is a legal right; information privacy is a moral principle.",
+          "Privacy applies to individuals; information privacy applies only to institutions.",
+          "Privacy is derived from property rights; information privacy is derived from bodily security."
+        ],
+        answer: 0
+      },
+      {
+        id: 90,
+        question: "Coherentism treats privacy as a right derived from other fundamental rights like property and bodily security.",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 1
+      }
+    ],
     10: [],
     11: [],
     12: []
