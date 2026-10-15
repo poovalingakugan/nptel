@@ -4683,7 +4683,116 @@ export const questionsByDepartment = {
         answer: 1
       }
     ],
-    10: [],
+    10: [
+      {
+        id: 91,
+        question: "Confidentiality concerns the externalization of restricted but accurate information to a specific, authorized entity.",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 0
+      },
+      {
+        id: 92,
+        question: "Which earlier regulatory framework evolved into the GDPR by 2018?",
+        options: [
+          "APEC privacy framework",
+          "OECD Guidelines",
+          "FTC privacy principles",
+          "EU Data Protection Directive"
+        ],
+        answer: 3
+      },
+      {
+        id: 93,
+        question: "In the randomization technique for privacy-preserving data mining, what does the data receiver do with the randomized values transmitted by data providers?",
+        options: [
+          "Discards the noise and reconstructs exact original values",
+          "Employs a distribution reconstruction algorithm to estimate the original data distribution",
+          "Applies k-anonymity to the randomized values",
+          "Encrypts the noise component before use"
+        ],
+        answer: 1
+      },
+      {
+        id: 94,
+        question: "What does the k-anonymity requirement state about a released dataset?",
+        options: [
+          "Every record must be fully anonymous with no identifiers at all",
+          "Every combination of quasi-identifier values must be indistinctly matched to at least k individuals",
+          "At most k attributes can be disclosed per record",
+          "Data must be encrypted using a k-bit key"
+        ],
+        answer: 1
+      },
+      {
+        id: 95,
+        question: "Data that has been de-identified and encrypted, but for which re-identification remains possible using a separate key, is classified under GDPR as:",
+        options: [
+          "Anonymous data, fully outside GDPR scope",
+          "Personal data, still within GDPR scope",
+          "Non-personal data once encrypted",
+          "Quasi-identifier data"
+        ],
+        answer: 1
+      },
+      {
+        id: 96,
+        question: "Completely removing certain columns and reducing the granularity of others, as part of k-anonymization, describes which two techniques?",
+        options: [
+          "Suppression and encryption",
+          "Generalization and encryption",
+          "Suppression and generalization",
+          "Randomization and suppression"
+        ],
+        answer: 2
+      },
+      {
+        id: 97,
+        question: "Which of the following are quasi-identifiers rather than direct identifiers?\n\nA. ZIP code\nB. Passport / ID card number\nC. Date of birth\nD. Gender",
+        options: [
+          "Only A and C",
+          "Only B and D",
+          "A, C, and D (ZIP code, Date of birth, and Gender)",
+          "All A, B, C, and D"
+        ],
+        answer: 2
+      },
+      {
+        id: 98,
+        question: "Individuals reporting that they value privacy highly, while freely sharing personal data on social media, illustrates which phenomenon?",
+        options: [
+          "Prioritizing convenience over privacy alone",
+          "Unawareness of behavioral impact on privacy",
+          "Privacy Paradox",
+          "The balance between privacy protection and data sharing"
+        ],
+        answer: 2
+      },
+      {
+        id: 99,
+        question: "Which statement correctly distinguishes anonymity, secrecy, and transparency?",
+        options: [
+          "Anonymity is intentional concealment of information; secrecy conceals identity; transparency discloses information about oneself.",
+          "Anonymity conceals identity; secrecy is intentional concealment of information; transparency discloses information about oneself.",
+          "Anonymity conceals identity; secrecy discloses information about oneself; transparency is intentional concealment.",
+          "Anonymity discloses information about oneself; secrecy conceals identity; transparency is intentional concealment."
+        ],
+        answer: 1
+      },
+      {
+        id: 100,
+        question: "On an R-U map plotting disclosure risk against data utility, what does the optimal release point represent?",
+        options: [
+          "None of the above",
+          "Utilizing all PII data to extract full value without privacy concerns",
+          "Complete elimination of all data privacy risks by fully anonymizing all data",
+          "Maximizing data usefulness while maintaining acceptable privacy risk"
+        ],
+        answer: 3
+      }
+    ],
     11: [],
     12: []
   }
