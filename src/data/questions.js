@@ -1268,334 +1268,671 @@ export const questionsByDepartment = {
     9: [
       {
         id: 121,
-        question: "Who first introduced the Fair Information Practice Principles (FIPPs)?",
+        question: "How does fog computing prevent unnecessary noisy big data from crowding the cloud?",
         options: [
-          "The Federal Trade Commission (FTC)",
-          "A private industry consortium",
-          "The European Union",
-          "The US Secretary's Advisory Committee on Automated Personal Data Systems"
+          "By storing all raw data permanently in the cloud",
+          "By performing prior filtration at the edge",
+          "By disabling real-time control algorithms",
+          "By increasing the frequency of sensor transmission"
         ],
-        answer: 3
+        answer: 1
       },
       {
         id: 122,
-        question: 'Who is credited with popularizing "the right to be let alone" in American privacy law, and in which year?',
+        question: "Which capability is provided by the fog-based industrial platform?",
         options: [
-          "Alan Westin, 1967",
-          "Warren & Brandeis, 1890",
-          "Richard Posner, 1975",
-          "Aristotle, 4th century BCE"
+          "Merging real-time and non-real-time workloads",
+          "Restricting the platform to non-real-time workloads",
+          "Transmitting all sensor data without processing",
+          "Eliminating control of IoT endpoints"
         ],
-        answer: 1
+        answer: 0
       },
       {
         id: 123,
-        question: "Which school of thought holds that privacy has no independent existence and must always be derived from other rights like property or bodily security?",
+        question: "Which fog-platform provider offers an edge-node software solution that supports any protocol, any PLC, and any hardware?",
         options: [
-          "Coherentism",
-          "Reductionism",
-          "Feminist view",
-          "Economic view"
+          "FogHorn",
+          "Sonn",
+          "Crosser",
+          "Nebbiolo Technologies"
         ],
-        answer: 1
+        answer: 2
       },
       {
         id: 124,
-        question: 'Which stakeholder in a data ecosystem "determines the purposes and means of processing personal data," termed Data Fiduciary under India\'s PDP?',
+        question: "What is the purpose of the %in% special operator in R?",
         options: [
-          "Data Subject",
-          "Controller",
-          "Processor",
-          "Regulator"
+          "To create a series of numbers for a vector",
+          "To check whether an element belongs to a vector",
+          "To perform integer division",
+          "To assign a value globally"
         ],
         answer: 1
       },
       {
         id: 125,
-        question: 'What is the equivalent term for "Data Subject" under India\'s Personal Data Protection framework?',
+        question: "Which validation method is used in the demonstrated R machine-learning execution process to estimate model accuracy?",
         options: [
-          "Data Fiduciary",
-          "Data Processor",
-          "Data Principal",
-          "Data Controller"
+          "Two-fold cross-validation",
+          "Leave-one-out validation",
+          "Ten-fold cross-validation",
+          "Validation without data partitioning"
         ],
         answer: 2
       },
       {
         id: 126,
-        question: "Which of the following are among the four dimensions of concern for information privacy?",
+        question: "Which Julia function is used to create a dictionary?",
         options: [
-          "Concern on Collection and Encryption Strength",
-          "Concern on Encryption Strength and Secondary Use",
-          "Concern on Collection, Unauthorized Access, and Secondary Use",
-          "None of the above"
+          "Tuple()",
+          "Array()",
+          "Dictn()",
+          "Dict()"
+        ],
+        answer: 3
+      },
+      {
+        id: 127,
+        question: "During data preprocessing, which operation eliminates repeated data through detection, filtering, and compression?",
+        options: [
+          "Data integration",
+          "Data cleaning",
+          "Redundancy mitigation",
+          "Data visualization"
         ],
         answer: 2
       },
       {
-        id: 127,
-        question: "According to Posner's (1975) economic view, when does privacy matter?",
-        options: [
-          "Always, regardless of cost",
-          "Only insofar as it has economic consequences",
-          "Never, it is purely a social construct",
-          "Only in employer-employee relationships"
-        ],
-        answer: 1
-      },
-      {
         id: 128,
-        question: "Which era in Westin's (2003) evolution of information privacy is marked by the rise of the Internet, the emergence of Web 2.0, and a major geopolitical event that reshaped information-exchange norms?",
+        question: "Which Hadoop component assigns CPU, memory, and storage resources to applications running on a Hadoop cluster?",
         options: [
-          "Privacy Baseline (1945-1960)",
-          "1st Era of Privacy (1961-1979)",
-          "2nd Era of Privacy (1980-1989)",
-          "3rd Era of Privacy (1990-2002)"
+          "Hadoop Common",
+          "Hadoop Distributed File System",
+          "MapReduce",
+          "Yet Another Resource Negotiator"
         ],
         answer: 3
       },
       {
         id: 129,
-        question: 'Alan Westin\'s 1967 work "Privacy and Freedom" distinguished "privacy" from a related concept concerning personal data. Which pairing correctly reflects that distinction?',
+        question: "Which of the following is listed as an application of integrating MongoDB with Hadoop?",
         options: [
-          "Privacy is control over exposure to others; informational self-determination is control over disclosure of personal data",
-          "Privacy is a legal right; information privacy is a moral principle",
-          "Privacy applies to individuals; information privacy applies only to institutions",
-          "Privacy is derived from property rights; information privacy is derived from bodily security"
+          "Batch aggregation",
+          "Physical network cabling",
+          "Sensor manufacturing",
+          "Firewall configuration"
         ],
         answer: 0
       },
       {
         id: 130,
-        question: "(True/False) Coherentism treats privacy as a right derived from other fundamental rights like property and bodily security.",
+        question: "Which source-routing protocol is used by the BCube data-center network topology?",
         options: [
-          "True",
-          "False"
+          "Border Gateway Protocol",
+          "BCube Source Routing",
+          "Open Shortest Path First",
+          "Spanning Tree Protocol"
         ],
         answer: 1
-      }
-    ],
-    10: [
+      },
       {
         id: 131,
-        question: "Confidentiality concerns the externalization of restricted but accurate information to a specific, authorized entity.",
+        question: "Why may an IIoT-based data center require an increase in inbound network bandwidth?",
         options: [
-          "True",
-          "False"
+          "IIoT devices generate a bulk amount of small messages containing sensor data",
+          "IIoT completely removes the need for data transmission",
+          "Sensor data is transmitted only once during deployment",
+          "Industrial devices communicate exclusively with one another without a data center"
         ],
         answer: 0
       },
       {
         id: 132,
-        question: "Which earlier regulatory framework evolved into the GDPR by 2018?",
+        question: "Which of the following is an advantage of a Software-Defined Data Centre?",
         options: [
-          "APEC privacy framework",
-          "OECD Guidelines",
-          "FTC privacy principles",
-          "EU Data Protection Directive"
+          "Static workload management",
+          "Permanent coupling of software with hardware",
+          "Programmable infrastructure and workload management",
+          "Elimination of network virtualization"
         ],
-        answer: 3
+        answer: 2
       },
       {
         id: 133,
-        question: "In the randomization technique for privacy-preserving data mining, what does the data receiver do with the randomized values transmitted by data providers?",
+        question: "When an SDN forwarding device has insufficient rule capacity, how can two existing flow rules be converted into a single rule?",
         options: [
-          "Discards the noise and reconstructs exact original values",
-          "Employs a distribution reconstruction algorithm to estimate the original data distribution",
-          "Applies k-anonymity to the randomized values",
-          "Encrypts the noise component before use"
+          "By applying wildcard-based rule combination",
+          "By disconnecting the SDN controller",
+          "By disabling the forwarding device",
+          "By changing TCP into UDP"
         ],
-        answer: 1
+        answer: 0
       },
       {
         id: 134,
-        question: "What does the k-anonymity requirement state about a released dataset?",
+        question: "How can SDN meet the dynamically changing forwarding requirements of IIoT sensor data?",
         options: [
-          "Every record must be fully anonymous with no identifiers at all",
-          "Every combination of quasi-identifier values must be indistinctly matched to at least k individuals",
-          "At most k attributes can be disclosed per record",
-          "Data must be encrypted using a k-bit key"
+          "By assigning the same priority to every type of data permanently",
+          "By using rule-based forwarding policies",
+          "By preventing the controller from updating forwarding rules",
+          "By transmitting data without considering the real-time situation"
         ],
         answer: 1
       },
       {
         id: 135,
-        question: "Data that has been de-identified and encrypted, but for which re-identification remains possible using a separate key, is classified under GDPR as:",
+        question: "Which statement best describes Software-Defined Automation?",
         options: [
-          "Anonymous data, fully outside GDPR scope",
-          "Personal data, still within GDPR scope",
-          "Non-personal data once encrypted",
-          "Quasi-identifier data"
+          "It uses only manually controlled physical equipment",
+          "It eliminates real-time control from industrial systems",
+          "It uses a virtualized platform for dynamic, real-time system control",
+          "It restricts control operations to sensors at Level 0"
+        ],
+        answer: 2
+      }
+    ],
+    10: [
+      {
+        id: 136,
+        question: "In Software-Defined 6TiSCH, at which layer is the slicing mechanism proposed to isolate SDN control overhead?",
+        options: [
+          "Physical Layer",
+          "Layer 2",
+          "Transport Layer",
+          "Application Layer"
         ],
         answer: 1
       },
       {
-        id: 136,
-        question: "Completely removing certain columns and reducing the granularity of others, as part of k-anonymization, describes which two techniques?",
-        options: [
-          "Suppression and encryption",
-          "Generalization and encryption",
-          "Suppression and generalization",
-          "Randomization and suppression"
-        ],
-        answer: 2
-      },
-      {
         id: 137,
-        question: "Which of the following are quasi-identifiers rather than direct identifiers?",
+        question: "In the adaptive transmission architecture for Software-Defined Edge Computing in IIoT, data streams are divided into which two categories?",
         options: [
-          "ZIP code and Passport number only",
-          "Passport / ID card number",
-          "ZIP code, Date of birth, and Gender",
-          "None of the above"
+          "Local and global data streams",
+          "Secure and insecure data streams",
+          "Ordinary and emergent data streams",
+          "Wired and wireless data streams"
         ],
         answer: 2
       },
       {
         id: 138,
-        question: "Individuals reporting that they value privacy highly, while freely sharing personal data on social media, illustrates which phenomenon?",
+        question: "According to the challenges and opportunities of Software-Defined IIoT, fog nodes/access devices play an important role in providing which type of service?",
         options: [
-          "Prioritizing convenience over privacy alone",
-          "Unawareness of behavioral impact on privacy",
-          "Privacy Paradox",
-          "The balance between privacy protection and data sharing"
+          "Delay-constrained emergent services",
+          "Long-term archival services",
+          "Offline batch-processing services",
+          "Manual configuration services"
         ],
-        answer: 2
+        answer: 0
       },
       {
         id: 139,
-        question: "Which statement correctly distinguishes anonymity, secrecy, and transparency?",
+        question: "In a trustworthy IIoT system, which property refers to the ability of the system to function correctly under dynamic adversarial conditions?",
         options: [
-          "Anonymity is intentional concealment of information; secrecy conceals identity; transparency discloses information about oneself",
-          "Anonymity conceals identity; secrecy is intentional concealment of information; transparency discloses information about oneself",
-          "Anonymity conceals identity; secrecy discloses information about oneself; transparency is intentional concealment",
-          "Anonymity discloses information about oneself; secrecy conceals identity; transparency is intentional concealment"
+          "Privacy",
+          "Reliability",
+          "Safety",
+          "Resilience"
         ],
-        answer: 1
+        answer: 3
       },
       {
         id: 140,
-        question: "On an R-U map plotting disclosure risk against data utility, what does the optimal release point represent?",
+        question: "In the STRIDE threat model, what does the letter \"E\" represent?",
         options: [
-          "None of the above",
-          "Utilizing all PII data to extract full value without privacy concerns",
-          "Complete elimination of all data privacy risks by fully anonymizing all data",
-          "Maximizing data usefulness while maintaining acceptable privacy risk"
+          "Encryption",
+          "Elevation of privilege",
+          "Exposure of information",
+          "Endpoint security"
         ],
-        answer: 3
-      }
-    ],
-    11: [
+        answer: 1
+      },
       {
         id: 141,
-        question: "Which of the following is not true about personal data as per GDPR?",
+        question: "Which participant in the IIoT trust flow is responsible for designing a cost-efficient trustworthy system, defining trust requirements for components, and conducting tests and certifications?",
         options: [
-          "Personal data is any information that relates to an individual who can be directly or indirectly identified.",
-          "Names and email addresses are personal data.",
-          "Location information, ethnicity, gender, biometric data, religious beliefs, web cookies, and political opinions can also be personal data.",
-          "Pseudonymous data is not personal data, even if the individual can be easily re-identified from it"
+          "System Owner",
+          "End User",
+          "System Builder",
+          "Cloud Service Provider"
         ],
-        answer: 3
+        answer: 2
       },
       {
         id: 142,
-        question: "An organization continues to retain personal data even though it is no longer required for the purpose for which it was collected. Which principle is most directly concerned with this situation?",
+        question: "Which of the following is suggested as a solution for protecting resource-constrained IIoT end devices?",
         options: [
-          "Accuracy",
-          "Purpose Limitation",
-          "Storage Limitation",
-          "Accountability"
+          "Lightweight symmetric key cryptography",
+          "Increasing the size of every transmitted packet",
+          "Disabling device authentication",
+          "Storing all security operations only in the cloud"
         ],
-        answer: 2
+        answer: 0
       },
       {
         id: 143,
-        question: "Which of the following statements best describes the applicability of the GDPR?",
+        question: "Which three states of data are considered under data protection in IIoT?",
         options: [
-          "GDPR applies only when an organization is physically located in the European Union.",
-          "GDPR applies only to organizations that collect names and email addresses.",
-          "GDPR can apply to organizations that process personal data, regardless of their location, when the GDPR applies to their processing activities",
-          "GDPR applies only to government organizations that process personal data."
+          "Data-at-source, Data-at-cloud, and Data-at-edge",
+          "Data-at-Rest, Data-in-Use, and Data-in-Transit",
+          "Structured, Semi-structured, and Unstructured data",
+          "Sensor data, Control data, and Application data"
         ],
-        answer: 2
+        answer: 1
       },
       {
         id: 144,
-        question: "A person is in a life-threatening situation, and processing their personal data is necessary to save their life. Which legal basis for processing is most appropriate under GDPR?",
+        question: "Which standard listed under OT security provides guidance for security in Industrial Control Systems?",
         options: [
-          "Consent",
-          "Public interest",
-          "Contract",
-          "Vital interests"
+          "ISO 27017",
+          "NIST SP 800-82",
+          "ISO/IEC 154083",
+          "NIST SP 800-144"
+        ],
+        answer: 1
+      },
+      {
+        id: 145,
+        question: "Which of the following is NOT one of the five layers of Hitachi's Lumada IoT platform?",
+        options: [
+          "Edge",
+          "Core",
+          "Analytics",
+          "Transport"
         ],
         answer: 3
       },
       {
-        id: 145,
-        question: "In the context of Aadhaar data, who is considered the Data Principal under DPDP Act?",
-        options: [
-          "The Unique Identification Authority of India (UIDAI)",
-          "The individual to whom the Aadhaar number and related personal data belong",
-          "The service provider that uses Aadhaar authentication",
-          "The government agency responsible for processing the data"
-        ],
-        answer: 1
-      },
-      {
         id: 146,
-        question: "What is the primary objective of the Digital Personal Data Protection (DPDP) Act, 2023?",
+        question: "In the North Star BlueScope Steel smart-factory application, sensors are used to detect which environmental hazards?",
         options: [
-          "To give organizations unrestricted authority to process personal data when a legitimate purpose exists.",
-          "To balance the right of individuals to protect their personal data with the need to process such data for lawful purposes.",
-          "To restrict the processing of digital personal data primarily to government-authorized purposes.",
-          "To prioritize the prevention of personal-data processing over its legitimate and lawful use."
+          "Radiation and toxic gases",
+          "Network congestion and packet loss",
+          "Inventory shortages and production delays",
+          "Voltage fluctuations and cloud failures"
         ],
-        answer: 1
+        answer: 0
       },
       {
         id: 147,
-        question: "According to the Digital Personal Data Protection Act, 2023 (DPDP Act), a person who alone or together with others determines the purpose and means of processing personal data is known as:",
+        question: "What technology does SmartLabel use to provide product-related information such as ingredients, allergens, and nutritional value to consumers?",
         options: [
-          "Data Protection Officer",
-          "Data Processor",
-          "Data Fiduciary",
-          "Consent Manager"
+          "RFID tag",
+          "Bluetooth beacon",
+          "QR code",
+          "GPS receiver"
         ],
         answer: 2
       },
       {
         id: 148,
-        question: "The Information Technology Act of India was enacted in which year?",
+        question: "In the Intellcup smart beverage-vending solution, what is integrated at the base of the IoT-enabled cup?",
         options: [
-          "2000",
-          "2020",
-          "2022",
-          "1998"
+          "GPS module",
+          "NFC chip",
+          "Temperature sensor",
+          "Wi-Fi router"
+        ],
+        answer: 1
+      },
+      {
+        id: 149,
+        question: "Which characteristic of a smart factory allows process parameters such as machine configuration, material flow, and temperature control to be optimally adjusted?",
+        options: [
+          "Flexibility",
+          "Isolation",
+          "Centralization",
+          "Redundancy"
         ],
         answer: 0
       },
       {
-        id: 149,
-        question: "Which of the following correctly identifies the core principles of the Aadhaar technology system?",
+        id: 150,
+        question: "Which network-security mechanism acts as a fence between a trusted internal network and an unauthorized external network and uses a set of rules to allow or block traffic?",
         options: [
-          "Openness, central storage, security, and data monetization",
-          "Data monetization, vendor-neutrality, security, and data analytics",
-          "Openness, data monetization, security, and data analytics",
-          "Openness, vendor-neutrality, security, and data analytics"
+          "Hypervisor",
+          "Firewall",
+          "Load balancer",
+          "Data logger"
         ],
-        answer: 3
+        answer: 1
+      }
+    ],
+    11: [
+      {
+        id: 151,
+        question: "What is the correct sequence of stages presented in the IIoT healthcare architecture?",
+        options: [
+          "Sensing → Processing → Sending → Learning → Storing",
+          "Sensing → Sending → Processing → Storing → Learning",
+          "Sending → Sensing → Storing → Processing → Learning",
+          "Sensing → Learning → Processing → Sending → Storing"
+        ],
+        answer: 1
       },
       {
-        id: 150,
-        question: "The Indian Telegraph Act, 1885, empowered the government to intercept certain communications under specified circumstances.",
+        id: 152,
+        question: "Which parameters are used by the ADAMM Intelligent Asthma Monitoring device to predict pre-symptoms of an asthma attack?",
         options: [
-          "True",
-          "False"
+          "Blood pressure, glucose level, and oxygen saturation",
+          "Body temperature, cough rate, and heart rate",
+          "Weight, respiration rate, and blood pressure",
+          "Skin temperature, blood glucose, and pulse pressure"
+        ],
+        answer: 1
+      },
+      {
+        id: 153,
+        question: "Which of the following is identified as a challenge in IIoT-based healthcare systems?",
+        options: [
+          "Unlimited computational capability of devices",
+          "Excessive on-device memory",
+          "Designing scalable algorithms without compromising security",
+          "Absence of mobile healthcare devices"
+        ],
+        answer: 2
+      },
+      {
+        id: 154,
+        question: "In the IIoT maturity model for power plants, which stage immediately follows optimization?",
+        options: [
+          "Monitor",
+          "Control",
+          "Autonomy",
+          "Device autonomy"
+        ],
+        answer: 2
+      },
+      {
+        id: 155,
+        question: "Which communication technologies are associated with a Field Area Network in the power-plant communication network?",
+        options: [
+          "Zigbee and 6LoWPAN only",
+          "WiMAX, 3G, and 4G for wireless communication and Ethernet for wired communication",
+          "Bluetooth and NFC only",
+          "RFID and LoRa only"
+        ],
+        answer: 1
+      },
+      {
+        id: 156,
+        question: "In Advanced Metering Infrastructure (AMI), which component analyzes the data collected from smart meters?",
+        options: [
+          "Meter data acquisition system",
+          "Communication network",
+          "Meter data management system",
+          "Smart meter"
+        ],
+        answer: 2
+      },
+      {
+        id: 157,
+        question: "Which of the following is a function of inventory management?",
+        options: [
+          "Increasing the probability of stock-outs",
+          "Protection against stock-outs",
+          "Eliminating all order cycles",
+          "Increasing production interruptions"
+        ],
+        answer: 1
+      },
+      {
+        id: 158,
+        question: "Which statement correctly describes a semi-passive RFID tag?",
+        options: [
+          "It has no battery and obtains all power from the RFID reader",
+          "It has an onboard battery and an active transmitter",
+          "It has an onboard battery to power the IC but does not have an active transmitter",
+          "It continuously broadcasts information as a beacon"
+        ],
+        answer: 2
+      },
+      {
+        id: 159,
+        question: "Which of the following information is included under \"comprehensive visibility\" provided by RFID-based inventory management?",
+        options: [
+          "Inventory levels, expiration dates, item location, and forecast demand",
+          "Employee passwords, salaries, and attendance",
+          "Network IP addresses and routing tables only",
+          "Machine source code and operating-system files"
+        ],
+        answer: 0
+      },
+      {
+        id: 160,
+        question: "In software security, how is availability defined in the lecture?",
+        options: [
+          "Ratio of encrypted packets to total packets",
+          "Ratio of time of functioning to the total time",
+          "Ratio of authenticated users to total users",
+          "Ratio of successful attacks to failed attacks"
+        ],
+        answer: 1
+      },
+      {
+        id: 161,
+        question: "What is the primary purpose of network segmentation as a network-security technique?",
+        options: [
+          "To combine all network devices into a single unrestricted network",
+          "To divide the network into smaller parts and explicitly enforce security policies",
+          "To disable encryption between endpoints",
+          "To prevent the creation of virtual private networks"
+        ],
+        answer: 1
+      },
+      {
+        id: 162,
+        question: "How does IoT help address the cost barrier in facility management?",
+        options: [
+          "By increasing maintenance activities",
+          "By eliminating all installed devices",
+          "By increasing operating efficiency and reducing maintenance cost",
+          "By preventing the collection of facility data"
+        ],
+        answer: 2
+      },
+      {
+        id: 163,
+        question: "Which of the following is an application of analytics in facility management?",
+        options: [
+          "Determining the exact square-foot utilization of office space",
+          "Increasing manual inspection for every facility",
+          "Preventing remote monitoring",
+          "Eliminating data-driven decision-making"
+        ],
+        answer: 0
+      },
+      {
+        id: 164,
+        question: "Active RFID tags are classified into which two types?",
+        options: [
+          "Inlays and hard tags",
+          "Wet tags and dry tags",
+          "Transponders and beacons",
+          "Passive and semi-passive tags"
+        ],
+        answer: 2
+      },
+      {
+        id: 165,
+        question: "Which mobile-device security component can identify attacks in advance and, through cloud-integrated security, help prevent an attack detected on one network branch from spreading to other branches?",
+        options: [
+          "Secure web gateway",
+          "RFID reader",
+          "Meter data acquisition system",
+          "Load balancer"
         ],
         answer: 0
       }
     ],
-    12: []
+    12: [
+      {
+        id: 166,
+        question: "In the oil and gas industry workflow, what happens before data moves to a cloud-based analytics platform?",
+        options: [
+          "Predictive analytics is applied",
+          "IoT solutions are deployed at different locations",
+          "Data analysis is performed through extraction, transform, and load processes",
+          "Required maintenance is identified"
+        ],
+        answer: 2
+      },
+      {
+        id: 167,
+        question: "Which of the following is an objective of predictive maintenance using IoT in the chemical industry?",
+        options: [
+          "Increase equipment breakdown",
+          "Address real-time issues and reduce equipment breakdown",
+          "Eliminate IoT analytics",
+          "Replace real-time monitoring with manual inspection"
+        ],
+        answer: 1
+      },
+      {
+        id: 168,
+        question: "How can IoT improve logistics in the chemical industry?",
+        options: [
+          "By preventing the use of RFID tags",
+          "By avoiding warehouse monitoring",
+          "By tracking product locations through sensors or RFID tags",
+          "By eliminating alert notifications"
+        ],
+        answer: 2
+      },
+      {
+        id: 169,
+        question: "Which elements are monitored in real time to minimize supply-chain risk in the chemical industry?",
+        options: [
+          "Equipment, material, process, environment, and workers",
+          "Only equipment and workers",
+          "Only material and warehouse location",
+          "Customers, competitors, and advertisements"
+        ],
+        answer: 0
+      },
+      {
+        id: 170,
+        question: "Which of the following can IoT applications in the pharmaceutical industry help detect while examining drugs?",
+        options: [
+          "Adverse Drug Reactions, effects of pharmaceutical excipients, and allergies",
+          "Only production cost",
+          "Only equipment temperature",
+          "Network routing failures only"
+        ],
+        answer: 0
+      },
+      {
+        id: 171,
+        question: "Which industrial control system can UAVs communicate with directly in an industrial environment?",
+        options: [
+          "RFID",
+          "SCADA",
+          "Bluetooth",
+          "GPS"
+        ],
+        answer: 1
+      },
+      {
+        id: 172,
+        question: "Which UAV technology generation introduces improved safety and regulatory features, platform and payload adaptability, intelligent piloting models, full autonomy, and airspace awareness?",
+        options: [
+          "Third Generation",
+          "Fourth Generation",
+          "Sixth Generation",
+          "Second Generation"
+        ],
+        answer: 2
+      },
+      {
+        id: 173,
+        question: "How can UAVs help optimize inputs in agricultural applications?",
+        options: [
+          "By increasing the use of water and fertilizer regardless of requirement",
+          "By optimizing the use of seed, fertilizer, and water",
+          "By eliminating crop-health monitoring",
+          "By replacing field measurements with manual estimates"
+        ],
+        answer: 1
+      },
+      {
+        id: 174,
+        question: "Which of the following is an advantage of UAVs for energy-management applications?",
+        options: [
+          "They require workers to climb power poles for every inspection",
+          "They can observe miles of transmission lines in a single flight",
+          "They cannot inspect wind turbines",
+          "They are restricted from monitoring solar panels"
+        ],
+        answer: 1
+      },
+      {
+        id: 175,
+        question: "Which activity is supported by UAVs in mining applications?",
+        options: [
+          "Regular surface surveys for optimized blast design",
+          "Increasing the probability of misfires",
+          "Eliminating site exploration",
+          "Preventing stockpile management"
+        ],
+        answer: 0
+      },
+      {
+        id: 176,
+        question: "Which healthcare task can be performed using UAVs?",
+        options: [
+          "Delivery of medicines, vaccines, defibrillators, and snake-bite serum",
+          "Replacement of all hospital medical equipment",
+          "Manufacture of drugs during flight",
+          "Elimination of laboratory testing"
+        ],
+        answer: 0
+      },
+      {
+        id: 177,
+        question: "In forestry applications, what can UAV-based remote sensing be used to measure for 3D mapping?",
+        options: [
+          "Carbon storage in biomass",
+          "Network bandwidth",
+          "Fuel consumption of vehicles",
+          "Pharmaceutical production rate"
+        ],
+        answer: 0
+      },
+      {
+        id: 178,
+        question: "Which of the following should be considered while evaluating the transformation of an existing process for Industry 4.0 adoption in a case study?",
+        options: [
+          "Only the purchase cost of sensors",
+          "Sensors, actuators, networks, interoperability, automated fault detection and maintenance, and feedback control",
+          "Only employee attendance",
+          "Elimination of real-time and non-real-time data analysis"
+        ],
+        answer: 1
+      },
+      {
+        id: 179,
+        question: "Which communication technology was used by Transco Industries to monitor conveyor-belt systems in its mining-industry IIoT implementation?",
+        options: [
+          "Bluetooth and Zigbee",
+          "Semtech LoRa devices and LoRaWAN",
+          "Wi-Fi and NFC",
+          "Ethernet and RFID"
+        ],
+        answer: 1
+      },
+      {
+        id: 180,
+        question: "What was one major benefit obtained from the IIoT-based monitoring of conveyor-belt systems in the mining-industry case study?",
+        options: [
+          "Increased dependence on manual inspection",
+          "Increased maintenance cost",
+          "Ability to obtain a holistic view of the conveyor-belt line and localize defects",
+          "Elimination of all sensing devices"
+        ],
+        answer: 2
+      }
+    ]
   },
   "vlsi-design-flow-rtl-to-gds": {
     1: [
@@ -3354,6 +3691,236 @@ export const questionsByDepartment = {
         answer: 3
       }
     ]
+  },
+  "cyber-security-and-privacy": {
+    1: [
+      {
+        id: 1,
+        question: "An attacker calls an employee, claims to be from the IT helpdesk, and convinces them to reveal their login credentials. Which technique is being used?",
+        options: [
+          "Session Hijacking",
+          "Social Engineering",
+          "Brute Force Attack",
+          "SQL Injection"
+        ],
+        answer: 1
+      },
+      {
+        id: 2,
+        question: "An attacker uses a commercially available penetration testing toolkit to probe and exploit vulnerabilities in a target network. In this context, the toolkit represents technology functioning as:",
+        options: [
+          "A compliance monitoring tool",
+          "A business continuity asset",
+          "A safeguard against external threats",
+          "A source of threat"
+        ],
+        answer: 3
+      },
+      {
+        id: 3,
+        question: "A threat actor sends a carefully researched email to a senior finance executive, referencing their recent business trip and impersonating their CEO. Which attack type does this describe?",
+        options: [
+          "Spear-phishing",
+          "Vishing",
+          "General phishing",
+          "Smishing"
+        ],
+        answer: 0
+      },
+      {
+        id: 4,
+        question: "A victim attempts to open their files after a malware infection but finds every document locked behind an unknown cipher. The attacker then demands payment for the decryption key. Which malware category best explains this behavior?",
+        options: [
+          "Spyware",
+          "Rootkit",
+          "Adware",
+          "Ransomware"
+        ],
+        answer: 3
+      },
+      {
+        id: 5,
+        question: "A national government wants to safeguard systems that, if disrupted, could destabilize essential public services. Which of the following system types would be the highest priority under Critical Infrastructure Protection (CIP)?",
+        options: [
+          "Consumer mobile apps and entertainment platforms",
+          "University learning management systems",
+          "SCADA systems managing water treatment and power distribution",
+          "Home automation devices"
+        ],
+        answer: 2
+      },
+      {
+        id: 6,
+        question: "Deploying a firewall alone is sufficient to constitute a complete Information Security program for an organization.",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 1
+      },
+      {
+        id: 7,
+        question: "A security manager wants to ensure that sensitive organizational data cannot be accessed by unauthorized individuals. Which combination of measures best achieves this?",
+        options: [
+          "Information classification, secure storage, and enforced access policies",
+          "Open access for all staff to improve collaboration efficiency",
+          "Faster network speeds and upgraded hardware",
+          "Regular system reboots and software updates only"
+        ],
+        answer: 0
+      },
+      {
+        id: 8,
+        question: "A hospital receptionist verbally shares a patient's diagnosis and full name with a visitor who claims to be a relative but has no verified authorization. Which category of violation does this represent?",
+        options: [
+          "A breach of general data privacy with no specific regulatory consequence",
+          "An acceptable disclosure under standard hospital protocols",
+          "A network security incident requiring IT intervention",
+          "A breach involving Protected Health Information (PHI)"
+        ],
+        answer: 3
+      },
+      {
+        id: 9,
+        question: "During an audit, a database record is found to have been silently modified by an unauthorized party. Which information security property has been violated?",
+        options: [
+          "Availability",
+          "Integrity",
+          "Authenticity",
+          "Confidentiality"
+        ],
+        answer: 1
+      },
+      {
+        id: 10,
+        question: "An organization rolls out a data classification scheme, runs employee awareness sessions, and deploys endpoint security tools. Collectively, these efforts are best described as implementing:",
+        options: [
+          "Information Security",
+          "Operations Security",
+          "Network Security",
+          "Physical Security"
+        ],
+        answer: 0
+      }
+    ],
+    2: [
+      {
+        id: 11,
+        question: "The attribute that describes whether information is genuine and original rather than reproduced or fabricated is called Authenticity, not Accuracy.",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 0
+      },
+      {
+        id: 12,
+        question: "A new IT manager wants to tighten access controls without disrupting productivity. Which of the following practices should they implement?\n\nA. Providing all staff with administrator-level access to avoid bottlenecks\nB. Maintaining and auditing access logs to detect anomalies\nC. Periodically reviewing and revoking unnecessary user access rights\nD. Assigning permissions based on each employee's role and responsibilities",
+        options: [
+          "Only A, B, C",
+          "Only B, C, D",
+          "Only A, C, D",
+          "All A, B, C, D"
+        ],
+        answer: 1
+      },
+      {
+        id: 13,
+        question: "A CISO needs a structured model to assess whether their organization's security program adequately covers the goals, data states, and control types relevant to protecting information. Which model was specifically designed for this purpose?",
+        options: [
+          "OSI Model",
+          "CIA Triad",
+          "STRIDE Model",
+          "McCumber Cube"
+        ],
+        answer: 3
+      },
+      {
+        id: 14,
+        question: "A developer ships a web application with an unvalidated input field that allows attackers to inject SQL commands. Before any attack occurs, this unvalidated field is best described as:",
+        options: [
+          "A vulnerability",
+          "A threat",
+          "An exploit",
+          "An attack vector in active use"
+        ],
+        answer: 0
+      },
+      {
+        id: 15,
+        question: "When malware slips through a detection system unidentified and causes damage, this is an example of a False Negative.",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 0
+      },
+      {
+        id: 16,
+        question: "A security analyst maps their controls across three axes: security goals, data states, and control types. Which framework are they applying, and which dimension addresses how data exists at any given moment?",
+        options: [
+          "CIA Triad; the first dimension",
+          "NIST CSF; the third dimension",
+          "McCumber Cube; the second dimension",
+          "COBIT; the second dimension"
+        ],
+        answer: 2
+      },
+      {
+        id: 17,
+        question: "A security tool quarantines a trusted internal application used daily by the finance team, flagging it as malware. Operations come to a halt. How is this detection outcome classified?",
+        options: [
+          "True Positive – the threat was correctly identified",
+          "False Positive – a safe file was incorrectly flagged as malicious",
+          "True Negative – a safe file was correctly cleared",
+          "False Negative – a real threat was missed by the system"
+        ],
+        answer: 1
+      },
+      {
+        id: 18,
+        question: "A server sends data packets to a workstation across an office. Which component of the information system made this transfer possible?",
+        options: [
+          "The server's hardware processor",
+          "The network infrastructure",
+          "The operating system software",
+          "The stored data files"
+        ],
+        answer: 1
+      },
+      {
+        id: 19,
+        question: "An employee receives an email from 'support@micros0ft.com' asking them to click a link and reset their password. What is the most appropriate immediate response?",
+        options: [
+          "Open the attachment to verify the content before deciding",
+          "Forward it to colleagues to check if they received the same email",
+          "Click the link since the sender mentions Microsoft",
+          "Verify the sender's legitimacy independently and avoid clicking any links"
+        ],
+        answer: 3
+      },
+      {
+        id: 20,
+        question: "An attacker crafts a SQL injection string that takes advantage of an unvalidated input field to dump an entire customer database. The crafted string itself is best described as:",
+        options: [
+          "A vulnerability",
+          "An exploit",
+          "A threat agent",
+          "A security patch"
+        ],
+        answer: 1
+      }
+    ],
+    3: [],
+    4: [],
+    5: [],
+    6: [],
+    7: [],
+    8: [],
+    9: [],
+    10: [],
+    11: [],
+    12: []
   }
 };
 
