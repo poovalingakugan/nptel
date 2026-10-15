@@ -1596,6 +1596,1764 @@ export const questionsByDepartment = {
       }
     ],
     12: []
+  },
+  "vlsi-design-flow-rtl-to-gds": {
+    1: [
+      {
+        id: 1,
+        question: "Which of the following statements is/are correct regarding integrated circuits (ICs)?\nA. ICs typically contain discrete components that were fabricated on separate wafers.\nB. ICs typically contain multiple layers of metals.\nC. The transistors in an IC are typically made using Copper and Sulphur.\nD. Having multiple metal layers in an IC typically simplifies the task of routing.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only D",
+          "only A, B",
+          "only A, C",
+          "only A, D",
+          "only B, C",
+          "only B, D",
+          "only C, D",
+          "All are correct"
+        ],
+        answer: 8
+      },
+      {
+        id: 2,
+        question: "Which of the following statements is/are correct regarding photolithography?\nA. Photolithography enables us to obtain a given geometric pattern on the surface of a silicon wafer.\nB. A photomask defines the geometric pattern we want to obtain on the silicon wafer.\nC. We use the same mask to print the patterns of all the layers in an IC.\nD. Photoresists are chemicals that are not sensitive to light.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only D",
+          "only A, B",
+          "only A, C",
+          "only A, D",
+          "only B, C",
+          "only B, D",
+          "only C, D",
+          "All are correct"
+        ],
+        answer: 4
+      },
+      {
+        id: 3,
+        question: "Which of the following statements is/are correct regarding IC design and fabrication?\nA. The thin slices of silicon on which an IC is fabricated are called silicon ingots.\nB. We obtain a silicon wafer after packaging a well-tested die.\nC. The primary responsibility of a fabless design company is to fabricate an IC using photolithography and other processes.\nD. ICs are typically fabricated in manufacturing plants called foundries.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only D",
+          "only A, B",
+          "only A, C",
+          "only A, D",
+          "only B, C",
+          "only B, D",
+          "only C, D",
+          "All are correct"
+        ],
+        answer: 3
+      },
+      {
+        id: 4,
+        question: "Which of the following statements is/are correct regarding design styles?\nA. We can use exactly the same VLSI design flow for full-custom, standard-cell-based, and FPGA designs.\nB. FPGAs are typically used to implement analog circuits such as PLLs, amplifiers, and ADCs.\nC. Standard-cell-based designs have lower fixed costs than FPGA designs.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct",
+          "No statement is correct"
+        ],
+        answer: 7
+      },
+      {
+        id: 5,
+        question: "The cost of producing N chips using standard-cell-based technology is given as:\nCost (in Rupees) = 25,00,000 + (2 × N)\nThe cost of producing N chips using FPGA technology is given as:\nCost (in Rupees) = 1,00,000 + 26 × N\nThe difference in the fixed cost in the two technologies and the break-even points, respectively, is:",
+        options: [
+          "1 Lakh Rupees and 50,000 chips",
+          "1 Lakh Rupees and 1,00,000 chips",
+          "10 Lakh Rupees and 50,000 chips",
+          "10 Lakh Rupees and 1,00,000 chips",
+          "12 Lakh Rupees and 50,000 chips",
+          "12 Lakh Rupees and 1,00,000 chips",
+          "24 Lakh Rupees and 50,000 chips",
+          "24 Lakh Rupees and 1,00,000 chips",
+          "25 Lakh Rupees and 50,000 chips",
+          "25 Lakh Rupees and 1,00,000 chips"
+        ],
+        answer: 7
+      },
+      {
+        id: 6,
+        question: "Which of the following statements is/are correct regarding a typical VLSI design flow?\nA. Abstraction decreases as we move from logical design to physical design.\nB. The details contained in a design decrease as we move from logical design to physical design.\nC. The turnaround time for trying out multiple solutions is typically shorter when the abstraction is higher.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct",
+          "No statement is correct"
+        ],
+        answer: 4
+      },
+      {
+        id: 7,
+        question: "Which of the following statements is/are correct regarding hardware-software partitioning?\nA. Hardware-software partitioning tries to exploit the distinct advantages of both hardware and software.\nB. The functionality that needs frequent updating are typically implemented using dedicated hardware rather than software running on a general-purpose processor.\nC. The functionality that are the bottleneck for runtime are typically implemented using dedicated hardware rather than software running on a general-purpose processor.\nD. The cost of a product typically decreases as we implement more functionality in dedicated hardware.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only D",
+          "only A, B",
+          "only A, C",
+          "only A, D",
+          "only B, C",
+          "only B, D",
+          "only C, D",
+          "All are correct"
+        ],
+        answer: 5
+      },
+      {
+        id: 8,
+        question: "Which of the following statements is/are correct regarding RTL?\nA. The algorithmic description of a design written in C is an example of an RTL model.\nB. The RTL model describes how data moves from register to register at various clock cycles.\nC. RTL models are typically written in Hardware Design Languages (HDLs) such as Verilog and VHDL.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct",
+          "No statement is correct"
+        ],
+        answer: 5
+      },
+      {
+        id: 9,
+        question: "Which of the following statements is/are correct regarding SoC design methodology?\nA. We write RTL for all subsystems from scratch in an SoC design methodology.\nB. Pre-designed IPs are not allowed in an SoC design methodology due to the high effort required for their integration.\nC. Once an IP is integrated into an SoC, we do not need to verify the SoC at the top level because the IPs were already verified by the IP vendor.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct",
+          "No statement is correct"
+        ],
+        answer: 7
+      },
+      {
+        id: 10,
+        question: "Which of the following statements is/are correct regarding behavior synthesis?\nA. Behavior synthesis involves creating an RTL model (in a language such as Verilog) from an algorithmic description (in a language such as C).\nB. Behavior synthesis instantiates transistors in the layout and makes connections.\nC. Behavior synthesis typically ignores all constraints of resource usage, latency, throughput, area, and power.\nD. Behavior synthesis can reduce area by sharing resources and trading off latency.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only D",
+          "only A, B",
+          "only A, C",
+          "only A, D",
+          "only B, C",
+          "only B, D",
+          "only C, D",
+          "All are correct"
+        ],
+        answer: 6
+      }
+    ],
+    2: [
+      {
+        id: 11,
+        question: "Which of the following statements is/are correct regarding logic synthesis?",
+        options: [
+          "A logic synthesis tool typically takes a layout as an input.",
+          "A logic synthesis tool typically ignores all constraints defined in the SDC file.",
+          "A logic synthesis tool typically produces a netlist consisting of standard cells as an output.",
+          "A logic synthesis tool typically produces a GDS file as an output."
+        ],
+        answer: 2
+      },
+      {
+        id: 12,
+        question: "Which of the following statements is/are correct regarding the Verilog netlist produced by a typical logic synthesis tool?",
+        options: [
+          "The netlist can contain multiple instances of the same cell defined in the given technology library.",
+          "The logic specified in the given RTL guides the logic synthesis tool in selecting appropriate cells from the given technology library.",
+          "The constraints specified in the given SDC file guide the logic synthesis tool in selecting appropriate cells from the given technology library.",
+          "All statements are correct"
+        ],
+        answer: 3
+      },
+      {
+        id: 13,
+        question: "Which of the following statements is/are correct regarding physical design?\nA. Physical design finally produces a layout typically represented as GDS.\nB. Physical design typically requires iterations to achieve design closure.\nC. The goal of a designer is to achieve design closure in the maximum number of iterations.",
+        options: [
+          "only A",
+          "only B",
+          "only A, B",
+          "All statements are correct"
+        ],
+        answer: 2
+      },
+      {
+        id: 14,
+        question: "Which of the following statements is/are correct regarding physical design?",
+        options: [
+          "Chip planning is done before placement.",
+          "Data signal routing is done before clock signal routing.",
+          "ECO is done before power planning.",
+          "Detailed routing is done before global routing."
+        ],
+        answer: 0
+      },
+      {
+        id: 15,
+        question: "Which of the following statements is/are correct regarding optimization goals of various tasks in a typical physical design flow?",
+        options: [
+          "CTS tries to maximize the clock skew in a design.",
+          "Placement tries to minimize the total wire length in a design.",
+          "Detailed routing tries to minimize the maximum operable frequency of a design.",
+          "All statements are correct"
+        ],
+        answer: 1
+      },
+      {
+        id: 16,
+        question: "Which of the following statements is/are correct regarding functional verification?",
+        options: [
+          "Simulation is widely used for functional verification of an RTL model.",
+          "A designer needs to provide test stimuli to a formal verification tool to verify the functionality of an RTL model.",
+          "A formal verification tool establishes the functional correctness of an RTL model by performing exhaustive simulation internally.",
+          "All statements are correct"
+        ],
+        answer: 0
+      },
+      {
+        id: 17,
+        question: "Which of the following statements is/are correct regarding STA?",
+        options: [
+          "We typically perform STA to verify the timing safety of an asynchronous design.",
+          "The STA tool ensures that the data launched by a flip-flop is captured by the sequentially adjacent flip-flop in the same clock cycle.",
+          "We perform STA many times throughout a VLSI design flow.",
+          "STA tool ensures that the behavior of a design remains random and unpredictable under all given scenarios."
+        ],
+        answer: 2
+      },
+      {
+        id: 18,
+        question: "Which of the following statements is/are correct regarding the manufacturing test?",
+        options: [
+          "We perform manufacturing tests to detect whether the logic synthesis tool performed the task correctly.",
+          "We perform manufacturing tests to detect whether the physical design tool performed the task correctly.",
+          "We perform manufacturing test to detect whether any fault exists in the manufactured die or circuit.",
+          "We perform manufacturing tests to detect whether any inconsequential flaws or distortions exist in the manufactured die or circuit."
+        ],
+        answer: 2
+      },
+      {
+        id: 19,
+        question: "Which of the following statements is/are correct regarding the yield of fabricating an integrated circuit?\nA. If we increase the area of a circuit, the yield is expected to increase.\nB. As the process matures, the yield typically increases. If the yield of a process increases, the defect level is expected to reduce.\nC. The yield of a process will be lower if defects are clustered rather than uniformly distributed across the entire wafer.",
+        options: [
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct"
+        ],
+        answer: 2
+      },
+      {
+        id: 20,
+        question: "Which of the following tasks is NOT a resolution enhancement technique?",
+        options: [
+          "Double patterning",
+          "Optical proximity correction",
+          "Multiple patterning",
+          "Binning"
+        ],
+        answer: 3
+      }
+    ],
+    3: [
+      {
+        id: 21,
+        question: "Which of the following statements is/are correct for the Verilog language?\nA. An always block sensitive to the posedge of a signal will be triggered if that signal transitions from 0 to x.\nB. An always block sensitive to the negedge of a signal will be triggered if that signal transitions from 0 to 1.\nC. An initial block executes only once and stops when it reaches the end of the block.\nD. We can use any logical operator, such as or, nor, and, nand, xor, etc., in the sensitivity list of an always block.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only D",
+          "only A, B",
+          "only A, C",
+          "only A, D",
+          "only B, C",
+          "only B, D",
+          "only C, D",
+          "All are correct"
+        ],
+        answer: 5
+      },
+      {
+        id: 22,
+        question: "Which of the following statements is/are correct regarding function and task in Verilog?\nA. A function can model both combinational and sequential circuits.\nB. A function can model delays using posedge, but not using negdege.\nC. A function must have 1 output, while a task can have 0, 1, or many outputs.\nD. A task can call a function, while a function cannot call a task.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only D",
+          "only A, B",
+          "only A, C",
+          "only A, D",
+          "only B, C",
+          "only B, D",
+          "only C, D",
+          "All are correct"
+        ],
+        answer: 9
+      },
+      {
+        id: 23,
+        question: "Which of the following statements is/are correct regarding the assign statement in Verilog?\nA. An assign statement models combinational circuit elements and not sequential circuit elements.\nB. An assign statement provides values to nets in Verilog.\nC. An assign statement can be written within an always block.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct",
+          "No statement is correct"
+        ],
+        answer: 3
+      },
+      {
+        id: 24,
+        question: "Which of the following statements is/are correct regarding blocking and non-blocking assignments in Verilog?\nA. The symbol of blocking assignment is = and of non-blocking assignment is <=\nB. The LHS and RHS of a blocking assignment are executed at two separate locations in the stratified event queue.\nC. For a non-blocking assignment, the execution of the next statement is blocked until the current statement is fully executed.\nD. We can use a blocking assignment inside an always block, but we cannot use a non-blocking assignment inside an always block.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only D",
+          "only A, B",
+          "only A, C",
+          "only A, D",
+          "only B, C",
+          "only B, D",
+          "only C, D",
+          "All are correct"
+        ],
+        answer: 0
+      },
+      {
+        id: 25,
+        question: "What is the internal representation of the integer 8'bz111 in Verilog?",
+        options: [
+          "0000 z111",
+          "0000 0111",
+          "xxxx z111",
+          "zzzz z111"
+        ],
+        answer: 3
+      },
+      {
+        id: 26,
+        question: "Assume that A={1011}. If we write, Y = |A , what will be the value of Y?",
+        options: [
+          "0",
+          "1",
+          "x",
+          "z"
+        ],
+        answer: 1
+      },
+      {
+        id: 27,
+        question: "Which of the following statements is/are correct for Verilog?\nA. The statements within a begin-end block are executed sequentially.\nB. The statements within a fork-join block are executed concurrently.\nC. We cannot write a non-blocking assignment within a begin-end block because they must be executed concurrently.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct",
+          "No statement is correct"
+        ],
+        answer: 3
+      },
+      {
+        id: 28,
+        question: "Which of the following statements is/are correct for coverage metrics for an RTL design?\nA. Code coverage identifies sections of given RTL code that did not execute during simulation.\nB. Functional coverage identifies whether the specified features in the given coverage model execute during simulation.\nC. Extracting functional coverage metrics requires more effort, as we need to develop a separate coverage model to specify the design features to be verified.\nD. Code coverage is a good metric for monitoring the progress of the verification effort.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only D",
+          "only A, B",
+          "only A, C",
+          "only A, D",
+          "only B, C",
+          "only B, D",
+          "only C, D",
+          "All are correct"
+        ],
+        answer: 10
+      },
+      {
+        id: 29,
+        question: "Which of the following statements is/are correct for RTL simulators?\nA. Event-driven simulation involves computing a chain of events and their responses until no further events are available.\nB. Cycle-based simulators evaluate the sequence of next states at successive clock edges as a function of the present state and the present input.\nC. Cycle-based simulators are typically employed to simulate asynchronous circuits because they don't have a periodic clock signal.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct",
+          "No statement is correct"
+        ],
+        answer: 3
+      },
+      {
+        id: 30,
+        question: "Which of the following statements is/are correct regarding races in Verilog simulation?\nA. Race is employed to increase the speed of simulation.\nB. We should introduce race conditions in Verilog simulation to better match simulation and synthesis results.\nC. If we don't have a race condition in RTL simulation, it implies that the coverage is less than 50%.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct",
+          "No statement is correct"
+        ],
+        answer: 7
+      }
+    ],
+    4: [
+      {
+        id: 31,
+        question: "Which of the following statements is/are correct regarding RTL synthesis of an always block in an RTL model written in Verilog?\nA. An always block can never be synthesized to a combinational logic.\nB. An always block can sometimes be synthesized to a latch.\nC. An always block can sometimes be synthesized to a flip-flop.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct",
+          "No statement is correct"
+        ],
+        answer: 5
+      },
+      {
+        id: 32,
+        question: "Which of the following statements is/are correct regarding RTL synthesis of an RTL model written in Verilog?\nA. The initial block is typically ignored by an RTL synthesis tool.\nB. The delay of 10 specified in the statement: reg2 <= #10 reg1 will be ignored by the RTL synthesis tool.\nC. System functions such as $display and $monitor are typically synthesized to latches.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct",
+          "No statement is correct"
+        ],
+        answer: 3
+      },
+      {
+        id: 33,
+        question: "What is the expected RTL synthesis output of the following piece of RTL code?\n\nmodule top(a, b, c, s, en, out1, out2);\n  input a, b, c, s, en;\n  output out1, out2;\n  reg out1, out2;\n\n  always @(*) begin\n    if (s==1'b0)\n      out1 = a;\n    else\n      out1 = b;\n  end\n\n  always @(*) begin\n    if (en==1'b1)\n      out2 = c;\n  end\nendmodule",
+        options: [
+          "Both out1 and out2 driven by latches",
+          "Both out1 and out2 driven by flip-flops",
+          "Both out1 and out2 driven by 2-to-1 multiplexers",
+          "out1 driven by a latch and out2 driven by a 2-to-1 multiplexer",
+          "out1 driven by a latch and out2 driven by a flip-flop",
+          "out1 driven by a flip-flop and out2 driven by a 2-to-1 multiplexer",
+          "out1 driven by a flip-flop and out2 driven by a latch",
+          "out1 driven by a 2-to-1 multiplexer and out2 driven by a latch",
+          "out1 driven by a 2-to-1 multiplexer and out2 driven by a flip-flop"
+        ],
+        answer: 7
+      },
+      {
+        id: 34,
+        question: "What will be the typical RTL synthesis result of the following piece of RTL code?\n\nmodule top1(in1, clk, out1);\n  input in1, clk;\n  output out1;\n  reg reg1, reg2, reg3, out1;\n\n  always @(posedge clk)\n  begin\n    reg1 = in1;\n    reg2 = reg1;\n    reg3 = reg2;\n    out1 = reg3;\n  end\nendmodule",
+        options: [
+          "One 2-to-1 multiplexer",
+          "One latch",
+          "One flip-flop",
+          "3-bit shift register",
+          "4-bit shift register"
+        ],
+        answer: 2
+      },
+      {
+        id: 35,
+        question: "Consider the Boolean function of three Boolean variables x₁, x₂, and x₃. The hypercube representation of the function is shown below.\nWhich of the following statements is/are correct for the above function?\nA. x'₁ is a prime implicant\nB. x₂ is a prime implicant\nC. x'₂x₃ is a prime implicant",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct",
+          "No statement is correct"
+        ],
+        answer: 1
+      },
+      {
+        id: 36,
+        question: "Which of the following statements is/are correct about implicants and prime implicants?\nA. An implicant of a function can include the corners of the OFF-set of the function.\nB. An implicant of a function can include corners of the DC-set of the function.\nC. A prime implicant is an implicant of a function that is not covered by any other implicant of that function.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct",
+          "No statement is correct"
+        ],
+        answer: 5
+      },
+      {
+        id: 37,
+        question: "Which of the following statements is/are correct about the heuristic minimizer in logic optimization?\nA. A heuristic minimizer may not produce the exact minimum cover for a Boolean function.\nB. A heuristic minimizer starts with an initial cover and iteratively improves the solution by applying operators to it.\nC. A heuristic minimizer is typically slower than the exact minimizer, especially for large problems.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct",
+          "No statement is correct"
+        ],
+        answer: 3
+      },
+      {
+        id: 38,
+        question: "Which of the following statements is/are correct about optimizations done in RTL synthesis?\nA. The primary objective of resource sharing is to reduce the area.\nB. Resource sharing can sometimes lead to an increase in the delay of the critical path.\nC. Unsharing resources can sometimes reduce the delay of the critical path.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct",
+          "No statement is correct"
+        ],
+        answer: 6
+      },
+      {
+        id: 39,
+        question: "Which of the following statements is/are correct about synthesis of a for loop in Verilog?\nA. A for loop is not synthesizable if the number of iterations cannot be statically known or derived by the synthesis tool.\nB. A for loop can be unrolled during RTL synthesis if the number of iterations is fixed or can be derived statically by the tool.\nC. A for loop is never synthesized by an RTL synthesis tool.",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct",
+          "No statement is correct"
+        ],
+        answer: 3
+      },
+      {
+        id: 40,
+        question: "Consider the following statements about the tools ICARUS, GTKWave, and COVERED used in simulation-based verification.\nA. We can use the ICARUS tool to write a VCD file containing simulation results for a given Verilog design and testbench.\nB. We can use GTKWave to display the results from a VCD file.\nC. The COVERED tool is used to obtain a maximal cover for a Boolean function.\nWhich of the above statements is/are correct?",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct",
+          "No statement is correct"
+        ],
+        answer: 3
+      }
+    ],
+    5: [
+      {
+        id: 41,
+        question: "Consider the following ROBDD:\n\nWhich of the following functions will have the above ROBDD?\nA. a+b+c\nB. a+b'+bc\nC. a+ab+ac",
+        image: "/images/vlsi-design-flow/week5-q1.png",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All",
+          "None"
+        ],
+        answer: 6
+      },
+      {
+        id: 42,
+        question: "Consider the following function:\n\ny = ab + acd + b'd + bc'\n\nConsider the following statements:\nA. The positive cofactor of the above function with respect to the variable a is b+cd+b'd+bc'\nB. The positive cofactor of the above function with respect to the variable b is a+acd+b'd+bc'\nC. The positive cofactor of the above function with respect to the variable c is ab+ad+b'd\n\nWhich of the above statements are correct?",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct.",
+          "No statement is correct."
+        ],
+        answer: 4
+      },
+      {
+        id: 43,
+        question: "Consider the following statements about the ROBDD of a Boolean function:\nA. The number of vertices in an ROBDD always increases linearly with the number of variables.\nB. The size of the ROBDD depends on the variable order chosen in the representation.\nC. It is a canonical representation of a Boolean function.\n\nWhich of the statements are correct?",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct.",
+          "No statement is correct."
+        ],
+        answer: 5
+      },
+      {
+        id: 44,
+        question: "Consider the following statements regarding functional verification:\nA. We typically need to provide an exhaustive set of test stimuli to a formal verification tool, which then simulates and checks using those stimuli.\nB. Among the given set of stimuli, a formally verification tool randomly chooses a subset of stimuli for which the simulation is done.\nC. Formal verification tools typically employ ROBDD and SAT solvers to establish proof of correctness.\n\nWhich of the statements are correct?",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct.",
+          "No statement is correct."
+        ],
+        answer: 2
+      },
+      {
+        id: 45,
+        question: "Consider the following statements regarding finite state machines:\nA. Given the current state and the current input, the state transition function produces the next state.\nB. The output of the FSM is a function of the current state only in a Mealy Machine.\nC. The output of the FSM is a function of the current state and current input in a Moore Machine.\n\nWhich of the statements are correct?",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct.",
+          "No statement is correct."
+        ],
+        answer: 0
+      },
+      {
+        id: 46,
+        question: "Which of the following techniques are used in FSM optimization?\nA. State minimization\nB. State encoding that minimizes the hardware cost\nC. Transforming the state of matter",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All",
+          "None"
+        ],
+        answer: 3
+      },
+      {
+        id: 47,
+        question: "To represent an FSM with nₛ states, the minimum number of bits needed is:",
+        options: [
+          "⌈log₂nₛ⌉",
+          "⌈log₁₀nₛ⌉",
+          "nₛ",
+          "nₛ + 1"
+        ],
+        answer: 0
+      },
+      {
+        id: 48,
+        question: "Which of the following expressions represent observability don't care (ODC) for F in the following Boolean logic network?\n\nGiven:\nF = ab + c\nG = F + a",
+        image: "/images/vlsi-design-flow/week5-q8.png",
+        options: [
+          "a'",
+          "a",
+          "b'",
+          "b",
+          "c'",
+          "c"
+        ],
+        answer: 0
+      },
+      {
+        id: 49,
+        question: "Match the following transformations done during multi-level logic optimization with their descriptions:",
+        image: "/images/vlsi-design-flow/week5-q9.png",
+        options: [
+          "A-1, B-2, C-3, D-4",
+          "A-1, B-3, C-4, D-1",
+          "A-2, B-1, C-4, D-3",
+          "A-2, B-4, C-1, D-3",
+          "A-3, B-1, C-4, D-2",
+          "A-3, B-4, C-1, D-2",
+          "None of the above"
+        ],
+        answer: 4
+      },
+      {
+        id: 50,
+        question: "Which of the following tools can be used for RTL synthesis?",
+        options: [
+          "OpenSTA",
+          "Yosys",
+          "Tempus",
+          "PrimeTime"
+        ],
+        answer: 1
+      }
+    ],
+    6: [
+      {
+        id: 51,
+        question: "The voltage waveform at the clock pin and the Q pin of a flip-flop is shown below.",
+        image: "/images/vlsi-design-flow/week6-q1.png",
+        options: [
+          "6 ps, 6 ps, 6 ps",
+          "12 ps, 6 ps, 6 ps",
+          "6 ps, 12 ps, 6 ps",
+          "6 ps, 6 ps, 12 ps",
+          "12 ps, 12 ps, 6 ps",
+          "6 ps, 12 ps, 12 ps",
+          "12 ps, 6 ps, 12 ps",
+          "12 ps, 12 ps, 12 ps"
+        ],
+        answer: 5
+      },
+      {
+        id: 52,
+        question: "Consider the following data from the NLDM table of a technology library for an inverter for rise delay:",
+        image: "/images/vlsi-design-flow/week6-q2.png",
+        options: [
+          "20",
+          "30",
+          "40",
+          "50",
+          "60",
+          "70",
+          "80",
+          "90",
+          "100",
+          "110",
+          "120"
+        ],
+        answer: 7
+      },
+      {
+        id: 53,
+        question: "Among the following options, on what factor(s) does the hold time of a D flip-flop typically depend?\n\nA. Slew at the clock pin\nB. Slew at the D-pin\nC. Slew at the Q-pin",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All",
+          "None"
+        ],
+        answer: 3
+      },
+      {
+        id: 54,
+        question: "The truth tables of three functions F1, F2, and F3 are shown below (x₁, x₂, x₃ are the Boolean variables on which these functions depend):\n\nWhich of the above functions are satisfiable?",
+        image: "/images/vlsi-design-flow/week6-q4.png",
+        images: [
+          "/images/vlsi-design-flow/week6-q4-f1.png",
+          "/images/vlsi-design-flow/week6-q4-f2.png",
+          "/images/vlsi-design-flow/week6-q4-f3.png"
+        ],
+        options: [
+          "only F1",
+          "only F2",
+          "only F3",
+          "only F1, F2",
+          "only F1, F3",
+          "only F2, F3",
+          "All",
+          "None"
+        ],
+        answer: 5
+      },
+      {
+        id: 55,
+        question: "Consider the following representations of a Boolean function:\n\nA. f(x₁, x₂, x₃) = (x₂) · (x₁ + x₃')\nB. f(x₁, x₂, x₃) = x₁x₂ + x₂x₃'\nC. f(x₁, x₂, x₃) = (x₁ + x₂) · (x₁' + x₂) · (x₁ + x₃')\n\nWhich of the representations are in CNF?",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All statements are correct.",
+          "No statement is correct."
+        ],
+        answer: 4
+      },
+      {
+        id: 56,
+        question: "What is the name of the technique that tries to determine a counterexample reachable in a finite number of clock cycles starting from the initial state?",
+        options: [
+          "Bounded Model Checking",
+          "Unbounded Model Checking",
+          "State Optimization of FSM",
+          "State Encoding of FSM",
+          "Technology Mapping",
+          "Multi-level Logic Optimization"
+        ],
+        answer: 0
+      },
+      {
+        id: 57,
+        question: "Consider an FSM with five states Q = {s₀, s₁, s₂, s₃, s₄}. The states are represented by 3 state bits x₂x₁x₀. Assume that these states s₀, s₁, s₂, s₃, s₄ are encoded as 000, 001, 010, 011, 100. In this representation, the characteristic function f(x₂, x₁, x₀) representing the subset of states A = {s₁, s₃, s₄} is:",
+        options: [
+          "x₂'x₁'x₀ + x₂'x₁x₀' + x₂x₁'x₀'",
+          "x₂'x₁'x₀ + x₂'x₁x₀ + x₂x₁'x₀'",
+          "x₂'x₁'x₀ + x₂'x₁'x₀' + x₂'x₁x₀",
+          "x₂'x₁x₀ + x₂'x₁'x₀' + x₂x₁'x₀'"
+        ],
+        answer: 1
+      },
+      {
+        id: 58,
+        question: "Which of the following tasks is not a part of Combinational Equivalence Checking (CEC)?",
+        options: [
+          "Port and register matching",
+          "Miter creation",
+          "Static Timing Analysis",
+          "Establishing the equivalence of miters"
+        ],
+        answer: 2
+      },
+      {
+        id: 59,
+        question: "Which of the following statements are correct about the miter circuits created during Combinational Equivalence Checking of two sequential circuits?\n\nA. A miter is derived using the corresponding combinational logic cones of both the circuits.\nB. A miter typically has a full adder at its output.\nC. A miter is a sequential circuit.",
+        options: [
+          "Only A",
+          "Only B",
+          "Only C",
+          "Only A, B",
+          "Only B, C",
+          "Only A, C",
+          "All of the above",
+          "None of the above"
+        ],
+        answer: 0
+      },
+      {
+        id: 60,
+        question: "Which of the following statements best describes the purpose of the following command in a script for Yosys: share -aggressive",
+        options: [
+          "It suggests small-cap stocks to buy for an aggressive portfolio",
+          "It shares the design with multiple users on the network",
+          "It parses a design and creates a data structure for it",
+          "It performs logic optimization by reusing resources for saving area",
+          "It maps a design to the given technology library",
+          "It loads the timing library from the file specified earlier"
+        ],
+        answer: 3
+      }
+    ],
+    7: [
+      {
+        id: 61,
+        question: "Consider the following synchronous circuit:\n\nThe following attributes are valid for all the flip-flops: setup time = 30 ps, hold time = 15 ps, and CLK-to-Q delay = 40 ps. The delay of each inverter is 50 ps. The delay of each NAND gate is 80 ps.\n\nAssume that the clock period is 500 ps. What is the worst slack for setup at the timing end-point F4/D?",
+        image: "/images/vlsi-design-flow/week7-q1.png",
+        options: [
+          "0 ps",
+          "50 ps",
+          "100 ps",
+          "150 ps",
+          "200 ps",
+          "250 ps",
+          "300 ps",
+          "350 ps",
+          "400 ps",
+          "450 ps",
+          "500 ps"
+        ],
+        answer: 6
+      },
+      {
+        id: 62,
+        question: "For the same question above (i.e. Q1), what is the worst slack for hold at the timing end-point F4/D?",
+        image: "/images/vlsi-design-flow/week7-q1.png",
+        options: [
+          "100 ps",
+          "105 ps",
+          "110 ps",
+          "115 ps",
+          "120 ps",
+          "125 ps",
+          "130 ps",
+          "135 ps",
+          "140 ps",
+          "145 ps",
+          "150 ps",
+          "155 ps",
+          "160 ps"
+        ],
+        answer: 1
+      },
+      {
+        id: 63,
+        question: "Consider the following synchronous circuit:\n\nThe following attributes are valid for the flip-flops FF1 and FF2: setup time = 40 ps, hold time = 30 ps, and CLK-to-Q delay = 15 ps. The delay of each inverter is 15 ps. Ignore the wire delay.\n\nAssume that the period of the clock is 500 ps. What is the hold slack at the timing end-point FF2/D?",
+        image: "/images/vlsi-design-flow/week7-q3.png",
+        options: [
+          "-10 ps",
+          "-5 ps",
+          "0 ps",
+          "5 ps",
+          "10 ps",
+          "15 ps",
+          "20 ps",
+          "25 ps",
+          "35 ps"
+        ],
+        answer: 2
+      },
+      {
+        id: 64,
+        question: "Consider the following synchronous circuit.\n\nThe following attributes are valid for all the flip-flops: setup time = 30 ps, hold time = 30 ps, and CLK-to-Q delay = 20 ps. The delay of each inverter and buffer is 45 ps. The delay of NAND gate is 60 ps. Ignore the wire delay.\n\nAssume that the period of the clock is 500 ps. What is the setup slack at the timing end-point F3/D?",
+        image: "/images/vlsi-design-flow/week7-q4.png",
+        options: [
+          "0 ps",
+          "50 ps",
+          "100 ps",
+          "150 ps",
+          "200 ps",
+          "250 ps",
+          "300 ps",
+          "350 ps",
+          "400 ps",
+          "450 ps",
+          "500 ps"
+        ],
+        answer: 9
+      },
+      {
+        id: 65,
+        question: "For the same question above (i.e. Q. 4), what is the hold slack at the timing end-point F3/D?",
+        image: "/images/vlsi-design-flow/week7-q4.png",
+        options: [
+          "10 ps",
+          "20 ps",
+          "30 ps",
+          "0 ps",
+          "-10 ps",
+          "-20 ps",
+          "-30 ps"
+        ],
+        answer: 4
+      },
+      {
+        id: 66,
+        question: "Which of the following are typically employed in the delay calculation for a given stage during Static Timing Analysis?\n\nA. Interconnect model\nB. Driver model of the driving cell\nC. Yield model for the given technology",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All",
+          "None"
+        ],
+        answer: 3
+      },
+      {
+        id: 67,
+        question: "Which tool will you employ to compute the hold slack of a synchronous circuit?",
+        options: [
+          "Icarus",
+          "OpenSTA",
+          "VCS",
+          "Conformal",
+          "Bambu"
+        ],
+        answer: 1
+      },
+      {
+        id: 68,
+        question: "The hold requirement constraint does NOT depend on which of the following quantities in a typical synchronous circuit?",
+        options: [
+          "Clock Period",
+          "Data Path Delay",
+          "Delay on the clock path of the launch flip-flop",
+          "Delay on the clock path of the capture flip-flop"
+        ],
+        answer: 0
+      },
+      {
+        id: 69,
+        question: "Consider the following statements about PBA and GBA.\n\nA. The PBA slack can be greater than the GBA slack for some timing paths.\nB. The GBA slack can be greater than the PBA slack for some timing paths.\nC. The PBA slack can be equal to the GBA slack for some timing paths.\n\nWhich of the above statements are correct?",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All",
+          "None"
+        ],
+        answer: 4
+      },
+      {
+        id: 70,
+        question: "Which of the following combinations are considered when creating scenarios for multi-mode multi-corner (MMMC) analysis?",
+        options: [
+          "PVT corners for libraries, RC corners for parasitics, Mode-specific SDC files for constraints",
+          "Low VT and High VT libraries, Floorplan corners for placement, Mode-specific SDC files for constraints",
+          "PVT corners for libraries, Floorplan corners for placement, Timing Exceptions for Constraints",
+          "PVT corners for libraries, Floorplan corners for placement, Mode-specific SDC files for constraints"
+        ],
+        answer: 0
+      }
+    ],
+    8: [
+      {
+        id: 71,
+        question: "Consider the following synchronous circuit:\n\nThe following attributes are valid for all the flip-flops: setup time = 30 ps, hold time = 20 ps, and CLK-to-Q delay = 40 ps. The delay of each inverter is 40 ps. The delay of each NAND gate is 80 ps. Ignore the wire delay.\n\nAssume that we have defined the following constraints in the SDC file (all time units are in picoseconds):\n\ncreate_clock -name CLK -period 500 [get_ports clk]\nset_input_delay -clock [get_clocks CLK] 150 [get_ports a]\nset_input_delay -clock [get_clocks CLK] 50 [get_ports b]\nset_input_delay -clock [get_clocks CLK] 200 [get_ports c]\nset_output_delay -clock [get_clocks CLK] 100 [get_ports out]\n\nWhat is the setup slack at the timing end-point F1/D?",
+        image: "/images/vlsi-design-flow/week8-q1.png",
+        options: [
+          "200 ps",
+          "220 ps",
+          "240 ps",
+          "260 ps",
+          "280 ps",
+          "300 ps",
+          "320 ps",
+          "340 ps",
+          "360 ps",
+          "400 ps"
+        ],
+        answer: 6
+      },
+      {
+        id: 72,
+        question: "For the question above (Q-1), what is the hold slack at the timing end-point F1/D?",
+        image: "/images/vlsi-design-flow/week8-q1.png",
+        options: [
+          "100 ps",
+          "120 ps",
+          "130 ps",
+          "140 ps",
+          "150 ps",
+          "160 ps",
+          "170 ps",
+          "180 ps",
+          "190 ps",
+          "200 ps"
+        ],
+        answer: 2
+      },
+      {
+        id: 73,
+        question: "For the question above (Q-1), what is the worst slack for setup at the timing end-point port out?",
+        image: "/images/vlsi-design-flow/week8-q1.png",
+        options: [
+          "200 ps",
+          "220 ps",
+          "240 ps",
+          "260 ps",
+          "280 ps",
+          "300 ps",
+          "320 ps",
+          "340 ps",
+          "360 ps",
+          "400 ps"
+        ],
+        answer: 2
+      },
+      {
+        id: 74,
+        question: "For the question above (Q-1), what is the worst slack for hold at the timing end-point port out?",
+        image: "/images/vlsi-design-flow/week8-q1.png",
+        options: [
+          "200 ps",
+          "220 ps",
+          "240 ps",
+          "260 ps",
+          "280 ps",
+          "300 ps",
+          "320 ps",
+          "340 ps",
+          "360 ps",
+          "400 ps"
+        ],
+        answer: 1
+      },
+      {
+        id: 75,
+        question: "Which of the following is the SDC command that instructs an STA tool to perform a hold check at the output port?",
+        options: [
+          "set_output_delay",
+          "set_hold_check",
+          "set_both_check",
+          "set_clock_latency",
+          "set_clock_transition",
+          "set_false_path",
+          "set_case_analysis"
+        ],
+        answer: 0
+      },
+      {
+        id: 76,
+        question: "Which of the following pieces of information is typically needed as input by a technology mapping tool?\n\nA. Unmapped netlist\nB. Technology library\nC. Testbench for RTL simulation",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only A, C",
+          "only B, C",
+          "All",
+          "None"
+        ],
+        answer: 3
+      },
+      {
+        id: 77,
+        question: "Which of the following optimization techniques is typically NOT targeted for improving timing?",
+        options: [
+          "Restructuring",
+          "Retiming",
+          "Resizing",
+          "Power Gating",
+          "Fanout optimization"
+        ],
+        answer: 3
+      },
+      {
+        id: 78,
+        question: "Which of the following optimization techniques involves changing logic circuit elements across a flip-flop?",
+        options: [
+          "Restructuring",
+          "Retiming",
+          "Resizing",
+          "Power Gating",
+          "Fanout optimization"
+        ],
+        answer: 1
+      },
+      {
+        id: 79,
+        question: "Which of the following is/are valid SDC commands:\n\nA. create_my_clock\nB. generate_clock\nC. create_generated_clock",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only B, C",
+          "only A, C",
+          "all A, B, C",
+          "none"
+        ],
+        answer: 2
+      },
+      {
+        id: 80,
+        question: "Consider the following timing report generated by OpenSTA. The unit of time is ps.\n\nWhich of the following statements are correct?\n\nA. The timing report shows the details of a path starting from port a and ending on port out.\nB. The external delay at the input port is 910 ps.\nC. The report shows a hold timing violation with slack of -85 ps.",
+        image: "/images/vlsi-design-flow/week8-q10.png",
+        options: [
+          "only A",
+          "only B",
+          "only C",
+          "only A, B",
+          "only B, C",
+          "only A, C",
+          "all A, B, C",
+          "none"
+        ],
+        answer: 0
+      }
+    ],
+    9: [
+      {
+        id: 81,
+        question: "Assume that an inverter drives an average load capacitance of 0.35 ff and the supply voltage is 1 V. Assume that there are 10000 such inverters in a circuit. Further assume that the inverter makes 2 × 10⁹ ZERO-TO-ONE and ONE-TO-ZERO transitions in 1 second. What is the total power dissipated by the inverters in the circuit for charging and discharging the load capacitance?",
+        options: [
+          "3.5 W",
+          "7 W",
+          "0.35 W",
+          "0.7 W",
+          "0.035 W",
+          "0.07 W",
+          "0.0035 W",
+          "0.007 W",
+          "0.00035 W",
+          "0.0007 W"
+        ],
+        answer: 7
+      },
+      {
+        id: 82,
+        question: "The input waveforms A, B, C, and D shown below are applied to a CMOS inverter (not to scale).\n\nWhich waveform is likely to dissipate the maximum short circuit power?",
+        image: "/images/vlsi-design-flow/week9-q2.png",
+        options: [
+          "A",
+          "B",
+          "C",
+          "D",
+          "All will dissipate equal short circuit power"
+        ],
+        answer: 2
+      },
+      {
+        id: 83,
+        question: "Which of the following is NOT a technique to estimate a signal's activity in power analysis?",
+        options: [
+          "Resizing Technique",
+          "Vector-based Technique",
+          "Vector-less Technique",
+          "Probabilistic Technique"
+        ],
+        answer: 0
+      },
+      {
+        id: 84,
+        question: "In scan-based testing methodology, what is the correct value at the SE (scan enable) port for the shift and capture mode, respectively?",
+        options: [
+          "Shift SE=0, Capture SE=0",
+          "Shift SE=0, Capture SE=1",
+          "Shift SE=1, Capture SE=0",
+          "Shift SE=1, Capture SE=1"
+        ],
+        answer: 2
+      },
+      {
+        id: 85,
+        question: "Consider the following statements about the scan design methodology.\n\nA. Replacing a D flip-flop with a scan cell decreases the overall area because a scan cell is smaller than a D flip-flop.\nB. Replacing a D flip-flop with a scan cell can increase the setup slack of some timing paths to the D-pin because scan cells have an extra delay of the multiplexer on the D-pin path.\nC. The purpose of replacing a flip-flop with a scan cell is to improve the tolerance of a circuit against electromigration.\n\nWhich of the above statements is/are correct?",
+        options: [
+          "Only A",
+          "Only B",
+          "Only C",
+          "Only A, B",
+          "Only B, C",
+          "Only A, C",
+          "All A, B, C",
+          "None"
+        ],
+        answer: 7
+      },
+      {
+        id: 86,
+        question: "The non-linear power model of the technology library (in Liberty format) models the internal power for an inverter as a function of which of the following quantities:\n\nA. Clock frequency\nB. Transition time at the input\nC. Load at the output\n\nWhich of the above statements is/are correct?",
+        options: [
+          "Only A",
+          "Only B",
+          "Only C",
+          "Only A, B",
+          "Only B, C",
+          "Only A, C",
+          "All A, B, C",
+          "None"
+        ],
+        answer: 4
+      },
+      {
+        id: 87,
+        question: "From the perspective of design for test (DFT), which of the following statements best describes a test vector?",
+        options: [
+          "Any input pattern that produces don't cares (X) values at the output of a fault-free circuit.",
+          "Any input pattern that produces a high impedance state (Z) at the output of a faulty circuit.",
+          "Any input pattern, or sequence of input patterns, that produces a 0 for a faulty circuit and a fault-free circuit.",
+          "Any input pattern, or sequence of input patterns, that produces a 1 for a faulty circuit and a fault-free circuit.",
+          "Any input pattern, or sequence of input patterns, that produces a different output response for a faulty circuit and a fault-free circuit.",
+          "Any input pattern, or sequence of input patterns, that produces a matching output response for a faulty circuit and a fault-free circuit."
+        ],
+        answer: 4
+      },
+      {
+        id: 88,
+        question: "Which of the following statements best describes the problem of using a simple AND gate for clock gating?",
+        options: [
+          "In some cases, it can cause the output of the AND gate to get stuck at zero, and the circuit will go into a metastable state.",
+          "In some cases, it can cause the output of the AND gate to get stuck at one, and the circuit will go into a metastable state.",
+          "It can create glitches at the AND gate's output, which can unnecessarily trigger a flip-flop in its fanout.",
+          "It cannot switch off the power supply and cannot save any power.",
+          "It can decrease dynamic power dissipation by increasing the load on the clock signal.",
+          "It can cause a significant voltage drop in the supply lines, increasing delays in other circuit elements."
+        ],
+        answer: 2
+      },
+      {
+        id: 89,
+        question: "What is the minimum number of test vectors for the five-input NAND gate that can detect ALL possible single stuck-at faults?",
+        options: [
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "12"
+        ],
+        answer: 0
+      },
+      {
+        id: 90,
+        question: "Assume that you are running the tool OpenSTA to compute the power dissipation. Consider the following statements about how the tool obtains various information in its computation.\n\nA. It obtains the clock frequency information from the constraints file in SDC format.\nB. It obtains the information on the leakage power for each cell from the technology library file given in the Liberty format.\nC. It computes the power dissipated within a cell using the NLPM in the library file.\n\nWhich statements are correct?",
+        options: [
+          "Only A",
+          "Only B",
+          "Only C",
+          "Only A, B",
+          "Only B, C",
+          "Only A, C",
+          "All",
+          "None"
+        ],
+        answer: 6
+      }
+    ],
+    10: [
+      {
+        id: 91,
+        question: "Consider the circuit and SA1 at G1/Y as shown below:\n\nWhich of the following input combinations is NOT a valid test vector for the above fault:",
+        image: "/images/vlsi-design-flow/week10-q1.png",
+        options: [
+          "A=0 B=1 C=0 D=1",
+          "A=1 B=1 C=0 D=1",
+          "A=1 B=1 C=1 D=0",
+          "A=1 B=1 C=1 D=1"
+        ],
+        answer: 0
+      },
+      {
+        id: 92,
+        question: "Consider the circuit and SA0 at G1/Y as shown below:\n\nWhich of the following input combinations is NOT a valid test vector for the above fault:",
+        image: "/images/vlsi-design-flow/week10-q2.png",
+        options: [
+          "A=0 B=0 C=1 D=1",
+          "A=0 B=1 C=1 D=1",
+          "A=1 B=0 C=1 D=0",
+          "A=1 B=0 C=1 D=1"
+        ],
+        answer: 2
+      },
+      {
+        id: 93,
+        question: "Consider the circuit and SA1 at G3/X1 as shown below:\n\nWhich of the following input combinations is a valid test vector for the above fault:",
+        image: "/images/vlsi-design-flow/week10-q3.png",
+        options: [
+          "A=0 B=0 C=0",
+          "A=0 B=0 C=1",
+          "A=0 B=1 C=0",
+          "A=0 B=1 C=1",
+          "A=1 B=0 C=0",
+          "A=1 B=0 C=1",
+          "A=1 B=1 C=0",
+          "A=1 B=1 C=1",
+          "None of the above"
+        ],
+        answer: 8
+      },
+      {
+        id: 94,
+        question: "Consider the following statements about the patterns obtained using a Linear Feedback Shift Register (LFSR).\n\nA. The number of patterns is finite.\nB. The patterns are repeatable.\nC. The patterns are truly random.\n\nWhich of the above statements is/are correct?",
+        options: [
+          "Only A",
+          "Only B",
+          "Only C",
+          "Only A, B",
+          "Only B, C",
+          "Only A, C",
+          "All A, B, C",
+          "None"
+        ],
+        answer: 3
+      },
+      {
+        id: 95,
+        question: "In BIST-based testing, the signature of a “good” circuit matching the signature of a “faulty” circuit is known as:",
+        options: [
+          "Faulting",
+          "Aliasing",
+          "Backtracking",
+          "Defaulting",
+          "Defecting",
+          "Retiming",
+          "Remapping"
+        ],
+        answer: 1
+      },
+      {
+        id: 96,
+        question: "Which of the following is one of the primary applications of ion implantation in integrated circuit fabrication?",
+        options: [
+          "Etching the photoresist after exposure",
+          "Fabricating the mask before photolithography",
+          "Packaging the die after fabrication",
+          "Compensating for diffraction during photolithography",
+          "Detecting defects in a fabricated die",
+          "Doping the semiconductor with n-type or p-type dopants",
+          "Applying a coating of metal before photolithography",
+          "Growing a thick layer of oxide for isolation"
+        ],
+        answer: 5
+      },
+      {
+        id: 97,
+        question: "The lateral capacitance between two adjacent interconnects running in parallel in the same layer will decrease under which of the following conditions?",
+        options: [
+          "The dielectric constant of the insulator between them is increased.",
+          "The sidewall area of the interconnects is increased.",
+          "The distance between the interconnects is increased.",
+          "The overlapping length between them is increased."
+        ],
+        answer: 2
+      },
+      {
+        id: 98,
+        question: "Consider the following statements about signal integrity issues.\n\nA. The delay of a gate can sometimes decrease due to signal integrity issues.\nB. The delay of a gate can sometimes increase due to signal integrity issues.\nC. Glitches can sometimes be observed on a stable signal due to signal integrity issues.\n\nWhich of the above statements is/are correct?",
+        options: [
+          "Only A",
+          "Only B",
+          "Only C",
+          "Only A, B",
+          "Only B, C",
+          "Only A, C",
+          "All",
+          "None"
+        ],
+        answer: 6
+      },
+      {
+        id: 99,
+        question: "Which of the following files contains the information about the sheet resistance and capacitance per unit area for the available metal layers?",
+        options: [
+          "SDF files",
+          "VCD files",
+          "SDC files",
+          "LEF files",
+          "Verilog files",
+          "DO files",
+          "RPT files"
+        ],
+        answer: 3
+      },
+      {
+        id: 100,
+        question: "Which tool can we use to perform physical design tasks, from floorplanning to detailed routing?",
+        options: [
+          "OpenROAD",
+          "Bambu",
+          "Icarus",
+          "Yosys",
+          "Conformal",
+          "VCS",
+          "Questa"
+        ],
+        answer: 0
+      }
+    ],
+    11: [
+      {
+        id: 101,
+        question: "Consider the following statements about chip planning for a hierarchical design:\n\nA. Partitioning allocates some fraction of a clock cycle to different blocks and the top-level design for signals crossing block boundaries.\nB. Budgeting divides a given top-level design into smaller parts called blocks.\nC. Top-level assembly integrates all the blocks at the top level.\n\nWhich of the above statements is/are correct?",
+        options: [
+          "Only A",
+          "Only B",
+          "Only C",
+          "Only A, B",
+          "Only A, C",
+          "Only B, C",
+          "All",
+          "None"
+        ],
+        answer: 2
+      },
+      {
+        id: 102,
+        question: "Consider the following functions:\n\nA. Provides an interface between the die and the external world for the incoming and outgoing signals.\nB. Increase the drive capability of the outgoing signal, if needed.\nC. Protects core cells from high-voltage spikes arising due to ESD.\n\nWhich of the above functions is typically provided by an IO cell in an integrated circuit:",
+        options: [
+          "Only A",
+          "Only B",
+          "Only C",
+          "Only A, B",
+          "Only A, C",
+          "Only B, C",
+          "All",
+          "None"
+        ],
+        answer: 6
+      },
+      {
+        id: 103,
+        question: "One of the popular topologies for power delivery networks is:",
+        options: [
+          "A-shape topology",
+          "B-shape topology",
+          "L-shape topology",
+          "Mesh grid topology",
+          "Fanout topology",
+          "Razor topology"
+        ],
+        answer: 3
+      },
+      {
+        id: 104,
+        question: "Consider the following statements about chip planning:\n\nA. Routing of all clock and data signal nets is typically undertaken during floorplanning.\nB. Fly lines can be used to guide macro placement during floorplanning.\nC. Placement of numerous standard cells over the layout is typically undertaken before floorplanning.\n\nWhich of the above statements are correct?",
+        options: [
+          "Only A",
+          "Only B",
+          "Only C",
+          "Only A, B",
+          "Only A, C",
+          "Only B, C",
+          "All",
+          "None"
+        ],
+        answer: 1
+      },
+      {
+        id: 105,
+        question: "The task that removes overlap among standard cells after global placement is known as:",
+        options: [
+          "Routing",
+          "Budgeting",
+          "Power Planning",
+          "Detailed Routing",
+          "Legalization",
+          "Clock Tree Synthesis",
+          "Floorplanning"
+        ],
+        answer: 4
+      },
+      {
+        id: 106,
+        question: "Consider the following statements about mesh grid topology in power planning:\n\nA. Rails and straps are organized as a uniformly spaced array in a mesh grid topology.\nB. The resistance from the power pad to any point in the grid is typically high because there is only one electrical path between them.\nC. The robustness of the mesh grid topology is low because if any wire breaks, the only existing electrical path between the power pad and any point in the grid becomes an open circuit.\n\nWhich of the above statements is/are correct?",
+        options: [
+          "Only A",
+          "Only B",
+          "Only C",
+          "Only A, B",
+          "Only A, C",
+          "Only B, C",
+          "All A, B, C"
+        ],
+        answer: 0
+      },
+      {
+        id: 107,
+        question: "Scan Chain Reordering helps us:",
+        options: [
+          "Utilize routing resources more efficiently",
+          "Fix functional problems in the design",
+          "Allow us to carry out combinational equivalence checking more efficiently",
+          "Allow us to carry out simulations more efficiently",
+          "Scheduling floorplanning more efficiently on a GPU",
+          "Perform ECO again more efficiently"
+        ],
+        answer: 0
+      },
+      {
+        id: 108,
+        question: "The extra cells that we put in an integrated circuit in anticipation of later use are known as:",
+        options: [
+          "Filler Cell",
+          "Isolation Cell",
+          "Level Shifter",
+          "Integrated Clock Gater (ICG)",
+          "Spare Cell"
+        ],
+        answer: 4
+      },
+      {
+        id: 109,
+        question: "Consider the following statements regarding physical design using OpenROAD:\n\nA. The command read_sdc can be used to dump out the constraints file.\nB. The command place_pins can be used to floorplan a design.\nC. The command write_def can be used to write the DEF file.\n\nWhich of the above statements is/are correct?",
+        options: [
+          "Only A",
+          "Only B",
+          "Only C",
+          "Only A, B",
+          "Only A, C",
+          "Only B, C",
+          "All A, B, C"
+        ],
+        answer: 2
+      },
+      {
+        id: 110,
+        question: "What is the purpose of the command report_tns in OpenROAD?",
+        options: [
+          "It reports the Total Negative Skew",
+          "It reports the Total Negative Slew",
+          "It reports the Total Negative Slack",
+          "It reports the Total Netlist Skew",
+          "It reports the Total Netlist Slew",
+          "It reports the Total Netlist Slack"
+        ],
+        answer: 2
+      }
+    ],
+    12: [
+      {
+        id: 111,
+        question: "The clock signal arrives at the clock sink S₁ at 15 ps and at clock sink S₂ at 20 ps. What is the clock skew between these two sinks?",
+        options: [
+          "5 ps",
+          "10 ps",
+          "15 ps",
+          "20 ps",
+          "25 ps",
+          "30 ps"
+        ],
+        answer: 0
+      },
+      {
+        id: 112,
+        question: "Consider the following statements about CTS:\n\nA. Its primary objective is to minimize clock skew.\nB. Sometimes it inserts useful skews to improve the overall timing of the circuit.\nC. At the end of CTS, all data signals get routed.\n\nWhich of the above statements is/are correct?",
+        options: [
+          "Only A",
+          "Only B",
+          "Only C",
+          "Only A, B",
+          "Only A, C",
+          "Only B, C",
+          "All",
+          "None"
+        ],
+        answer: 3
+      },
+      {
+        id: 113,
+        question: "Consider the following clock architecture:\n\nA. H-tree\nB. S-tree\nC. X-tree\n\nWhich of the above is/are valid symmetric clock tree architecture(s)?",
+        options: [
+          "Only A",
+          "Only B",
+          "Only C",
+          "Only A, B",
+          "Only A, C",
+          "Only B, C",
+          "All",
+          "None"
+        ],
+        answer: 4
+      },
+      {
+        id: 114,
+        question: "Consider the following statements about the mesh architecture in the global clock distribution network.\n\nA. It is highly reliable because multiple paths exist from the clock drivers to any point on the mesh.\nB. It is impacted less by process-induced variations than the tree architecture.\nC. It dissipates significant short-circuit power when the clock signal has skew at the inputs of the mesh drivers.\n\nWhich of the above statements are correct?",
+        options: [
+          "Only A",
+          "Only B",
+          "Only C",
+          "Only A, B",
+          "Only A, C",
+          "Only B, C",
+          "All",
+          "None"
+        ],
+        answer: 6
+      },
+      {
+        id: 115,
+        question: "The planning phase of the Detailed Routing that produces a high-level routing of nets is called:",
+        options: [
+          "Route Making",
+          "Local Routing",
+          "CTS",
+          "Global Routing",
+          "Congestion Routing",
+          "ECO",
+          "Signoff"
+        ],
+        answer: 3
+      },
+      {
+        id: 116,
+        question: "When is overflow said to occur in routing?",
+        options: [
+          "Routing resource usage is zero.",
+          "Routing resource availability is zero.",
+          "Routing resource usage is less than routing resource availability.",
+          "Routing resource usage is equal to routing resource availability.",
+          "Routing resource usage is more than routing resource availability."
+        ],
+        answer: 4
+      },
+      {
+        id: 117,
+        question: "The addition of redundant vias helps improve:",
+        options: [
+          "Power dissipation",
+          "Performance or Speed",
+          "Area",
+          "Testability",
+          "Routability",
+          "Reliability"
+        ],
+        answer: 5
+      },
+      {
+        id: 118,
+        question: "Consider the following statements about parasitic extraction:\n\nA. It involves determining parasitic resistance, capacitance and inductance from a given layout.\nB. Capacitance extraction involves partitioning a layout into smaller windows and matching them to pre-characterized patterns.\nC. The technology pre-characterization of millions of sample geometries/structures requires a huge computational effort.\n\nWhich of the above statements is/are correct?",
+        options: [
+          "Only A",
+          "Only B",
+          "Only C",
+          "Only A, B",
+          "Only A, C",
+          "Only B, C",
+          "All",
+          "None"
+        ],
+        answer: 6
+      },
+      {
+        id: 119,
+        question: "For IC design, what do we mean by \"tape out\"?",
+        options: [
+          "Adding paper tape to the IC design.",
+          "Measuring the size of an IC using tape.",
+          "Taking a backup of the netlist on magnetic tape.",
+          "Handing over the final IC layout to the foundry for fabrication."
+        ],
+        answer: 3
+      },
+      {
+        id: 120,
+        question: "Consider the following statements regarding physical design using OpenROAD:\n\nA. We can use the command clock_tree_synthesis to perform clock tree synthesis for a given design\nB. We can use the command write_spef to dump out the information about parasitics for a given design\nC. We can use the command check_equivalence to detect rule violations related to plasma-induced gate damage\n\nWhich of the above statements is/are correct?",
+        options: [
+          "Only A",
+          "Only B",
+          "Only C",
+          "Only A, B",
+          "Only A, C",
+          "Only B, C",
+          "All",
+          "None"
+        ],
+        answer: 3
+      }
+    ]
   }
 };
 

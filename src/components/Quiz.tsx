@@ -244,14 +244,17 @@ const Quiz = ({ weekId, department = 'ece', topicId }: QuizProps) => {
                             {index + 1}
                           </div>
                           <div className="flex-1">
-                            <p className="font-medium text-foreground mb-2">{question.question}</p>
-                            {question.image && question.image !== "PLACE_IMAGE_URL_HERE" && (
-                              <div className="mb-2">
-                                <img 
-                                  src={question.image} 
-                                  alt="Question illustration" 
-                                  className="max-w-sm h-auto rounded-lg border-2 border-border"
-                                />
+                            <p className="font-medium text-foreground mb-2 whitespace-pre-line">{question.question}</p>
+                            {((question.images && question.images.length > 0) || (question.image && question.image !== "PLACE_IMAGE_URL_HERE")) && (
+                              <div className="mb-2 flex flex-wrap gap-3 items-center">
+                                {(question.images || [question.image]).map((imgSrc: string, i: number) => (
+                                  <img 
+                                    key={i}
+                                    src={imgSrc} 
+                                    alt={`Question illustration ${i + 1}`} 
+                                    className="max-w-xs h-auto rounded-lg border-2 border-border bg-white p-1"
+                                  />
+                                ))}
                               </div>
                             )}
                             <div className="text-sm space-y-1">
@@ -369,14 +372,17 @@ const Quiz = ({ weekId, department = 'ece', topicId }: QuizProps) => {
                         {index + 1}
                       </span>
                       <div className="flex-1">
-                        <div>{question.question}</div>
-                        {question.image && question.image !== "PLACE_IMAGE_URL_HERE" && (
-                          <div className="mt-2">
-                            <img 
-                              src={question.image} 
-                              alt="Question illustration" 
-                              className="max-w-full h-auto rounded-lg border-2 border-border"
-                            />
+                        <div className="whitespace-pre-line">{question.question}</div>
+                        {((question.images && question.images.length > 0) || (question.image && question.image !== "PLACE_IMAGE_URL_HERE")) && (
+                          <div className="mt-2 flex flex-wrap gap-3 items-center">
+                            {(question.images || [question.image]).map((imgSrc: string, i: number) => (
+                              <img 
+                                key={i}
+                                src={imgSrc} 
+                                alt={`Question illustration ${i + 1}`} 
+                                className="max-w-xs h-auto rounded-lg border-2 border-border bg-white p-1"
+                              />
+                            ))}
                           </div>
                         )}
                       </div>
@@ -428,16 +434,19 @@ const Quiz = ({ weekId, department = 'ece', topicId }: QuizProps) => {
                   {currentQuestion + 1}
                 </div>
                 <div className="flex-1">
-                  <CardTitle className="text-2xl mb-2">
+                  <CardTitle className="text-2xl mb-2 whitespace-pre-line">
                     {currentQuestionData.question}
                   </CardTitle>
-                  {currentQuestionData.image && currentQuestionData.image !== "PLACE_IMAGE_URL_HERE" && (
-                    <div className="mt-4 mb-2">
-                      <img 
-                        src={currentQuestionData.image} 
-                        alt="Question illustration" 
-                        className="max-w-full h-auto rounded-lg border-2 border-border"
-                      />
+                  {((currentQuestionData.images && currentQuestionData.images.length > 0) || (currentQuestionData.image && currentQuestionData.image !== "PLACE_IMAGE_URL_HERE")) && (
+                    <div className="mt-4 mb-2 flex flex-wrap gap-4 items-center justify-center">
+                      {(currentQuestionData.images || [currentQuestionData.image]).map((imgSrc: string, i: number) => (
+                        <img 
+                          key={i}
+                          src={imgSrc} 
+                          alt={`Question illustration ${i + 1}`} 
+                          className="max-w-full sm:max-w-xs h-auto rounded-lg border-2 border-border bg-white p-1"
+                        />
+                      ))}
                     </div>
                   )}
                   <CardDescription>
