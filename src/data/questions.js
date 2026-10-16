@@ -5458,7 +5458,118 @@ export const questionsByDepartment = {
         answer: 1
       }
     ],
-    5: [],
+    5: [
+      {
+        id: 41,
+        question: "Which among the following is not classified as a morphological characteristic of a malignant cell?",
+        options: [
+          "Regular size and shape",
+          "Prominent nucleoli",
+          "Infiltrating growth",
+          "Scarce cytoplasm"
+        ],
+        answer: 0
+      },
+      {
+        id: 42,
+        question: "Phase contrast microscopy is especially useful for observing:",
+        options: [
+          "Fixed and stained tissue sections",
+          "Metal surfaces and crystal defects",
+          "Live, unstained biological cells",
+          "Fluorescent molecules in tissues"
+        ],
+        answer: 2
+      },
+      {
+        id: 43,
+        question: "Identify the cytology method that is specifically designed to obtain a monolayer of cells for effective screening.",
+        options: [
+          "Spin coating",
+          "Fine needle aspiration",
+          "Brush cytology",
+          "Cytospin"
+        ],
+        answer: 3
+      },
+      {
+        id: 44,
+        question: "Which component is unique to a phase contrast microscope compared to a bright field microscope?",
+        options: [
+          "Objective lens",
+          "Eyepiece",
+          "Phase plate",
+          "Condenser diaphragm"
+        ],
+        answer: 2
+      },
+      {
+        id: 45,
+        question: "______ are used to identify antigens that are linked to cancer in immunohistochemistry.",
+        options: [
+          "Antibiotics",
+          "Antibodies",
+          "T cells",
+          "None of the above"
+        ],
+        answer: 1
+      },
+      {
+        id: 46,
+        question: "What is the primary contrast mechanism in bright field microscopy?",
+        options: [
+          "Variation in refractive index",
+          "Absorption of light by stained parts of the specimen",
+          "Interference between scattered and unscattered light",
+          "Fluorescence emission"
+        ],
+        answer: 1
+      },
+      {
+        id: 47,
+        question: "If the power of the objective lens is 20× and the eyepiece lens is 10×, the total magnification is:",
+        options: [
+          "300 times",
+          "200 times",
+          "10 times",
+          "30 times"
+        ],
+        answer: 1
+      },
+      {
+        id: 48,
+        question: "The minimally invasive diagnostic method used in identifying oral premalignant and malignant lesions is:",
+        options: [
+          "Visual inspection",
+          "Surgical biopsy",
+          "Brush biopsy",
+          "Exfoliative cytology"
+        ],
+        answer: 2
+      },
+      {
+        id: 49,
+        question: "Which of the following microscopes enhances the contrast between the specimen and its background without staining?",
+        options: [
+          "Bright field",
+          "Fluorescent",
+          "Phase contrast",
+          "None of the above"
+        ],
+        answer: 2
+      },
+      {
+        id: 50,
+        question: "What is the primary purpose of using a cytospin centrifuge in a laboratory setting?",
+        options: [
+          "To separate plasma from blood cells",
+          "To pellet bacteria from a culture broth",
+          "To concentrate cells onto a defined area of a microscope slide for cytological analysis",
+          "To separate DNA fragments based on size"
+        ],
+        answer: 2
+      }
+    ],
     6: [],
     7: [],
     8: [],
