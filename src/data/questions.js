@@ -5570,7 +5570,120 @@ export const questionsByDepartment = {
         answer: 2
       }
     ],
-    6: [],
+    6: [
+      {
+        id: 51,
+        question: "Consider R1 = 8 kΩ, R2 = 4 kΩ, R3 = 2 kΩ, Rf = 12 kΩ, V1 = 1 V, V2 = 0.5 V, and V3 = 0.25 V. Find the output voltage.",
+        image: "/images/electronic-systems-for-cancer-diagnosis/week6-q1.png",
+        options: [
+          "−3.5 V",
+          "−4.5 V",
+          "−5.5 V",
+          "+4.5 V"
+        ],
+        answer: 1
+      },
+      {
+        id: 52,
+        question: "The input impedance of an op-amp is higher for:",
+        options: [
+          "Inverting Amplifier",
+          "Difference Amplifier",
+          "Voltage Follower",
+          "None of the above"
+        ],
+        answer: 2
+      },
+      {
+        id: 53,
+        question: "An op-amp has an input offset voltage of 2 mV. Given R1 = 1 kΩ and R2 = 4 MΩ, calculate the output voltage Vout.",
+        image: "/images/electronic-systems-for-cancer-diagnosis/week6-q3.png",
+        options: [
+          "8 V",
+          "4 V",
+          "+5 mV",
+          "−0.5 V"
+        ],
+        answer: 0
+      },
+      {
+        id: 54,
+        question: "A tuned amplifier has a peak output at 5 MHz and a quality factor of 40. The bandwidth and 3-dB frequencies shall be at what values, respectively?",
+        options: [
+          "40 kHz, 4.02 MHz, 3.98 MHz",
+          "40 kHz, 4.04 MHz, 3.96 MHz",
+          "125 kHz, 5.0625 MHz, 4.9375 MHz",
+          "125 kHz, 5.08 MHz, 3.92 MHz"
+        ],
+        answer: 2
+      },
+      {
+        id: 55,
+        question: "Which of the following electrical characteristics is not exhibited by an ideal op-amp?",
+        options: [
+          "Infinite voltage gain",
+          "Infinite bandwidth",
+          "Infinite output resistance",
+          "Infinite slew rate"
+        ],
+        answer: 2
+      },
+      {
+        id: 56,
+        question: "5 V, 5 V, and 2 V are the three input voltages applied to the inverting input terminal of an averaging amplifier. Determine the output voltage.",
+        options: [
+          "−4 V",
+          "−15 V",
+          "+4 V",
+          "+5 V"
+        ],
+        answer: 0
+      },
+      {
+        id: 57,
+        question: "The corner frequency is defined as the point at which the response drops ______ from the passband.",
+        options: [
+          "20 dB",
+          "3 dB",
+          "6 dB",
+          "0.7071 dB"
+        ],
+        answer: 1
+      },
+      {
+        id: 58,
+        question: "Which is a low-pass filter with a cutoff frequency of 1.6 Hz and a passband gain of 2?",
+        options: [
+          "Option A: Circuit with two 10 kΩ resistors and 0.01 µF capacitor",
+          "Option B: Circuit with two 20 kΩ resistors and 0.01 µF capacitor",
+          "Option C: Circuit with 10 kΩ and 20 kΩ resistors and 0.05 µF capacitor",
+          "Option D: Circuit with 5 kΩ and 10 kΩ resistors and 0.02 µF capacitor"
+        ],
+        answer: 0
+      },
+      {
+        id: 59,
+        question: "Using the frequency scaling technique, convert a 10 kHz cutoff frequency of the low-pass filter to a cutoff frequency of 15 kHz. Take C = 0.01 µF and R = 15.9 kΩ.",
+        options: [
+          "6.25 kΩ",
+          "10.60 kΩ",
+          "16 kΩ",
+          "1.59 kΩ"
+        ],
+        answer: 1
+      },
+      {
+        id: 60,
+        question: "A band-pass filter has a lower 3-dB frequency of 3.2 kHz and an upper 3-dB frequency of 4.8 kHz. What is its bandwidth?",
+        options: [
+          "1.6 kHz",
+          "8.0 kHz",
+          "4.0 kHz",
+          "0.8 kHz"
+        ],
+        answer: 0
+      }
+    ],
     7: [],
     8: [],
     9: [],
