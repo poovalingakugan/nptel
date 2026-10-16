@@ -54,6 +54,19 @@ export const departmentConfig: Record<string, CourseConfig> = {
     totalQuestions: 120,
     badge: "12 Weeks",
   },
+  "electronic-systems-for-cancer-diagnosis": {
+    id: "electronic-systems-for-cancer-diagnosis",
+    topic: "Electronic Systems for Cancer Diagnosis",
+    code: "NOC26-EE",
+    category: "Biomedical Electronics",
+    description: "Comprehensive 12-week NPTEL course covering biosensors, microfluidics, instrumentation, and electronic detection systems for cancer diagnosis.",
+    startWeek: 1,
+    endWeek: 12,
+    questionsPerWeek: 10,
+    finalTestLabel: "Week 1-12",
+    totalQuestions: 120,
+    badge: "12 Weeks",
+  },
 };
 
 export const getCoursesList = (): CourseConfig[] => {
