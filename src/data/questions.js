@@ -5653,11 +5653,17 @@ export const questionsByDepartment = {
       {
         id: 58,
         question: "Which is a low-pass filter with a cutoff frequency of 1.6 Hz and a passband gain of 2?",
+        images: [
+          "/images/electronic-systems-for-cancer-diagnosis/week6-q8-a.png",
+          "/images/electronic-systems-for-cancer-diagnosis/week6-q8-b.png",
+          "/images/electronic-systems-for-cancer-diagnosis/week6-q8-c.png",
+          "/images/electronic-systems-for-cancer-diagnosis/week6-q8-d.png"
+        ],
         options: [
-          "Option A: Circuit with two 10 kΩ resistors and 0.01 µF capacitor",
-          "Option B: Circuit with two 20 kΩ resistors and 0.01 µF capacitor",
-          "Option C: Circuit with 10 kΩ and 20 kΩ resistors and 0.05 µF capacitor",
-          "Option D: Circuit with 5 kΩ and 10 kΩ resistors and 0.02 µF capacitor"
+          "Circuit (a)",
+          "Circuit (b)",
+          "Circuit (c)",
+          "Circuit (d)"
         ],
         answer: 0
       },
