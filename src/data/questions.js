@@ -5351,7 +5351,113 @@ export const questionsByDepartment = {
         answer: 1
       }
     ],
-    4: [],
+    4: [
+      {
+        id: 31,
+        question: "Base resistance value of Cr/Au IDE structure with a spacing of 20 microns and 40 microns is x ohm and y ohm, respectively. What is the relationship between x and y?",
+        options: [
+          "x > y",
+          "x = y",
+          "x < y",
+          "Cannot be predicted"
+        ],
+        answer: 1
+      },
+      {
+        id: 32,
+        question: "Evaluate whether the following statement is True/False.\n\nA piezoresistive polymeric sensor can be realised using the conductive polymer Poly(3,4-ethylenedioxythiophene): Polystyrene sulfonate (PEDOT:PSS).",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 0
+      },
+      {
+        id: 33,
+        question: "SU-8 photoresist layer is formed using:",
+        options: [
+          "Highly sensitive polymer",
+          "Polysilicon",
+          "Light-sensitive polymer",
+          "Silicon dioxide"
+        ],
+        answer: 2
+      },
+      {
+        id: 34,
+        question: "Which sensor can be used to measure the thermal conductivity of tissue?",
+        options: [
+          "Piezoresistor",
+          "Strain gauge",
+          "Thermistor",
+          "Potentiometer"
+        ],
+        answer: 2
+      },
+      {
+        id: 35,
+        question: "What properties are measured using an ETM sensor for breast cancer tissue phenotyping?",
+        options: [
+          "Capacitance, elasticity, specific heat",
+          "Resistivity/resistance, elasticity, thermal conductivity",
+          "Resistivity/resistance, viscosity, specific heat"
+        ],
+        answer: 1
+      },
+      {
+        id: 36,
+        question: "Why are sensors such as microheaters fabricated on a diaphragm structure?",
+        options: [
+          "Reduces sensor footprint",
+          "Achieves desired working temperatures at lower voltage",
+          "Ease of fabrication",
+          "All the above"
+        ],
+        answer: 1
+      },
+      {
+        id: 37,
+        question: "Which of the following is a good prognostic factor in detecting breast cancer?",
+        options: [
+          "Tumour Grade III",
+          "Lymphatic and vascular invasion",
+          "Tumour size",
+          "ER positivity"
+        ],
+        answer: 3
+      },
+      {
+        id: 38,
+        question: "To fabricate SU-8 pillars on a Cr/Au layer, what is the sequence of processes to be followed?",
+        options: [
+          "Spin coat, soft bake, UV exposure, PR development, hard bake",
+          "Spin coat, soft bake, UV exposure, PR development, hard bake, annealing",
+          "Spin coat, soft bake, UV exposure, hard bake, PR development, annealing",
+          "Spin coat, soft bake, UV exposure, hard bake, PR development, acetone dip"
+        ],
+        answer: 1
+      },
+      {
+        id: 39,
+        question: "For the Electro-Thermo-Mechanical phenotyping of breast cancer tool discussed in the lectures, what technology was used to fabricate the housing for the tool?",
+        options: [
+          "Injection moulding",
+          "3D printing",
+          "Laser cutting of acrylic sheets",
+          "Forming"
+        ],
+        answer: 1
+      },
+      {
+        id: 40,
+        question: "\"In the ETM phenotyping device, the tissue is heated from the tip of the indenter and its thermal properties are measured by the microchip kept below the tissue in the 3D-printed housing.\" The statement is:",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 1
+      }
+    ],
     5: [],
     6: [],
     7: [],
