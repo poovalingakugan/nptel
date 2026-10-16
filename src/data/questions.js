@@ -6010,7 +6010,103 @@ export const questionsByDepartment = {
         answer: 0
       }
     ],
-    10: [],
+    10: [
+      {
+        id: 91,
+        question: "Complete the following sentence:\n“In cleanrooms, gloves are used to .............”",
+        options: [
+          "Keep users safe during chemical handling.",
+          "Stop corrosion of skin in contact with acids and concentrated bases during chemical spills.",
+          "Stop sodium and potassium contamination of devices.",
+          "All of these"
+        ],
+        answer: 3
+      },
+      {
+        id: 92,
+        question: "Glasses or face shields help users to:\nI. Protect eyes from chemical (liquid) spill.\nII. Protect eyes from gases that create eye irritation.",
+        options: [
+          "Only I",
+          "Only II",
+          "Both I and II"
+        ],
+        answer: 2
+      },
+      {
+        id: 93,
+        question: "Consider the following statements about vacuum desiccator:\nI. Desiccator is used to store devices and wafers for future use and protect them from contamination\nII. Desiccators store the devices in an inert gas-filled environment protecting it from oxidation\nWhich of the above statement(s) is/are true?",
+        options: [
+          "I only",
+          "II only",
+          "I and II both"
+        ],
+        answer: 0
+      },
+      {
+        id: 94,
+        question: "Complete the following sentence:\n“Before microscopy, centrifuge is used to separate cells from the medium. A centrifuge uses ______ difference between the particles and the medium in which they are dispersed to separate.”",
+        options: [
+          "Surface roughness",
+          "Temperature",
+          "Density",
+          "Hydrophobicity"
+        ],
+        answer: 2
+      },
+      {
+        id: 95,
+        question: "What is the difference between an inverted microscope and a compound microscope?",
+        options: [
+          "The condenser lens and the light source remain above the specimen in inverted microscope whereas they remain below the specimen for the compound microscope",
+          "The condenser lens and the light source remain above the specimen in compound microscope whereas they remain below the specimen for the inverted microscope",
+          "The condenser lens remains above the specimen and the light source below in inverted microscope whereas they remain below the specimen for the compound microscope",
+          "The condenser lens remains above the specimen and the light source below in compound microscope whereas they remain below the specimen for the inverted microscope"
+        ],
+        answer: 0
+      },
+      {
+        id: 96,
+        question: "Sometimes, a microscope cannot accommodate a tissue section. So, it is sliced into pieces. Which of the following equipment can be used to do that?",
+        options: [
+          "Slicer",
+          "Microtome",
+          "Surgical blade"
+        ],
+        answer: 1
+      },
+      {
+        id: 97,
+        question: "Which of the following microscopy is suitable for viewing colourless and transparent specimens and live cells?",
+        options: [
+          "Bright Field Microscopy",
+          "Dark Field Microscopy",
+          "Phase Contrast Microscopy"
+        ],
+        answer: 2
+      },
+      {
+        id: 98,
+        question: "To fabricate a PDMS microchannel structure, which of the following statement is true?",
+        options: [
+          "An identical microchannel structure is patterned on silicon mold.",
+          "A PDMS block is patterned using photolithography (UV region).",
+          "An inverted structure of the microchannel structure is patterned on a silicon mold.",
+          "A PDMS block is patterned using e-beam lithography."
+        ],
+        answer: 2
+      },
+      {
+        id: 99,
+        question: "Why gowning is important prior to cleanroom entry?\nI. To keep samples safe from human body contamination.\nII. To keep the user safe from harmful chemicals\nIII. To increase the resolution of the fabricated devices.\nIV. To restrict the maximum number of users at a time in the lab.",
+        options: [
+          "i",
+          "i, ii",
+          "i, ii, iii",
+          "i, ii, iv"
+        ],
+        answer: 1
+      }
+    ],
     11: [],
     12: []
   }
