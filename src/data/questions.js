@@ -5239,7 +5239,118 @@ export const questionsByDepartment = {
         answer: 3
       }
     ],
-    3: [],
+    3: [
+      {
+        id: 21,
+        question: "Why are primers used in lithography?",
+        options: [
+          "To enhance resolution.",
+          "To improve the photoresist adhesion.",
+          "To load the mask.",
+          "To align the mask."
+        ],
+        answer: 1
+      },
+      {
+        id: 22,
+        question: "Tumor markers should:",
+        options: [
+          "Be as inexpensive as possible.",
+          "Change the way a physician treats a patient so as to affect the outcome.",
+          "Be 100% sensitive and 100% specific.",
+          "Be used only to screen for the early detection of cancer."
+        ],
+        answer: 2
+      },
+      {
+        id: 23,
+        question: "Biomarkers for metastatic breast cancer are:",
+        options: [
+          "Epigenetic (methylation) and Estrogen receptor (ER).",
+          "Estrogen receptor (ER) and Epigenetic (methylation).",
+          "Progesterone receptor (PR) and Epigenetic (methylation).",
+          "Estrogen receptor (ER), Progesterone receptor (PR), and Human epidermal growth factor receptor 2 (HER2)."
+        ],
+        answer: 3
+      },
+      {
+        id: 24,
+        question: "The most aggressive form of breast cancer is:",
+        options: [
+          "Invasive ductal carcinoma.",
+          "Invasive lobular carcinoma.",
+          "Papillary carcinoma.",
+          "All of these."
+        ],
+        answer: 0
+      },
+      {
+        id: 25,
+        question: "In the fabrication of a piezoresistive cantilever sensor for mechanical characterization of cancer tissue, deposition of silicon nitride is for:",
+        options: [
+          "Better insulation.",
+          "Better adhesion of contact pads.",
+          "Better conductivity.",
+          "As a stress-releasing layer."
+        ],
+        answer: 3
+      },
+      {
+        id: 26,
+        question: "A piezoresistive pressure sensor works on the principle of piezoresistive effects, i.e., a change in resistivity due to mechanical stress. Maximum stress and displacement of square membranes occur at:",
+        options: [
+          "Uniform throughout the membrane.",
+          "At the edges and the centre, respectively.",
+          "At the centre and at the edges, respectively.",
+          "Cannot be predicted."
+        ],
+        answer: 1
+      },
+      {
+        id: 27,
+        question: "Consider the following two statements and select the correct answer.\n\nS1: Photoresist should have high etch resistance and good adhesion.\nS2: For photoresist coating, the final thickness is independent of the spin speed of the photoresist coater.",
+        options: [
+          "Both statements are correct.",
+          "Only S1 is correct.",
+          "Only S2 is correct.",
+          "Both statements are incorrect."
+        ],
+        answer: 1
+      },
+      {
+        id: 28,
+        question: "Which of the following processes can produce a silicon wafer with more purity?",
+        options: [
+          "CZ technique.",
+          "FZ technique.",
+          "Boule generation.",
+          "Epitaxial growth."
+        ],
+        answer: 1
+      },
+      {
+        id: 29,
+        question: "Which of the following PVD techniques can deposit a film with better purity?",
+        options: [
+          "E-beam evaporation.",
+          "Sputtering.",
+          "Thermal evaporation.",
+          "Thermal oxidation."
+        ],
+        answer: 0
+      },
+      {
+        id: 30,
+        question: "Which of the below statements are correct?\n\ni. Dry oxidation is about 5 times faster than wet oxidation.\nii. Dry oxidation is mainly used for creating thin oxide layers and wet oxidation for thicker ones.\niii. Dry oxidation is used for making field oxide layers and wet oxidation for gate oxides.\niv. Dry oxidation gives better-quality oxide layers compared to wet oxidation.",
+        options: [
+          "i, ii, iii, and iv.",
+          "ii and iv.",
+          "ii, iii, and iv.",
+          "i, ii, and iv."
+        ],
+        answer: 1
+      }
+    ],
     4: [],
     5: [],
     6: [],
