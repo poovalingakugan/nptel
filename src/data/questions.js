@@ -6107,7 +6107,109 @@ export const questionsByDepartment = {
         answer: 1
       }
     ],
-    11: [],
+    11: [
+      {
+        id: 100,
+        question: "Complete the following statement:\n“_________ provides an environment to work safely with infectious biological materials (bacteria, virus or other infectious tissues) in the lab.”",
+        options: [
+          "Fume hood",
+          "Bio safety hood",
+          "Laboratory work bench"
+        ],
+        answer: 1
+      },
+      {
+        id: 101,
+        question: "Evaluate whether the following statement is true or false regarding the use of incubators:\n\"Bacterial and Mammalian Cells can be cultured at the same time inside a common incubator.\"",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 1
+      },
+      {
+        id: 102,
+        question: "Check whether the following statement is true or false:\n“In anisotropic etching, the etching rate is constant along with all directions; that is, the properties of a material are in-dependent of the direction.”",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 1
+      },
+      {
+        id: 103,
+        question: "Four probe method is the method used in impedance analyzer to calibrate impedance with function of frequency. Why four probe method is used to calibrate impedance in place of conventional voltmeter?",
+        options: [
+          "Four probe method is faster calibration method.",
+          "Four probe method will give better accuracy due to exclusion of parasitic resistance of contact leads.",
+          "Four probe method will give better accuracy due to inclusion of parasitic resistance of contact leads."
+        ],
+        answer: 1
+      },
+      {
+        id: 104,
+        question: "In the aspect of 3D printing techniques, what does SLS stands for?",
+        options: [
+          "Stereo lithography sintering",
+          "Selective laser sintering",
+          "Selective laminar sintering"
+        ],
+        answer: 1
+      },
+      {
+        id: 105,
+        question: "Complete the following sentence:\n“in vivo situation of body can be mimicked most faithfully by ---------”",
+        options: [
+          "IDE structure",
+          "Micro-tubules with peristaltic pump",
+          "Microfluidic chips"
+        ],
+        answer: 2
+      },
+      {
+        id: 106,
+        question: "Ultrasonic bath is used to:\nI. Dissolve solute particles in solvent\nII. Substrate cleaning\nIII. Substrate coating\nIV. Decrease particle count in room by ultrasonic radiation.",
+        options: [
+          "I",
+          "I, II",
+          "I, II, III",
+          "I, II, III, IV"
+        ],
+        answer: 1
+      },
+      {
+        id: 107,
+        question: "Which of the following statement(s) is/ are correct:\nI. UV light is used to sterilize the biosafety hood after use.\nII. UV light should be switched on while the biosafety hood is being used.",
+        options: [
+          "I only",
+          "II only",
+          "Both I and II",
+          "Neither I nor II"
+        ],
+        answer: 0
+      },
+      {
+        id: 108,
+        question: "Complete the following sentence:\n“_________ is based on the principle that organisms require a particular set of parameters for their growth and development with the optimal condition (under artificial conditions) of temperature, humidity, oxygen, and CO2 levels.”",
+        options: [
+          "Autoclave",
+          "Incubator",
+          "Centrifuge",
+          "Biosafety hood"
+        ],
+        answer: 1
+      },
+      {
+        id: 109,
+        question: "Which 3D-printing method uses liquid resin to convert to solid 3D objects?",
+        options: [
+          "FDM",
+          "SLS",
+          "SLA"
+        ],
+        answer: 2
+      }
+    ],
     12: []
   }
 };
