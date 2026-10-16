@@ -5015,7 +5015,118 @@ export const questionsByDepartment = {
     ]
   },
   "electronic-systems-for-cancer-diagnosis": {
-    1: [],
+    1: [
+      {
+        id: 1,
+        question: "Cell culture can be classified as which method?",
+        options: [
+          "In vivo",
+          "In vitro",
+          "Ex vivo",
+          "Either in vitro or ex vivo"
+        ],
+        answer: 1
+      },
+      {
+        id: 2,
+        question: "Which of the following best defines cell culture?",
+        options: [
+          "Growing bacteria in nutrient agar",
+          "Growing cells outside their natural environment under controlled conditions",
+          "Preserving cells in a cryogenic freezer",
+          "Observing cells under a microscope"
+        ],
+        answer: 1
+      },
+      {
+        id: 3,
+        question: "On what principle does a HEPA filter operate?\n\nI. Pressure gradient\nII. Diffusion and electrostatic attraction\nIII. Impaction and interception",
+        options: [
+          "I",
+          "I, II",
+          "I, II, III",
+          "None of the above"
+        ],
+        answer: 2
+      },
+      {
+        id: 4,
+        question: "In cell culture, what does \"80% confluence\" indicate?",
+        options: [
+          "80% of the medium is used up",
+          "80% of the plate surface is covered by cells",
+          "Cells have divided 80 times",
+          "80% of the cells are dead"
+        ],
+        answer: 1
+      },
+      {
+        id: 5,
+        question: "What is the primary purpose of using a CO₂ incubator in cell culture?",
+        options: [
+          "Cooling down culture flasks",
+          "Measuring cell viability",
+          "To maintain optimal temperature, humidity, and CO₂ levels for cell growth",
+          "To preserve tissue samples at low temperature"
+        ],
+        answer: 2
+      },
+      {
+        id: 6,
+        question: "What is the primary purpose of an autoclave in a laboratory?",
+        options: [
+          "Cooling down culture flasks",
+          "Measuring cell viability",
+          "Sterilizing equipment and media using high-pressure steam",
+          "Maintaining constant CO₂ levels for cell culture"
+        ],
+        answer: 2
+      },
+      {
+        id: 7,
+        question: "______ can be used to measure force.",
+        options: [
+          "Strain gauges",
+          "Bellows",
+          "Bourdon gauges",
+          "All of these"
+        ],
+        answer: 0
+      },
+      {
+        id: 8,
+        question: "The gauge factor in a strain gauge represents ______.",
+        options: [
+          "Accuracy of sensor",
+          "Sensitivity of the sensor",
+          "Resolution of the system",
+          "None of the above"
+        ],
+        answer: 1
+      },
+      {
+        id: 9,
+        question: "Which of the following best describes the function of a centrifuge in cell culture work?",
+        options: [
+          "Measuring protein concentration",
+          "Separating components based on density using centrifugal force",
+          "Incubating cells under controlled conditions",
+          "Observing cells in real time"
+        ],
+        answer: 1
+      },
+      {
+        id: 10,
+        question: "What was the equipment used to characterize the catheter force sensor in the lectures?",
+        options: [
+          "Atomic Force Microscope",
+          "Micromanipulator",
+          "Hydraulic Actuators",
+          "None of the above"
+        ],
+        answer: 1
+      }
+    ],
     2: [],
     3: [],
     4: [],
