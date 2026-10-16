@@ -6210,7 +6210,113 @@ export const questionsByDepartment = {
         answer: 2
       }
     ],
-    12: []
+    12: [
+      {
+        id: 110,
+        question: "Complete the following sentence:\n“Working principle of metal-oxide based gas sensors is ___________”",
+        options: [
+          "Electron diffusion through sensing layer",
+          "Absorption of the volatile organic compounds on the sensing layer",
+          "Adsorption of the volatile organic compounds on the sensing layer",
+          "Tunnelling of gas through the sensing layer"
+        ],
+        answer: 2
+      },
+      {
+        id: 111,
+        question: "Consider the following statements and select the correct option:\nS1: Sputtering is a chemical way of thin film deposition.\nS2: Thermal Evaporation is a thin film deposition technique.",
+        options: [
+          "Both Statements are correct.",
+          "Both Statements are incorrect.",
+          "Only S1 is correct.",
+          "Only S2 is correct."
+        ],
+        answer: 3
+      },
+      {
+        id: 112,
+        question: "Evaluate whether the following statement is true or false:\n“Biological simulations such as bio-heating cannot be performed using COMSOL Multiphysics.”",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 1
+      },
+      {
+        id: 113,
+        question: "To model a micro-resistor beam in COMSOL, which physics will you solve for in a scenario of multi-physics simulation?",
+        options: [
+          "Only Electrical and structural physics",
+          "Only Structural and thermal physics",
+          "Only Thermal and Electrical physics",
+          "Electrical, thermal and structural physics"
+        ],
+        answer: 3
+      },
+      {
+        id: 114,
+        question: "Consider the following two statements about DAQ and select the correct option:\nS1: It can be used as a function generator.\nS2: It can be used as a logic analyzer.",
+        options: [
+          "Both Statements are correct.",
+          "Both Statements are incorrect.",
+          "Only S1 is correct.",
+          "Only S2 is correct."
+        ],
+        answer: 1
+      },
+      {
+        id: 115,
+        question: "Which among the following techniques is used for NiCr (Nichrome) deposition during the fabrication of gas sensors?",
+        options: [
+          "Sputtering",
+          "Thermal oxidation",
+          "Spin coating"
+        ],
+        answer: 0
+      },
+      {
+        id: 116,
+        question: "Considering the COMSOL Multiphysics simulation, what should be the flow of the modeling?\n\nA. Make geometry.\nB. Post-process results\nC. Add materials.\nD. Choose the type of study.\nE. Apply physics conditions.",
+        options: [
+          "A, C, E, B, D",
+          "A, C, D, E, B",
+          "A, C, E, D, B",
+          "A, C, E, B, D"
+        ],
+        answer: 2
+      },
+      {
+        id: 117,
+        question: "Which is the most critical subprocess in microfabrication?",
+        options: [
+          "Thin Film Deposition",
+          "Lithography",
+          "Etching",
+          "Characterization"
+        ],
+        answer: 1
+      },
+      {
+        id: 118,
+        question: "Evaluate if the statement is true or false:\n“Streamline plot is used to visualize the direction and amplitude of vector variables in COMSOL.”",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 0
+      },
+      {
+        id: 119,
+        question: "What are the applications for Gas Sensors?",
+        options: [
+          "VOC sensing",
+          "Detect Flammable gases",
+          "Food Safety and Security",
+          "All of the above"
+        ],
+        answer: 3
+      }
+    ]
   }
 };
 

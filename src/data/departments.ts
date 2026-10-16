@@ -64,7 +64,7 @@ export const departmentConfig: Record<string, CourseConfig> = {
     endWeek: 12,
     questionsPerWeek: 10,
     finalTestLabel: "Week 1-12",
-    totalQuestions: 120,
+    totalQuestions: 119,
     badge: "12 Weeks",
   },
 };
