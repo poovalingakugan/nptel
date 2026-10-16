@@ -5904,7 +5904,112 @@ export const questionsByDepartment = {
         answer: 1
       }
     ],
-    9: [],
+    9: [
+      {
+        id: 81,
+        question: "Which of the following is not part of the signal conditioning circuit explained in the lecture for force sensing?",
+        options: [
+          "Wheatstone Bridge",
+          "Instrumentation Amplifier",
+          "Voltage Follower",
+          "Resistor Divider"
+        ],
+        answer: 3
+      },
+      {
+        id: 82,
+        question: "Check whether the following statement is true or false:\n\n“A full-wave rectifier is used in the QRS detector circuit.”",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 1
+      },
+      {
+        id: 83,
+        question: "Which of the following techniques involved in the fabrication of 3D components produces parts with the highest dimensional accuracy and smooth surface finish?",
+        options: [
+          "Binder Jetting",
+          "Direct Metal Laser Sintering",
+          "Material Jetting",
+          "Fused Deposition Modelling"
+        ],
+        answer: 2
+      },
+      {
+        id: 84,
+        question: "Check whether the statement is true or false:\n\n“Strain gauge is an active device that converts mechanical displacement into change of resistance.”",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 1
+      },
+      {
+        id: 85,
+        question: "Consider a half-wave rectifier shown in the figure below. What is the minimum input voltage (Vin) required for the diode to conduct?\n\nNote: The forward voltage of the diode is 0.7 V, and the open-loop gain of the op-amp is 10³.",
+        image: "/images/electronic-systems-for-cancer-diagnosis/week9-q5.png",
+        options: [
+          "0.7 V",
+          "1 V",
+          "0.7 mV",
+          "7 μV"
+        ],
+        answer: 2
+      },
+      {
+        id: 86,
+        question: "Complete the following statement:\n\n“QRS complexes are used to compute the BPM (beats per minute). The frequency of the QRS peak is about _____.”",
+        options: [
+          "10 Hz",
+          "15 Hz",
+          "17 Hz",
+          "50 Hz"
+        ],
+        answer: 2
+      },
+      {
+        id: 87,
+        question: "Complete the following sentence:\n\n“PDMS can be bonded to a glass wafer by ______.”",
+        options: [
+          "Plasma Bonding",
+          "Anodic Bonding",
+          "Using double-sided adhesive",
+          "Thermocompression"
+        ],
+        answer: 0
+      },
+      {
+        id: 88,
+        question: "Evaluate if the sentence is true or false:\n\n“SLA (Stereolithography) makes use of liquid resin, which gets converted to a solid 3D object.”",
+        options: [
+          "True",
+          "False"
+        ],
+        answer: 0
+      },
+      {
+        id: 89,
+        question: "Choose the suitable options for 3D printing from the following:\n\ni. 3D printing is a type of additive manufacturing.\nii. 3D printing enables us to produce complex structures using less material, which is not possible to generate with traditional manufacturing methods.\niii. 3D printing is a type of subtractive manufacturing.\niv. A wide variety of plastics and metals can be used as 3D printing materials.",
+        options: [
+          "i and ii",
+          "i, ii, and iv",
+          "ii, iii, and iv",
+          "iii and iv"
+        ],
+        answer: 1
+      },
+      {
+        id: 90,
+        question: "For ECG Signal Conditioning Circuit, which is not part of the signal conditioning unit?",
+        options: [
+          "All Pass Filter",
+          "Peak Detector",
+          "Half Wave Rectifier"
+        ],
+        answer: 0
+      }
+    ],
     10: [],
     11: [],
     12: []
