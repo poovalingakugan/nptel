@@ -5127,7 +5127,118 @@ export const questionsByDepartment = {
         answer: 1
       }
     ],
-    2: [],
+    2: [
+      {
+        id: 11,
+        question: "Ideally, the value of anisotropy of the wet etch process is:",
+        options: [
+          "1",
+          "0",
+          "0.5",
+          "Infinity"
+        ],
+        answer: 1
+      },
+      {
+        id: 12,
+        question: "Why is split-field microscopy used in a mask aligner?\n\nI. As the dimensions of the alignment marks on the wafer and mask are in the micron range, microscopes are required to observe them while aligning.\nII. Split-field microscopy enables the user to view the output from both microscopes at the same time, helping to align faster.\nIII. Split-field microscopy gives better depth of focus.\nIV. Split-field microscopy is easier to install and does not require any optimization.",
+        options: [
+          "I, II, III, IV",
+          "I, II, III",
+          "I, II",
+          "I, II, IV"
+        ],
+        answer: 2
+      },
+      {
+        id: 13,
+        question: "Bulk micromachining primarily relies on which technique for removing unwanted material?",
+        options: [
+          "Plasma cleaning",
+          "Deep Reactive Ion Etching (DRIE)",
+          "Photolithography",
+          "Electroplating"
+        ],
+        answer: 1
+      },
+      {
+        id: 14,
+        question: "Which is NOT a step of cleaning a Si wafer (100 orientation) before patterning?",
+        options: [
+          "Native oxide removal using HF",
+          "DI water rinse",
+          "Purging N₂ gas",
+          "Dip wafer into TMAH (Tetramethylammonium hydroxide) at 80°C"
+        ],
+        answer: 3
+      },
+      {
+        id: 15,
+        question: "Traditionally, in the microfabrication process, which unit process is the technologically limiting process?",
+        options: [
+          "Etching",
+          "Lift-off technique",
+          "Masking",
+          "Lithography"
+        ],
+        answer: 3
+      },
+      {
+        id: 16,
+        question: "Why is HMDS (hexamethyldisilazane) coated on an Si substrate?",
+        options: [
+          "It will remove native oxide impurities on the Si wafer.",
+          "It will control the etch rate of photoresist.",
+          "It will improve adhesion of photoresist on the Si substrate.",
+          "It is an ISO standard to use HMDS before spin coating any photoresist."
+        ],
+        answer: 2
+      },
+      {
+        id: 17,
+        question: "Buffered HF is used as an etchant to etch out the SiO₂ layer, known as BOE (Buffered Oxide Etch). Which kind of etching is this?",
+        options: [
+          "Isotropic and Dry Etching",
+          "Isotropic and Wet Etching",
+          "Anisotropic and Dry Etching",
+          "Anisotropic and Wet Etching"
+        ],
+        answer: 1
+      },
+      {
+        id: 18,
+        question: "Consider the following two statements and select the correct answer:\n\nS1: Surface Micromachining is a process that produces structures inside the substrate by selective etching.\nS2: Bulk Micromachining is a process that creates structures on top of the substrate by film deposition and selective etching.",
+        options: [
+          "Both statements are correct.",
+          "Only S1 is correct.",
+          "Only S2 is correct.",
+          "Both statements are incorrect."
+        ],
+        answer: 3
+      },
+      {
+        id: 19,
+        question: "Processes related to photolithography are mentioned here. Arrange the processes in the proper order.\n\ni. Soft bake\nii. Photoresist coating\niii. Wafer cleaning\niv. Primer coating\nv. Exposure\nvi. Alignment\nvii. Development",
+        options: [
+          "iii – i – iv – ii – v – vi – vii",
+          "iii – iv – ii – i – vi – v – vii",
+          "iv – i – ii – vi – v – iii – vii",
+          "iii – iv – i – vi – v – vi – vii"
+        ],
+        answer: 1
+      },
+      {
+        id: 20,
+        question: "Spin-coated photoresist thickness does NOT depend on:",
+        options: [
+          "Spin coater rotation speed",
+          "Spin coating time",
+          "Viscosity of photoresist",
+          "Coated primer"
+        ],
+        answer: 3
+      }
+    ],
     3: [],
     4: [],
     5: [],
